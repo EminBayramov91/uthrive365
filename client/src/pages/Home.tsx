@@ -11,7 +11,7 @@ export default function Home() {
       <section 
         className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden bg-cover bg-center"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(30, 50, 40, 0.45), rgba(30, 50, 40, 0.15)), url('/hero-ut365.jpg')`
+          backgroundImage: `linear-gradient(rgba(30, 50, 40, 0.45), rgba(30, 50, 40, 0.15)), url('/images/hero-ut365.jpg')`
         }}
       >
         {/* Subtle Noise/Texture Overlay */}
