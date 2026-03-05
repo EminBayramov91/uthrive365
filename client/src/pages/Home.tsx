@@ -11,11 +11,19 @@ export default function Home() {
       <section 
         className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden bg-cover bg-center"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(30, 50, 40, 0.45), rgba(30, 50, 40, 0.15)), url('/images/hero-ut365.jpg')`
+          backgroundImage: `url('/images/hero-ut365.jpg')`
         }}
       >
+        {/* Adjusted Background Overlay */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{ 
+            background: 'linear-gradient(180deg, rgba(31,42,37,0.35) 0%, rgba(31,42,37,0.20) 40%, rgba(31,42,37,0.45) 100%)' 
+          }}
+        />
+        
         {/* Subtle Noise/Texture Overlay */}
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-1"></div>
         
         <div className="max-w-5xl mx-auto text-center relative z-10 py-20">
           <motion.div
@@ -23,28 +31,34 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md text-white font-medium text-sm mb-8 border border-white/20">
+            <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md text-[#F6F4EF] font-medium text-sm mb-8 border border-white/20">
               The Path to Sustainable Flow
             </span>
-            <h1 className="text-5xl md:text-8xl font-display font-bold text-white mb-8 leading-tight text-balance drop-shadow-sm">
+            <h1 
+              className="text-5xl md:text-8xl font-display font-bold text-[#F6F4EF] mb-8 leading-tight text-balance"
+              style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
+            >
               Recalibrate Your <br className="hidden md:block" />
-              <span className="text-white">Personal Operating System.</span>
+              <span className="text-[#F6F4EF]">Personal Operating System.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
+            <p 
+              className="text-xl md:text-2xl text-[#F6F4EF]/90 mb-12 max-w-3xl mx-auto leading-relaxed text-balance"
+              style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
+            >
               Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
               <Link
                 href="/start"
-                className="w-full sm:w-auto px-10 py-4 rounded-xl font-bold bg-[#3F5F56] text-white shadow-xl shadow-black/20 hover:bg-[#3F5F56]/90 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#3F5E54] text-[#F6F4EF] shadow-xl shadow-black/20 hover:bg-[#3F5E54]/90 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Start with the PEM Wheel (Free)
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/spin"
-                className="w-full sm:w-auto px-10 py-4 rounded-xl font-bold bg-white/5 backdrop-blur-md border-2 border-white/40 text-white shadow-lg hover:bg-white/20 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#B8A58C] text-[#1F2A25] shadow-lg hover:bg-[#A99379] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <RefreshCcw className="w-5 h-5" />
                 Daily Recalibration (Spin)
