@@ -35,14 +35,14 @@ export default function Home() {
               The Path to Sustainable Flow
             </span>
             <h1 
-              className="text-5xl md:text-8xl font-display font-bold text-[#F6F4EF] mb-8 leading-tight text-balance"
+              className="text-5xl md:text-8xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
               Recalibrate Your <br className="hidden md:block" />
-              <span className="text-[#F6F4EF]">Personal Operating System.</span>
+              <span className="text-[#EDE8DE]">Personal Operating System.</span>
             </h1>
             <p 
-              className="text-xl md:text-2xl text-[#F6F4EF]/90 mb-12 max-w-3xl mx-auto leading-relaxed text-balance"
+              className="text-xl md:text-2xl text-[#EDE8DE]/90 mb-12 max-w-3xl mx-auto leading-relaxed text-balance"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
               Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.
@@ -51,16 +51,16 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
               <Link
                 href="/start"
-                className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#3F5E54] text-[#F6F4EF] shadow-xl shadow-black/20 hover:bg-[#3F5E54]/90 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#3F5E54] text-[#F4F1EA] shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-[6px] hover:bg-[#3F5E54]/90 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Start with the PEM Wheel (Free)
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/spin"
-                className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#B8A58C] text-[#1F2A25] shadow-lg hover:bg-[#A99379] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#B9A68C] text-[#1F2A25] shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-[6px] hover:bg-[#A99379] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
-                <RefreshCcw className="w-5 h-5" />
+                <RefreshCcw className="w-5 h-5 text-[#1F2A25]" />
                 Daily Recalibration (Spin)
               </Link>
             </div>
