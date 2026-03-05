@@ -40,7 +40,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 
-              className="text-5xl md:text-8xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance"
+              className="text-5xl md:text-8xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px] mx-auto"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
               Recalibrate Your <br className="hidden md:block" />
