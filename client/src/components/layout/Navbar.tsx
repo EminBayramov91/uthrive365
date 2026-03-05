@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="sticky top-0 w-full z-50 transition-all duration-300 bg-[#EEF3F1]/82 backdrop-blur-[10px] border-b border-black/[0.06] shadow-[0_8px_24px_rgba(0,0,0,0.06)] py-3.5 md:py-[18px]"
+      className="sticky top-0 w-full z-50 transition-all duration-300 bg-[#EEF3F1]/94 backdrop-blur-[10px] border-b border-black/[0.08] shadow-[0_8px_24px_rgba(0,0,0,0.06)] py-3.5 md:py-[18px]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
