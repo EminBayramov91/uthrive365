@@ -39,7 +39,7 @@ export default function Home() {
               <span className="text-[#EDE8DE]">Personal Operating System.</span>
             </h1>
             <p 
-              className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-balance opacity-100"
+              className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-balance opacity-100 font-semibold"
               style={{ 
                 color: '#E6E0D6',
                 textShadow: '0 2px 14px rgba(0,0,0,0.35)',
