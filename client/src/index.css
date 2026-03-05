@@ -9,35 +9,36 @@
     --font-sans: 'Plus Jakarta Sans', sans-serif;
     --font-display: 'Outfit', sans-serif;
 
-    /* Warm Cream Background */
-    --background: 42 33% 98%;
-    /* Deep Forest Green/Black Foreground */
-    --foreground: 132 30% 15%;
+    /* Option B — Eucalyptus + Stone + Brass */
+    /* Linen Background (#FBF6EE) */
+    --background: 37 67% 96%;
+    /* Espresso text (#2C2621) */
+    --foreground: 28 14% 15%;
 
-    /* Forest Green Primary */
-    --primary: 132 30% 25%;
-    --primary-foreground: 42 33% 98%;
+    /* Eucalyptus Primary (#2F5D50) */
+    --primary: 163 33% 28%;
+    --primary-foreground: 37 67% 96%;
 
-    /* Soft Stone/Taupe Secondary */
-    --secondary: 38 15% 85%;
-    --secondary-foreground: 132 30% 20%;
+    /* Taupe/Stone Secondary (#A79C8E) */
+    --secondary: 33 13% 61%;
+    --secondary-foreground: 28 14% 15%;
 
     /* Muted backgrounds for subtle distinction */
-    --muted: 38 20% 93%;
-    --muted-foreground: 38 12% 45%;
+    --muted: 37 30% 92%;
+    --muted-foreground: 33 10% 45%;
 
-    /* Soft Gold Accent */
-    --accent: 46 65% 52%;
-    --accent-foreground: 42 33% 98%;
+    /* Brass Accent (#B08D57) */
+    --accent: 37 38% 52%;
+    --accent-foreground: 37 67% 96%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --card: 42 33% 99%;
-    --card-foreground: 132 30% 15%;
+    --card: 37 67% 97%;
+    --card-foreground: 28 14% 15%;
 
-    --border: 38 15% 85%;
-    --ring: 132 30% 25%;
+    --border: 33 26% 86%;
+    --ring: 163 33% 28%;
     
     --radius: 1rem;
   }
