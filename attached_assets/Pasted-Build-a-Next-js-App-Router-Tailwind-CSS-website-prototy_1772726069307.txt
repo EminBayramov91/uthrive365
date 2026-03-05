@@ -1,0 +1,56 @@
+Build a Next.js (App Router) + Tailwind CSS website prototype for the brand “uThrive365” (formal: U Thrive 365).
+
+Goal: Phase I marketing site prototype (not perfect). Clean, premium, calm, structured. Mobile-first.
+
+Pages: Home, About, Start Here, Blog, Contact, Daily Recalibration (spin wheel).
+- Use a top nav with these links.
+- Use a warm cream background, forest green primary, taupe/stone neutrals, soft gold accents.
+- Use readable modern sans-serif. Headings can be slightly more elegant.
+
+HOME page sections:
+Hero:
+Headline: “Recalibrate Your Personal Operating System.”
+Subhead: “Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.”
+Small signature line: “One small shift today. One giant leap in how you live.”
+Buttons:
+Primary: “Start with the PEM Wheel (Free)”
+Secondary: “Daily Recalibration (Free Spin)”
+
+Section: “Where’s your SOP for you?” (3 bullets max)
+Section: 3 cards: Map → Regulate → Redesign
+Section: Free Micro-Modules (3 cards, 6 minutes) with placeholders
+Section: Email capture block (UI only, no backend):
+Title: “Free PEM Wheel guide (first 100 subscribers)”
+Button: “Get the Free Guide”
+Section: Blog preview cards (3) labeled “2-minute read”
+Footer: “U Thrive 365” + placeholder links (Privacy, Terms)
+
+ABOUT page:
+Short story: engineering mindset + energy/frequency + systems for humans.
+Credibility bullets (short).
+CTA: “Start with the PEM Wheel (Free)”
+
+START HERE page:
+Step 1 PEM Wheel, Step 2 Daily Spin, Step 3 Micro-modules.
+Email capture block repeated.
+
+BLOG page:
+List layout with 6 placeholder posts, each shows title, date, “2-minute read”, category.
+Note: “Witty Wednesday: 60–90 second pattern-break posts.”
+
+CONTACT page:
+Simple form (name/email/message) UI only + social icon placeholders.
+
+DAILY RECALIBRATION page:
+Spin Wheel tool: big “Spin” button. On click, randomly select an item from a local data file (JSON).
+Display:
+Word, 1-line meaning, 2-minute action, power question.
+Add “Spin again” button.
+
+Implementation:
+- Next.js App Router under /app
+- Components folder for reusable sections (Navbar, Footer, CTASection, Card, etc.)
+- Data file under /data/spins.json
+- No external APIs needed.
+
+Deliver working code with clean styling.
