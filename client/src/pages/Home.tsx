@@ -28,7 +28,7 @@ export default function Home() {
             </span>
             <h1 className="text-5xl md:text-8xl font-display font-bold text-white mb-8 leading-tight text-balance drop-shadow-sm">
               Recalibrate Your <br className="hidden md:block" />
-              <span className="text-accent">Personal Operating System.</span>
+              <span className="text-white">Personal Operating System.</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
               Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.
@@ -59,11 +59,11 @@ export default function Home() {
       </section>
 
       {/* Where's your SOP section */}
-      <section className="py-24 bg-gradient-to-b from-[#E6F0EA] to-[#D9E6DF] border-y border-border/50">
+      <section className="py-24 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-6">
-              Where's your SOP for <span className="italic text-accent">you</span>?
+              Where's your SOP for <span className="italic font-semibold">you</span>?
             </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Companies spend millions developing Standard Operating Procedures. But the most complex system you'll ever manage is yourself. It's time to map, regulate, and redesign how you function.
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Micro-Modules Teaser */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#D9E6DF]">
+      <section className="py-24 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 space-y-6">

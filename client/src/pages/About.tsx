@@ -24,7 +24,7 @@ export default function About() {
           </p>
         </section>
 
-        <section className="bg-gradient-to-b from-[#E6F0EA] to-[#D9E6DF] p-8 md:p-12 rounded-3xl border border-border">
+      <section className="bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] p-8 md:p-12 rounded-3xl border border-border">
           <h3 className="text-2xl font-bold font-display text-primary mb-6">Why this works (The Credibility)</h3>
           <ul className="space-y-4">
             {[
