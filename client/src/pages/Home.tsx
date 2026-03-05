@@ -8,19 +8,14 @@ export default function Home() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center px-4 overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `url('/images/hero-ut365.jpg')`,
-          }}
-        >
-          {/* Elegant Gradient Overlay - tuned for readability without muddying the vista */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2C2621]/50 via-[#2C2621]/20 to-transparent"></div>
-          {/* Subtle Noise/Texture Overlay */}
-          <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
-        </div>
+      <section 
+        className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden bg-cover bg-center"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(20, 40, 30, 0.45), rgba(20, 40, 30, 0.15)), url('/images/hero-ut365.jpg')`
+        }}
+      >
+        {/* Subtle Noise/Texture Overlay */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
         
         <div className="max-w-5xl mx-auto text-center relative z-10 py-20">
           <motion.div
