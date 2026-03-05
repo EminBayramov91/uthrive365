@@ -68,7 +68,16 @@ export default function Home() {
               </Link>
             </div>
             
-            <p className="mt-12 text-sm text-[#EDE8DE]/70 font-medium italic">
+            <p 
+              className="mt-12 italic"
+              style={{ 
+                color: '#E6E0D6',
+                fontSize: '1.05rem',
+                fontWeight: 500,
+                opacity: 0.9,
+                letterSpacing: '0.02em'
+              }}
+            >
               "One small shift today. One giant leap in how you live."
             </p>
           </motion.div>
