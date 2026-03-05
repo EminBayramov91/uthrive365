@@ -54,7 +54,8 @@ export default function Navbar() {
             ))}
             <Link
               href="/spin"
-              className="bg-[#3F5F56] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#3F5F56]/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              role="button"
+              className="bg-[#3F5E54] text-[#F4F1EA] px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#3F5E54]/90 hover:text-[#F4F1EA] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-md"
             >
               Daily Spin
             </Link>
@@ -97,7 +98,8 @@ export default function Navbar() {
               <Link
                 href="/spin"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-4 bg-primary text-primary-foreground text-center p-4 rounded-xl text-base font-medium hover:bg-primary/90 transition-colors"
+                role="button"
+                className="mt-4 bg-[#3F5E54] text-[#F4F1EA] text-center p-4 rounded-xl text-base font-semibold hover:bg-[#3F5E54]/90 transition-colors shadow-md"
               >
                 Daily Spin
               </Link>
