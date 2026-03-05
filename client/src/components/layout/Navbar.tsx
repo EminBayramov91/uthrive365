@@ -24,11 +24,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-primary/10 shadow-sm py-3"
-          : "bg-transparent py-5"
-      }`}
+      className="sticky top-0 w-full z-50 transition-all duration-300 bg-[#EEF3F1]/82 backdrop-blur-[10px] border-b border-black/[0.06] shadow-[0_8px_24px_rgba(0,0,0,0.06)] py-3.5 md:py-[18px]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -45,8 +41,8 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary/80 ${
-                  location === link.path ? "text-primary" : "text-primary/70"
+                className={`text-sm font-medium transition-all duration-200 hover:text-[#2D453E] hover:underline underline-offset-4 decoration-2 ${
+                  location === link.path ? "text-[#3F5F56] underline" : "text-[#3F5F56]/80"
                 }`}
               >
                 {link.label}
