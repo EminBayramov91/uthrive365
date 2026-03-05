@@ -21,6 +21,14 @@ export default function Home() {
             background: 'linear-gradient(180deg, rgba(31,42,37,0.35) 0%, rgba(31,42,37,0.20) 40%, rgba(31,42,37,0.45) 100%)' 
           }}
         />
+
+        {/* Vignette Overlay */}
+        <div 
+          className="absolute inset-0 z-0" 
+          style={{ 
+            background: 'radial-gradient(circle at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.15) 75%, rgba(0,0,0,0.30) 100%)' 
+          }}
+        />
         
         {/* Subtle Noise/Texture Overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-1"></div>
