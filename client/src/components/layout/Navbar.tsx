@@ -33,8 +33,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2 group">
-            <Compass className="w-8 h-8 text-primary group-hover:rotate-45 transition-transform duration-500" />
-            <span className="font-display font-bold text-xl tracking-tight text-primary">
+            <Compass className="w-8 h-8 text-[#3F5F56] group-hover:rotate-45 transition-transform duration-500" />
+            <span className="font-display font-bold text-xl tracking-tight text-[#3F5F56]">
               Recalibrate
             </span>
           </Link>
@@ -45,8 +45,8 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location === link.path ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-medium transition-colors hover:text-[#7C9088] ${
+                  location === link.path ? "text-[#3F5F56]" : "text-[#2C2621]/60"
                 }`}
               >
                 {link.label}
@@ -54,7 +54,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/spin"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              className="bg-[#3F5F56] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#3F5F56]/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               Daily Spin
             </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-primary p-2"
+            className="md:hidden text-[#3F5F56] p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

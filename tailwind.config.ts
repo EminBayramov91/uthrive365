@@ -12,13 +12,13 @@ export default {
       },
       colors: {
         uthrive: {
-          bg: "#FBF6EE",        // Linen
+          bg: "#FCFAF6",        // Ivory
           ink: "#2C2621",       // Espresso text
-          primary: "#7C9088",   // Eucalyptus
-          primarySoft: "#A9B9AD",// Pale Sage
-          accent: "#B08D57",    // Brass
+          primary: "#3F5F56",   // Deep Eucalyptus
+          soft: "#7C9088",      // Dusty Eucalyptus
+          accent: "#A37E4F",    // Bronze/Brass
           stone: "#A79C8E",     // Taupe/Stone
-          border: "#E7DED2",    // Warm border (optional)
+          border: "#E7DED2",    // Warm border
         },
         // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
