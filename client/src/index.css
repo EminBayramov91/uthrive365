@@ -10,37 +10,34 @@
     --font-display: 'Outfit', sans-serif;
 
     /* Option B — Eucalyptus + Stone + Brass */
-    /* Ivory Background (#FCFAF6) */
-    --background: 156 10% 94%;
+    /* Dusty Eucalyptus Background (#DEE9E3) */
+    --background: 153 13% 89%;
     /* Espresso text (#2C2621) */
-    --foreground: 28 14% 15%;
+    --foreground: 160 9% 34%;
 
     /* Headlines (#3F5E54) */
     --primary: 162 20% 31%;
-    --primary-foreground: 156 10% 94%;
-
-    /* Body Text (#4F5F5A) */
-    --foreground: 160 9% 34%;
+    --primary-foreground: 153 13% 89%;
 
     /* Navigation Links / Secondary Headlines (#3F5E54) */
     --secondary: 162 20% 31%;
-    --secondary-foreground: 156 10% 94%;
+    --secondary-foreground: 153 13% 89%;
 
     /* Muted / Secondary Text (#6F877F) */
     --muted: 159 10% 48%;
     --muted-foreground: 159 10% 48%;
 
-    /* Highlight / Emphasized (#7F6F87) */
-    --accent: 279 10% 48%;
-    --accent-foreground: 156 10% 94%;
+    /* Dark Taupe Accent (#6E6256) */
+    --accent: 30 12% 39%;
+    --accent-foreground: 153 13% 89%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --card: 156 10% 95%;
+    --card: 153 13% 92%;
     --card-foreground: 160 9% 34%;
 
-    --border: 160 9% 85%;
+    --border: 160 9% 80%;
     --ring: 162 20% 31%;
     
     --radius: 1rem;

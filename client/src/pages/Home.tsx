@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* Where's your SOP section */}
-      <section className="py-24 bg-[#EEF3F1] border-y border-border/50">
+      <section className="py-24 bg-gradient-to-b from-[#E6F0EA] to-[#D9E6DF] border-y border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-6">
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Micro-Modules Teaser */}
-      <section className="py-24 px-4 bg-[#EEF3F1]">
+      <section className="py-24 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#D9E6DF]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 space-y-6">
