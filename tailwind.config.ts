@@ -14,7 +14,7 @@ export default {
         uthrive: {
           bg: "#FBF6EE",        // Linen
           ink: "#2C2621",       // Espresso text
-          primary: "#2F5D50",   // Eucalyptus
+          primary: "#5F7C72",   // Eucalyptus
           primarySoft: "#A9B9AD",// Pale Sage
           accent: "#B08D57",    // Brass
           stone: "#A79C8E",     // Taupe/Stone
