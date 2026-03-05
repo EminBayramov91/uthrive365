@@ -13,7 +13,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2830&auto=format&fit=crop')`,
+            backgroundImage: `url('/images/hero-ut365.jpg')`,
           }}
         >
           {/* Elegant Gradient Overlay - tuned for readability without muddying the vista */}
