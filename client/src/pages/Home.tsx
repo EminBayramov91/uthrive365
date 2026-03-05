@@ -39,8 +39,8 @@ export default function Home() {
               <span className="text-[#EDE8DE]">Personal Operating System.</span>
             </h1>
             <p 
-              className="text-xl md:text-2xl text-[#EDE8DE]/90 mb-12 max-w-3xl mx-auto leading-relaxed text-balance"
-              style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
+              className="text-xl md:text-2xl text-[#E6E0D6] mb-12 max-w-3xl mx-auto leading-relaxed text-balance"
+              style={{ textShadow: '0 2px 14px rgba(0,0,0,0.35)' }}
             >
               Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.
             </p>
