@@ -8,46 +8,55 @@ export default function Home() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 px-4 overflow-hidden">
-        {/* Abstract organic shapes for aesthetic background */}
-        <div className="absolute top-20 right-[10%] w-96 h-96 bg-secondary/40 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-        <div className="absolute top-40 left-[10%] w-72 h-72 bg-accent/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+      <section className="relative min-h-[85vh] flex items-center justify-center px-4 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop')`,
+          }}
+        >
+          {/* Elegant Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2C2621]/60 via-[#2C2621]/30 to-[#FCFAF6]/10"></div>
+          {/* Subtle Noise/Texture Overlay */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+        </div>
         
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div className="max-w-5xl mx-auto text-center relative z-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-1.5 px-4 rounded-full bg-secondary text-primary font-medium text-sm mb-6 border border-border">
+            <span className="inline-block py-1.5 px-4 rounded-full bg-white/10 backdrop-blur-md text-white font-medium text-sm mb-8 border border-white/20">
               The Path to Sustainable Flow
             </span>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-[#3F5F56] mb-8 leading-tight text-balance">
+            <h1 className="text-5xl md:text-8xl font-display font-bold text-white mb-8 leading-tight text-balance drop-shadow-sm">
               Recalibrate Your <br className="hidden md:block" />
               <span className="text-[#A37E4F]">Personal Operating System.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-[#2C2621]/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
               Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
               <Link
                 href="/start"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-[#3F5F56] text-white shadow-lg shadow-[#3F5F56]/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 rounded-xl font-bold bg-[#3F5F56] text-white shadow-xl shadow-black/20 hover:bg-[#3F5F56]/90 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Start with the PEM Wheel (Free)
                 <ArrowRight className="w-5 h-5" />
               </Link>
-            <Link
+              <Link
                 href="/spin"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-white border-2 border-[#3F5F56]/10 text-[#3F5F56] shadow-sm hover:border-[#3F5F56]/30 hover:bg-[#FBF6EE]/50 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-10 py-4 rounded-xl font-bold bg-white/5 backdrop-blur-md border-2 border-white/40 text-white shadow-lg hover:bg-white/20 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <RefreshCcw className="w-5 h-5" />
                 Daily Recalibration (Spin)
               </Link>
             </div>
             
-            <p className="mt-8 text-sm text-muted-foreground font-medium italic">
+            <p className="mt-12 text-sm text-white/70 font-medium italic">
               "One small shift today. One giant leap in how you live."
             </p>
           </motion.div>
