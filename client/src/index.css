@@ -15,30 +15,33 @@
     /* Espresso text (#2C2621) */
     --foreground: 28 14% 15%;
 
-    /* Deep Eucalyptus Primary (#3F5F56) */
-    --primary: 164 21% 31%;
-    --primary-foreground: 45 33% 98%;
+    /* Headlines (#3F5E54) */
+    --primary: 162 20% 31%;
+    --primary-foreground: 156 10% 94%;
 
-    /* Taupe/Stone Secondary (#A79C8E) */
-    --secondary: 33 13% 61%;
-    --secondary-foreground: 28 14% 15%;
+    /* Body Text (#4F5F5A) */
+    --foreground: 160 9% 34%;
 
-    /* Muted backgrounds for subtle distinction */
-    --muted: 45 20% 95%;
-    --muted-foreground: 28 14% 35%;
+    /* Navigation Links / Secondary Headlines (#3F5E54) */
+    --secondary: 162 20% 31%;
+    --secondary-foreground: 156 10% 94%;
 
-    /* Bronze Accent (#A37E4F) */
-    --accent: 33 35% 47%;
-    --accent-foreground: 45 33% 98%;
+    /* Muted / Secondary Text (#6F877F) */
+    --muted: 159 10% 48%;
+    --muted-foreground: 159 10% 48%;
+
+    /* Highlight / Emphasized (#7F6F87) */
+    --accent: 279 10% 48%;
+    --accent-foreground: 156 10% 94%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --card: 45 33% 99%;
-    --card-foreground: 28 14% 15%;
+    --card: 156 10% 95%;
+    --card-foreground: 160 9% 34%;
 
-    --border: 33 26% 86%;
-    --ring: 164 21% 31%;
+    --border: 160 9% 85%;
+    --ring: 162 20% 31%;
     
     --radius: 1rem;
   }
@@ -50,7 +53,15 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    @apply font-semibold tracking-tight text-foreground;
+    @apply font-semibold tracking-tight text-primary;
+  }
+
+  p, li {
+    @apply text-foreground;
+  }
+
+  a:not([role="button"]) {
+    @apply text-primary transition-colors hover:text-primary/80;
   }
 }
 

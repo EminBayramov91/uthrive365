@@ -45,8 +45,8 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors hover:text-[#7C9088] ${
-                  location === link.path ? "text-[#3F5F56]" : "text-[#2C2621]/60"
+                className={`text-sm font-medium transition-colors hover:text-primary/80 ${
+                  location === link.path ? "text-primary" : "text-primary/70"
                 }`}
               >
                 {link.label}

@@ -28,7 +28,7 @@ export default function Newsletter() {
         </p>
 
         {subscribe.isSuccess ? (
-          <div className="flex items-center justify-center gap-3 text-[#A37E4F] font-medium text-lg bg-[#A37E4F]/10 py-4 px-6 rounded-2xl w-fit mx-auto border border-[#A37E4F]/20">
+          <div className="flex items-center justify-center gap-3 text-accent font-medium text-lg bg-accent/10 py-4 px-6 rounded-2xl w-fit mx-auto border border-accent/20">
             <CheckCircle className="w-6 h-6" />
             <span>Welcome to the movement. Check your inbox.</span>
           </div>
@@ -40,12 +40,12 @@ export default function Newsletter() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[#A37E4F] focus:border-transparent transition-all"
+              className="flex-1 px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
             />
             <button
               type="submit"
               disabled={subscribe.isPending}
-              className="px-8 py-4 bg-[#A37E4F] text-white font-bold rounded-xl hover:bg-[#A37E4F]/90 hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="px-8 py-4 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {subscribe.isPending ? "Joining..." : "Join Now"}
               {!subscribe.isPending && <Send className="w-4 h-4" />}
