@@ -13,11 +13,11 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2830&auto=format&fit=crop')`,
           }}
         >
-          {/* Elegant Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2C2621]/60 via-[#2C2621]/30 to-[#FCFAF6]/10"></div>
+          {/* Elegant Gradient Overlay - tuned for readability without muddying the vista */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2C2621]/50 via-[#2C2621]/20 to-transparent"></div>
           {/* Subtle Noise/Texture Overlay */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
         </div>
