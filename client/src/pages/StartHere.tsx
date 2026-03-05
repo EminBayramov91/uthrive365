@@ -52,7 +52,7 @@ export default function StartHere() {
             
             <div className="flex-1 space-y-3">
               <div className="flex items-center gap-3">
-                <step.icon className="w-6 h-6 text-accent" />
+                <step.icon className="w-6 h-6 text-[#B8A58C]" />
                 <h3 className="text-2xl font-bold text-foreground">{step.title}</h3>
               </div>
               <p className="text-muted-foreground text-lg leading-relaxed">

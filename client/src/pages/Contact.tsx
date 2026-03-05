@@ -27,11 +27,11 @@ export default function Contact() {
             <h3 className="text-2xl font-display font-bold text-primary mb-4">Direct Lines</h3>
             <div className="space-y-4">
               <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="w-5 h-5 text-accent" />
+                <Mail className="w-5 h-5 text-[#B8A58C]" />
                 <span>hello@recalibrate.os</span>
               </a>
               <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
-                <MessageSquare className="w-5 h-5 text-accent" />
+                <MessageSquare className="w-5 h-5 text-[#B8A58C]" />
                 <span>@recalibrate.os</span>
               </a>
             </div>
@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="w-full md:w-2/3 bg-background border border-border rounded-3xl p-8 shadow-sm">
           {status === "success" ? (
             <div className="h-full flex flex-col items-center justify-center text-center py-12">
-              <div className="w-16 h-16 bg-accent/20 text-accent rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#B8A58C]/20 text-[#B8A58C] rounded-full flex items-center justify-center mb-6">
                 <Send className="w-8 h-8" />
               </div>
               <h3 className="text-3xl font-display font-bold text-primary mb-2">Message Sent</h3>

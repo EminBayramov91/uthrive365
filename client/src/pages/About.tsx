@@ -34,7 +34,7 @@ export default function About() {
               "Focuses on micro-shifts (2mm changes) that compound effortlessly."
             ].map((bullet, idx) => (
               <li key={idx} className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-accent shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-6 h-6 text-[#B8A58C] shrink-0 mt-0.5" />
                 <span className="text-foreground">{bullet}</span>
               </li>
             ))}

@@ -72,11 +72,11 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 relative">
             {/* Connection line behind cards */}
-            <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-[#7C9088]/20 to-transparent -translate-y-1/2 z-0" />
+            <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-[#B8A58C]/20 to-transparent -translate-y-1/2 z-0" />
 
             <div className="glass-card hover-elevate p-8 rounded-3xl relative z-10 bg-background">
-              <div className="w-14 h-14 rounded-2xl bg-[#7C9088]/10 flex items-center justify-center mb-6 shadow-inner">
-                <Compass className="w-7 h-7 text-[#7C9088]" />
+              <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
+                <Compass className="w-7 h-7 text-[#B8A58C]" />
               </div>
               <h3 className="text-2xl font-bold mb-3 text-primary">1. Map</h3>
               <p className="text-foreground leading-relaxed">
@@ -85,8 +85,8 @@ export default function Home() {
             </div>
 
             <div className="glass-card hover-elevate p-8 rounded-3xl relative z-10 bg-background">
-              <div className="w-14 h-14 rounded-2xl bg-[#A37E4F]/10 flex items-center justify-center mb-6 shadow-inner">
-                <RefreshCcw className="w-7 h-7 text-[#A37E4F]" />
+              <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
+                <RefreshCcw className="w-7 h-7 text-[#B8A58C]" />
               </div>
               <h3 className="text-2xl font-bold mb-3 text-primary">2. Regulate</h3>
               <p className="text-foreground leading-relaxed">
@@ -96,7 +96,7 @@ export default function Home() {
 
             <div className="glass-card hover-elevate p-8 rounded-3xl relative z-10 bg-background">
               <div className="w-14 h-14 rounded-2xl bg-[#3F5F56]/10 flex items-center justify-center mb-6 shadow-inner">
-                <Sparkles className="w-7 h-7 text-[#7C9088]" />
+                <Sparkles className="w-7 h-7 text-[#B8A58C]" />
               </div>
               <h3 className="text-2xl font-bold mb-3 text-primary">3. Redesign</h3>
               <p className="text-foreground leading-relaxed">
@@ -123,7 +123,7 @@ export default function Home() {
                   "Energy Auditing for High Performers"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-foreground font-medium">
-                    <div className="w-2 h-2 rounded-full bg-[#A37E4F]" />
+                    <div className="w-2 h-2 rounded-full bg-[#B8A58C]" />
                     {item}
                   </li>
                 ))}
@@ -138,11 +138,11 @@ export default function Home() {
             <div className="flex-1 relative">
               {/* Abstract graphic representing modules */}
               <div className="aspect-square max-w-md mx-auto relative">
-                <div className="absolute inset-0 bg-[#7C9088] rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute inset-8 bg-gradient-to-tr from-[#3F5F56] to-[#A37E4F]/80 rounded-3xl rotate-12 opacity-80 backdrop-blur-3xl shadow-2xl"></div>
+                <div className="absolute inset-0 bg-[#B8A58C] rounded-full opacity-20 animate-pulse"></div>
+                <div className="absolute inset-8 bg-gradient-to-tr from-[#3F5F56] to-[#B8A58C]/80 rounded-3xl rotate-12 opacity-80 backdrop-blur-3xl shadow-2xl"></div>
                 <div className="absolute inset-12 bg-white rounded-2xl -rotate-6 shadow-xl flex items-center justify-center p-8 border border-[#E7DED2]">
                   <div className="text-center">
-                    <Sparkles className="w-12 h-12 text-[#A37E4F] mx-auto mb-4" />
+                    <Sparkles className="w-12 h-12 text-[#B8A58C] mx-auto mb-4" />
                     <h3 className="font-display font-bold text-xl mb-2 text-primary">Module 01: The Reset</h3>
                     <p className="text-sm text-muted-foreground">Unlock your potential</p>
                   </div>

@@ -16,7 +16,7 @@ export default function Newsletter() {
   return (
     <div className="bg-[#3F5F56] rounded-3xl p-8 md:p-16 text-center max-w-5xl mx-auto shadow-2xl relative overflow-hidden my-20">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[#A37E4F]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#B8A58C]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="relative z-10">
@@ -45,7 +45,7 @@ export default function Newsletter() {
             <button
               type="submit"
               disabled={subscribe.isPending}
-              className="px-8 py-4 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="px-8 py-4 bg-[#B8A58C] text-white font-bold rounded-xl hover:bg-[#A99379] hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {subscribe.isPending ? "Joining..." : "Join Now"}
               {!subscribe.isPending && <Send className="w-4 h-4" />}
