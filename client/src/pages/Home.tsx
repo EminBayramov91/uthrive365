@@ -54,7 +54,7 @@ export default function Home() {
                 WebkitTextFillColor: '#E6E0D6'
               }}
             >
-              Reduce energy leaks, restore flow, and thrive 365—one small shift at a time.
+              Move beyond autopilot patterns. Restore vitality and create a healthier, more aligned, more purposeful next chapter.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
