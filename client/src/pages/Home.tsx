@@ -97,10 +97,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-6">
-              Where's your SOP for <span className="italic font-semibold">you</span>?
+              A Practical Path to Recalibration
             </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Companies spend millions developing Standard Operating Procedures. But the most complex system you'll ever manage is yourself. It's time to map, regulate, and redesign how you function.
+                U Thrive 365 helps you better understand where your vitality is going, what patterns may be keeping you stuck, and how to begin making meaningful shifts from the inside out. Through structured reflection, practical tools, and holistic support, you can begin to heal, restore alignment, and create a life that feels more true to who you are now.
               </p>
           </div>
 
@@ -112,9 +112,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
                 <Compass className="w-7 h-7 text-[#B8A58C]" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">1. Map</h3>
+              <h3 className="text-2xl font-bold mb-3 text-primary">1. Discover</h3>
               <p className="text-foreground leading-relaxed">
-                Discover your baseline. Identify the friction points and energy leaks in your daily routine using the PEM Assessment Wheel.
+                Discover your baseline. Identify the patterns, pressures, vitality drains, and areas of misalignment that may be shaping your health, choices, and daily life.
               </p>
             </div>
 
@@ -122,9 +122,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
                 <RefreshCcw className="w-7 h-7 text-[#B8A58C]" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">2. Regulate</h3>
+              <h3 className="text-2xl font-bold mb-3 text-primary">2. Support</h3>
               <p className="text-foreground leading-relaxed">
-                Establish immediate equilibrium. Learn somatic techniques and micro-habits to quickly return to a state of flow and calm.
+                Use practical tools, reflection, and small restorative shifts to support healing, restore vitality, and create more steadiness, clarity, and self-awareness.
               </p>
             </div>
 
@@ -132,9 +132,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-2xl bg-[#3F5F56]/10 flex items-center justify-center mb-6 shadow-inner">
                 <Sparkles className="w-7 h-7 text-[#B8A58C]" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">3. Redesign</h3>
+              <h3 className="text-2xl font-bold mb-3 text-primary">3. Recalibrate</h3>
               <p className="text-foreground leading-relaxed">
-                Build the sustainable architecture. Create a custom personal operating system that supports your unique neurobiology.
+                Build a more intentional way of living—one that supports your well-being, reflects who you are becoming, and helps you create a healthier, more aligned next chapter.
               </p>
             </div>
           </div>
