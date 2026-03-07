@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* A More Aligned Life Section */}
-      <section className="py-24 px-4 bg-[#DDE8E2]">
+      <section className="py-20 px-4 bg-[#DDE8E2]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-10">
             A More Aligned Life Starts with Awareness
@@ -158,20 +158,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Micro-Modules Teaser */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2]">
+      {/* Foundational Resources Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 space-y-6">
-              <h2 className="text-4xl font-display font-bold text-primary">Free Micro-Modules</h2>
+              <h2 className="text-4xl font-display font-bold text-primary">Foundational Resources</h2>
               <p className="text-lg text-foreground">
-                Bite-sized, actionable frameworks designed to be consumed in 5 minutes and implemented immediately. No fluff, just leverage.
+                Short, practical resources designed to help you better understand your patterns, restore vitality, and begin making meaningful shifts in how you live, heal, and grow. Start here with the core ideas behind U Thrive 365.
               </p>
               <ul className="space-y-4 pt-4">
                 {[
-                  "The 90-Second Nervous System Reset",
-                  "Designing Your Shutdown Sequence",
-                  "Energy Auditing for High Performers"
+                  "What Is the PEM?",
+                  "Understanding Patterns, Vitality, and Alignment",
+                  "How Small Shifts Create Meaningful Change"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-foreground font-medium">
                     <div className="w-2 h-2 rounded-full bg-[#B8A58C]" />
@@ -181,7 +181,7 @@ export default function Home() {
               </ul>
               <div className="pt-4">
                 <Link href="/start" className="inline-flex items-center text-primary font-bold hover:text-accent transition-colors gap-2">
-                  Access the library <ArrowRight className="w-4 h-4" />
+                  Explore the Resources <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
