@@ -13,7 +13,7 @@ export default function Footer() {
                 uThrive 365
               </span>
             </Link>
-            <p className="text-primary-foreground/80 max-w-md text-base leading-relaxed">
+            <p className="text-primary-foreground/80 max-w-lg text-sm leading-relaxed">
               Is there more life in you than the life you're living right now?
             </p>
           </div>
