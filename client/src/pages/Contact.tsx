@@ -1,7 +1,7 @@
 import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
 import { useState } from "react";
-import { Mail, MessageSquare, Send } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
@@ -16,33 +16,27 @@ export default function Contact() {
   return (
     <MainLayout>
       <PageHeader 
-        title="Connect & Collaborate" 
-        description="Whether you're looking for speaking engagements, workshops, or 1:1 recalibration."
+        title="Contact U Thrive 365" 
+        description="Questions, ideas, or simply want to reach out? I'd love to hear from you."
       />
 
       <div className="max-w-5xl mx-auto px-4 pb-24 flex flex-col md:flex-row gap-16">
         {/* Contact Info */}
         <div className="w-full md:w-1/3 space-y-8">
           <div>
-            <h3 className="text-2xl font-display font-bold text-primary mb-4">Direct Lines</h3>
+            <h3 className="text-2xl font-display font-bold text-primary mb-4">Get in Touch</h3>
             <div className="space-y-4">
-              <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:hello@uthrive365.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="w-5 h-5 text-[#B8A58C]" />
-                <span>hello@recalibrate.os</span>
-              </a>
-              <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
-                <MessageSquare className="w-5 h-5 text-[#B8A58C]" />
-                <span>@recalibrate.os</span>
+                <span>hello@uthrive365.com</span>
               </a>
             </div>
           </div>
           
           <div className="p-6 bg-secondary/30 rounded-2xl border border-border">
-            <h4 className="font-bold text-foreground mb-2">Speaking Inquiries</h4>
-            <p className="text-sm text-muted-foreground mb-4">Looking for a paradigm-shifting talk on sustainable performance?</p>
-            <a href="#" className="text-sm font-bold text-primary hover:text-accent transition-colors underline underline-offset-4">
-              Download Media Kit
-            </a>
+            <h4 className="font-bold text-foreground mb-2">A Thoughtful Space</h4>
+            <p className="text-sm text-muted-foreground mb-4">Whether you have a question about the PEM Wheel, foundational resources, future offerings, or simply want to connect, feel free to reach out.</p>
+            <p className="text-xs text-muted-foreground/70">This space is being built thoughtfully and intentionally. Thank you for your patience as U Thrive 365 grows.</p>
           </div>
         </div>
 
@@ -54,7 +48,7 @@ export default function Contact() {
                 <Send className="w-8 h-8" />
               </div>
               <h3 className="text-3xl font-display font-bold text-primary mb-2">Message Sent</h3>
-              <p className="text-muted-foreground text-lg">I'll get back to you within 48 hours.</p>
+              <p className="text-muted-foreground text-lg">Thank you. I'll be in touch soon.</p>
               <button 
                 onClick={() => setStatus("idle")}
                 className="mt-8 text-primary font-medium hover:underline"
@@ -79,15 +73,17 @@ export default function Contact() {
                 <label className="text-sm font-semibold text-foreground">Inquiry Type</label>
                 <select className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
                   <option>General Question</option>
-                  <option>Speaking Engagement</option>
-                  <option>1:1 Coaching</option>
-                  <option>Corporate Workshop</option>
+                  <option>PEM Wheel</option>
+                  <option>Foundational Resources</option>
+                  <option>Future Offerings</option>
+                  <option>Collaboration / Partnership</option>
+                  <option>Other</option>
                 </select>
               </div>
 
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-foreground">Message</label>
-                <textarea required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" placeholder="Tell me about your current operating system..."></textarea>
+                <textarea required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" placeholder="How can I help?"></textarea>
               </div>
 
               <button 
@@ -97,6 +93,10 @@ export default function Contact() {
               >
                 {status === "submitting" ? "Sending..." : "Send Message"}
               </button>
+
+              <p className="text-xs text-muted-foreground/60 text-center">
+                I may not be able to respond immediately, but every message is read with care.
+              </p>
             </form>
           )}
         </div>

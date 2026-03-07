@@ -1,0 +1,111 @@
+Please update the current Contact page for the U Thrive 365 website.
+
+GOAL:
+Keep the existing layout structure of the Contact page, but replace the current placeholder / consulting-oriented content so it aligns with the U Thrive 365 brand.
+
+IMPORTANT:
+- Keep the current visual style, color palette, typography, spacing, and overall page layout consistent with the rest of the website
+- Do not redesign the page from scratch
+- Preserve the current contact form structure unless a field clearly needs to be renamed
+- Remove all “Recalibrate OS” placeholder language and any speaking/workshop/business consulting language that does not fit U Thrive 365
+- Make the page feel warm, grounded, clear, and human
+
+UPDATE THE PAGE CONTENT AS FOLLOWS:
+
+1. HERO SECTION
+
+Replace the current headline:
+“Connect & Collaborate”
+
+With:
+Contact U Thrive 365
+
+Replace the current subheadline:
+“Whether you're looking for speaking engagements, workshops, or 1:1 recalibration.”
+
+With:
+Questions, ideas, or simply want to reach out? I’d love to hear from you.
+
+2. LEFT COLUMN / CONTACT INFO
+
+Replace the current “Direct Lines” heading with:
+Get in Touch
+
+Replace the email address:
+hello@recalibrate.os
+
+With:
+hello@uthrive365.com
+
+Remove the social handle / placeholder line:
+@recalibrate.os
+
+If needed, replace it with nothing at all. Do not keep placeholder social text.
+
+3. LEFT-SIDE INFO CARD
+
+Remove the current card content:
+“Speaking Inquiries”
+“Looking for a paradigm-shifting talk on sustainable performance?”
+“Download Media Kit”
+
+Replace that card with a more natural U Thrive 365 message:
+
+CARD TITLE:
+A Thoughtful Space
+
+CARD BODY:
+Whether you have a question about the PEM Wheel, foundational resources, future offerings, or simply want to connect, feel free to reach out.
+
+OPTIONAL SMALL SUPPORT LINE:
+This space is being built thoughtfully and intentionally. Thank you for your patience as U Thrive 365 grows.
+
+Do not include a media kit or speaking-specific CTA.
+
+4. CONTACT FORM
+
+Keep the form layout, but update labels/placeholders if needed so they feel natural for U Thrive 365.
+
+FORM FIELDS:
+- Name
+- Email
+- Inquiry Type
+- Message
+
+Update the “Inquiry Type” dropdown options so they better fit this brand. Suggested options:
+- General Question
+- PEM Wheel
+- Foundational Resources
+- Future Offerings
+- Collaboration / Partnership
+- Other
+
+Update the message placeholder text from:
+“Tell me about your current operating system...”
+
+To:
+How can I help?
+
+Keep the submit button, but make sure the text reads:
+Send Message
+
+5. OPTIONAL SMALL NOTE BELOW OR NEAR THE FORM
+If it fits naturally in the layout, add a small understated note such as:
+I may not be able to respond immediately, but every message is read with care.
+
+Keep this subtle and not too prominent.
+
+DESIGN DIRECTION:
+- Keep the page calm, clear, and approachable
+- Make the content feel aligned with the homepage and About page
+- Do not make it overly corporate or overly mystical
+- Keep good readability and spacing on desktop and mobile
+
+DO NOT:
+- reintroduce placeholder branding
+- use “recalibration” language here unless it truly fits naturally
+- include speaking/media kit language
+- include fake or inactive social handles
+
+FINAL NOTE:
+The Contact page should feel real, simple, trustworthy, and aligned with the current U Thrive 365 brand.
