@@ -1,6 +1,5 @@
 import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
-import Newsletter from "@/components/Newsletter";
 import { Link } from "wouter";
 import { PieChart, RefreshCcw, BookOpen } from "lucide-react";
 
@@ -39,7 +38,7 @@ export default function StartHere() {
     <MainLayout>
       <PageHeader 
         title="Start Here" 
-        description="If you're wondering where to begin, begin simply. Follow these first steps to understand where you are now, what may be asking for attention, and how to start moving forward without overwhelm."
+        description="If you're wondering where to begin, begin simply. Follow these first steps to understand where you are now, what may be asking for attention, and how to move forward with greater clarity and intention."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-12 space-y-8">
@@ -91,13 +90,9 @@ export default function StartHere() {
         <div className="text-center bg-secondary/20 border border-border rounded-2xl p-8">
           <p className="text-lg text-foreground leading-relaxed">
             <span className="font-semibold">Want to go deeper?</span><br />
-            The PEM ebook offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
+            The book <em>The Personal Energy Map (PEM) Wheel: A Practical Guide</em> offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
           </p>
         </div>
-      </div>
-
-      <div className="py-12">
-        <Newsletter />
       </div>
     </MainLayout>
   );
