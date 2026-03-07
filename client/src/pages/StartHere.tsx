@@ -9,29 +9,28 @@ export default function StartHere() {
     {
       number: "01",
       title: "Take the PEM Wheel Assessment",
-      description: "Map your Physical, Emotional, and Mental states to find your biggest energy leaks. Takes 3 minutes.",
+      description: "Get a quick, practical snapshot of where your life stands right now—what matters most, where your focus or energy is going, and which areas may need attention, support, or change.",
       icon: PieChart,
       action: "Take Assessment",
-      link: "#", // Placeholder
-      disabled: true,
-      note: "Coming soon"
+      link: "#pem-section",
+      disabled: false
     },
     {
       number: "02",
-      title: "The Daily Recalibration",
-      description: "Use the Spin feature whenever you feel friction. Get an instant word, meaning, and action to reset.",
-      icon: RefreshCcw,
-      action: "Spin the Wheel",
-      link: "/spin",
+      title: "Explore the Foundational Resources",
+      description: "Once you have a clearer picture of where you are, begin with the short, practical resources that explain the core ideas behind U Thrive 365 and how meaningful change begins.",
+      icon: BookOpen,
+      action: "Explore Resources",
+      link: "/start",
       disabled: false
     },
     {
       number: "03",
-      title: "Dive into Micro-Modules",
-      description: "Learn the foundational frameworks of your new operating system.",
-      icon: BookOpen,
-      action: "Read Modules",
-      link: "/blog",
+      title: "Use the Daily Recalibration",
+      description: "Use the Daily Spin whenever you want a simple prompt, reflection, or nudge to help you reset, refocus, and take one supportive step forward.",
+      icon: RefreshCcw,
+      action: "Spin the Wheel",
+      link: "/spin",
       disabled: false
     }
   ];
@@ -39,8 +38,8 @@ export default function StartHere() {
   return (
     <MainLayout>
       <PageHeader 
-        title="Your Journey Begins Here" 
-        description="Follow this exact sequence to begin recalibrating your personal operating system."
+        title="Start Here" 
+        description="If you're wondering where to begin, begin simply. Follow these first steps to understand where you are now, what may be asking for attention, and how to start moving forward without overwhelm."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-12 space-y-8">
@@ -66,13 +65,35 @@ export default function StartHere() {
                   {step.note}
                 </button>
               ) : (
-                <Link href={step.link} className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md">
+                <Link 
+                  href={step.link} 
+                  {...(step.link === "#pem-section" && {
+                    onClick: (e: React.MouseEvent) => {
+                      e.preventDefault();
+                      const element = document.getElementById('pem-section');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }
+                  })}
+                  className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md"
+                >
                   {step.action}
                 </Link>
               )}
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Go Deeper Section */}
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="text-center bg-secondary/20 border border-border rounded-2xl p-8">
+          <p className="text-lg text-foreground leading-relaxed">
+            <span className="font-semibold">Want to go deeper?</span><br />
+            The PEM ebook offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
+          </p>
+        </div>
       </div>
 
       <div className="py-12">

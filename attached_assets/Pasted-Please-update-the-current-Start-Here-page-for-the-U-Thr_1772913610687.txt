@@ -1,0 +1,110 @@
+Please update the current Start Here page for the U Thrive 365 website.
+
+GOAL:
+Keep the existing Start Here page layout structure, but replace the current copy so the page clearly guides visitors through the best first steps in the right sequence.
+
+IMPORTANT:
+- Keep the current visual design, color palette, typography, spacing, and overall layout style
+- Do not redesign the page from scratch
+- Preserve the strong step-by-step layout with the 01 / 02 / 03 cards
+- Keep the PEM email capture section near the bottom
+- Make the page feel calm, clear, welcoming, and practical
+- Remove outdated placeholder wording such as “micro-modules” and anything tied to “recalibrating your personal operating system” if it sounds too repetitive or unnatural here
+
+UPDATE THE PAGE AS FOLLOWS:
+
+1. HERO SECTION
+
+Replace the current hero headline:
+“Your Journey Begins Here”
+
+With:
+Start Here
+
+Replace the current subheadline:
+“Follow this exact sequence to begin recalibrating your personal operating system.”
+
+With:
+If you’re wondering where to begin, begin simply. Follow these first steps to understand where you are now, what may be asking for attention, and how to start moving forward without overwhelm.
+
+2. STEP CARD 01
+
+Replace the current step 01 content with:
+
+TITLE:
+Take the PEM Wheel Assessment
+
+BODY:
+Get a quick, practical snapshot of where your life stands right now—what matters most, where your focus or energy is going, and which areas may need attention, support, or change.
+
+Keep the existing visual card structure and CTA style.
+
+3. STEP CARD 02
+
+Replace the current step 02 content with:
+
+TITLE:
+Explore the Foundational Resources
+
+BODY:
+Once you have a clearer picture of where you are, begin with the short, practical resources that explain the core ideas behind U Thrive 365 and how meaningful change begins.
+
+This should replace the current Daily Recalibration step as step 02.
+
+4. STEP CARD 03
+
+Replace the current step 03 content with:
+
+TITLE:
+Use the Daily Recalibration
+
+BODY:
+Use the Daily Spin whenever you want a simple prompt, reflection, or nudge to help you reset, refocus, and take one supportive step forward.
+
+This should become step 03.
+
+5. PEM CTA SECTION NEAR THE BOTTOM
+
+Keep the existing PEM Wheel email capture section and overall layout.
+
+Make sure the wording remains consistent with the homepage version:
+
+HEADLINE:
+Take the Free PEM Wheel Assessment
+
+SUBHEADLINE:
+Get a quick, practical snapshot of where your life is right now—what matters most, where your vitality is going, and which areas may need attention, support, or recalibration.
+
+SUPPORTING LINE:
+Enter your email to access the PEM Wheel and get started.
+
+EMAIL FIELD PLACEHOLDER:
+Enter your email address
+
+BUTTON TEXT:
+Get the Free PEM Wheel
+
+6. ADD A SMALL “GO DEEPER” NOTE BELOW THE 3 STEPS OR NEAR THE LOWER SECTION
+
+Add a small, understated section or support line that says:
+
+Want to go deeper?
+The PEM ebook offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
+
+DESIGN DIRECTION FOR THIS NOTE:
+- Keep it small and subtle
+- Do not make it a primary CTA
+- It should feel like a helpful optional next step, not a sales push
+- Keep it visually aligned with the rest of the Start Here page
+
+IMPORTANT:
+- Replace “Micro-Modules” language with “Foundational Resources”
+- Make sure the step sequence is:
+  01 PEM Wheel
+  02 Foundational Resources
+  03 Daily Recalibration
+- Keep the page easy to understand and not overcrowded
+- Preserve responsiveness on desktop and mobile
+
+FINAL NOTE:
+This Start Here page should feel like a practical roadmap for new visitors, not a second homepage and not a sales page.
