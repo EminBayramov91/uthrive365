@@ -33,10 +33,10 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="p-6 bg-secondary/30 rounded-2xl border border-border">
-            <h4 className="font-bold text-foreground mb-2">A Thoughtful Space</h4>
-            <p className="text-sm text-muted-foreground mb-4">Whether you have a question about the PEM Wheel, foundational resources, future offerings, or simply want to connect, feel free to reach out.</p>
-            <p className="text-xs text-muted-foreground/70">This space is being built thoughtfully and intentionally. Thank you for your patience as U Thrive 365 grows.</p>
+          <div className="p-8 bg-secondary/30 rounded-2xl border border-border space-y-4">
+            <h4 className="font-bold text-foreground text-lg">A Thoughtful Space</h4>
+            <p className="text-base text-foreground leading-relaxed">Whether you have a question about the PEM Wheel, foundational resources, future offerings, or simply want to connect, feel free to reach out.</p>
+            <p className="text-sm text-foreground/80 leading-relaxed">This space is being built thoughtfully and intentionally. Thank you for your patience as U Thrive 365 grows.</p>
           </div>
         </div>
 
