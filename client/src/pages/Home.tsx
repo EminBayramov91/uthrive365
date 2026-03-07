@@ -141,6 +141,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* A More Aligned Life Section */}
+      <section className="py-24 px-4 bg-[#DDE8E2]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-10">
+            A More Aligned Life Starts with Awareness
+          </h2>
+          
+          <p className="text-lg text-foreground leading-relaxed mb-8">
+            You are not here by mistake. You may simply be at a point where old patterns, inherited pressures, unresolved health challenges, or familiar ways of living no longer fit who you are becoming or the life you want to create.
+          </p>
+          
+          <p className="text-lg text-foreground leading-relaxed">
+            U Thrive 365 is a practical, holistic framework designed to help you better understand where your vitality is going, what may be keeping you stuck, and how to begin making meaningful changes from the inside out. This is not about becoming someone else. It is about reclaiming the parts of yourself that may have been buried under stress, expectation, conditioning, or survival patterns.
+          </p>
+        </div>
+      </section>
+
       {/* Micro-Modules Teaser */}
       <section className="py-24 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2]">
         <div className="max-w-7xl mx-auto">
