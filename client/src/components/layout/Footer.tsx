@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground py-10 mt-24 rounded-t-3xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-8">
-          <div className="col-span-1 md:col-span-1 space-y-4">
+        <div className="flex flex-col md:flex-row gap-12 lg:gap-8 mb-8">
+          <div className="flex-1 space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Compass className="w-8 h-8 text-accent" />
               <span className="font-display font-bold text-2xl tracking-tight">
@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="min-w-0">
+          <div className="flex-1">
             <h4 className="font-display font-semibold text-base mb-4 text-accent">Explore</h4>
             <ul className="space-y-3">
               <li><Link href="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Home</Link></li>
@@ -28,7 +28,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="flex-1">
             <h4 className="font-display font-semibold text-base mb-4 text-accent">Get in Touch</h4>
             <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
               <Mail className="w-4 h-4" />
