@@ -138,11 +138,11 @@ export default function DailySpin() {
 
       <div className="max-w-3xl mx-auto px-4 pb-24">
         {/* Spin Button */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <button
             onClick={handleSpin}
             disabled={isSpinning}
-            className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md text-lg"
+            className="px-10 py-5 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg text-xl"
             data-testid="button-spin"
           >
             {isSpinning ? "Spinning..." : "Spin"}
@@ -155,25 +155,25 @@ export default function DailySpin() {
             <div className="bg-background border border-border p-10 rounded-3xl shadow-sm">
               {/* Theme */}
               <div className="mb-10 pb-8 border-b border-border/50">
-                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-2">Theme</p>
+                <p className="text-sm uppercase tracking-widest text-foreground/70 font-semibold mb-2">Theme</p>
                 <h2 className="text-5xl font-display font-bold text-primary">{currentEntry.theme}</h2>
               </div>
 
               {/* Meaning */}
               <div className="mb-10">
-                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-3">Meaning</p>
+                <p className="text-sm uppercase tracking-widest text-foreground/70 font-semibold mb-3">Meaning</p>
                 <p className="text-lg text-foreground leading-relaxed">{currentEntry.meaning}</p>
               </div>
 
               {/* Reflection Question */}
               <div className="mb-10">
-                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-3">Reflection Question</p>
+                <p className="text-sm uppercase tracking-widest text-foreground/70 font-semibold mb-3">Reflection Question</p>
                 <p className="text-lg text-foreground leading-relaxed italic">{currentEntry.question}</p>
               </div>
 
               {/* Micro-Action */}
               <div>
-                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-3">Micro-Action</p>
+                <p className="text-sm uppercase tracking-widest text-foreground/70 font-semibold mb-3">Micro-Action</p>
                 <p className="text-lg text-foreground leading-relaxed">{currentEntry.action}</p>
               </div>
             </div>
