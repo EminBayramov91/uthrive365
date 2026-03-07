@@ -7,9 +7,12 @@ export default function About() {
     <MainLayout>
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-3">
           About U Thrive 365
         </h1>
+        <p className="text-sm md:text-base text-muted-foreground mb-8 tracking-wide">
+          Created by Lisa Fitzharris
+        </p>
         <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
           A practical, holistic path for people ready to pay closer attention to what their life, body, and inner voice may already be telling them.
         </p>
