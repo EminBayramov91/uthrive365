@@ -18,13 +18,13 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <h4 className="font-display font-semibold text-base mb-4 text-accent">Explore</h4>
             <ul className="space-y-3">
-              <li><Link href="/" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Home</Link></li>
-              <li><Link href="/start" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Start Here</Link></li>
-              <li><Link href="/about" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">About</Link></li>
-              <li><Link href="/contact" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Contact</Link></li>
+              <li><Link href="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Home</Link></li>
+              <li><Link href="/start" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Start Here</Link></li>
+              <li><Link href="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">About</Link></li>
+              <li><Link href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
 
