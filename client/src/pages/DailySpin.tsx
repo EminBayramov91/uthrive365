@@ -178,18 +178,6 @@ export default function DailySpin() {
               </div>
             </div>
 
-            {/* Spin Again Button */}
-            <div className="text-center">
-              <button
-                onClick={handleSpin}
-                disabled={isSpinning}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-foreground font-semibold rounded-xl hover:bg-secondary/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                data-testid="button-spin-again"
-              >
-                <RefreshCcw className="w-5 h-5" />
-                Spin Again
-              </button>
-            </div>
           </div>
         )}
 
