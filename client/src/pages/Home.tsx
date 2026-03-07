@@ -40,21 +40,21 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h1 
-              className="text-5xl md:text-8xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px] mx-auto"
+              className="text-5xl md:text-7xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px] mx-auto"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
               Recalibrate Your <br className="hidden md:block" />
               <span className="text-[#EDE8DE]">Personal Operating System.</span>
             </h1>
             <p 
-              className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-balance opacity-100 font-semibold"
+              className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed text-balance opacity-100 font-semibold"
               style={{ 
                 color: '#E6E0D6',
                 textShadow: '0 2px 14px rgba(0,0,0,0.35)',
                 WebkitTextFillColor: '#E6E0D6'
               }}
             >
-              Move beyond autopilot patterns. Restore vitality and create a healthier, more aligned, more purposeful next chapter.
+              Move beyond autopilot patterns, restore vitality, and create a healthier, more aligned, more purposeful next chapter.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
             
             <p 
-              className="mt-12 italic"
+              className="mt-6 italic"
               style={{ 
                 color: '#E6E0D6',
                 fontSize: '1.05rem',
