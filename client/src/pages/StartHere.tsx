@@ -75,7 +75,7 @@ export default function StartHere() {
                       }
                     }
                   })}
-                  className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md"
+                  className="px-6 py-3 bg-primary text-[#EDE8DE] font-semibold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md"
                 >
                   {step.action}
                 </Link>
