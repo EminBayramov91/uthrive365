@@ -65,7 +65,8 @@ export default function StartHere() {
                 </button>
               ) : (
                 <Link 
-                  href={step.link} 
+                  href={step.link}
+                  role="button"
                   {...(step.link === "#pem-section" && {
                     onClick: (e: React.MouseEvent) => {
                       e.preventDefault();
