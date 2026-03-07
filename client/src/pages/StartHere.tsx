@@ -90,7 +90,7 @@ export default function StartHere() {
         <div className="text-center bg-secondary/20 border border-border rounded-2xl p-8">
           <p className="text-lg text-foreground leading-relaxed">
             <span className="font-semibold">Want to go deeper?</span><br />
-            The book <em>The Personal Energy Map (PEM) Wheel: A Practical Guide</em> offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
+            The book <em>The Personal Energy Map (PEM) Wheel: A Practical Guide</em> by Lisa Fitzharris offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
           </p>
         </div>
       </div>
