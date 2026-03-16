@@ -30,7 +30,7 @@ export default function Newsletter() {
           className="text-lg mb-3 max-w-2xl mx-auto"
           style={{ color: '#E6E0D6' }}
         >
-          Get a quick, practical snapshot of where your life is right now—what matters most, where your vitality is going, and which areas may need attention, support, or recalibration.
+          Start with a practical snapshot of where you are now—what may be draining your energy, where you may be stuck, and where to begin.
         </p>
         <p 
           className="text-base mb-8 max-w-xl mx-auto"

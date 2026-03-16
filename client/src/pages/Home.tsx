@@ -184,13 +184,13 @@ export default function Home() {
             <div className="flex-1 space-y-6">
               <h2 className="text-4xl font-display font-bold text-primary">Foundational Resources</h2>
               <p className="text-lg text-foreground">
-                Short, practical resources designed to help you better understand your patterns, restore vitality, and begin making meaningful shifts in how you live, heal, and grow. Start here with the core ideas behind U Thrive 365.
+                Start with the core tools and ideas that help you understand where you are, make small meaningful shifts, and begin building momentum for real change.
               </p>
               <ul className="space-y-4 pt-4">
                 {[
-                  "What Is the PEM?",
-                  "Understanding Patterns, Vitality, and Alignment",
-                  "How Small Shifts Create Meaningful Change"
+                  "Why Change Is Harder Than It Looks",
+                  "The PEM: A Simple Way to See Your Patterns",
+                  "How to Start Mapping Your Life More Clearly"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-foreground font-medium">
                     <div className="w-2 h-2 rounded-full bg-[#B8A58C]" />
