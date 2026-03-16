@@ -88,7 +88,7 @@ export default function About() {
               U Thrive 365 is different because it blends systems thinking with holistic transformation.
             </p>
             <p>
-              This is not generic life coaching, empty motivation, or a collection of disconnected wellness ideas. It is a structured, reflective approach designed to help you understand your patterns, notice where your energy is going, and begin making meaningful changes from the inside out.
+              This is not generic life coaching or a collection of disconnected wellness ideas. It is a practical, structured approach designed to help you understand what is shaping your life, where your energy is going, and how to begin making meaningful changes with more clarity and intention.
             </p>
             <p>
               My approach brings together:
@@ -104,7 +104,7 @@ export default function About() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent font-bold mt-1">•</span>
-                <span>practical support for healing and personal growth</span>
+                <span>practical support for healing, growth, and daily recalibration</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent font-bold mt-1">•</span>
@@ -112,10 +112,10 @@ export default function About() {
               </li>
             </ul>
             <p>
-              In other words, this approach is both grounded and expansive. It is practical enough for thoughtful people who want clarity and structure, but deep enough for those who know real change requires more than surface-level productivity hacks.
+              In other words, this approach is both grounded and expansive. It offers enough structure for thoughtful people who want clarity and practical tools, while leaving room for the deeper shifts that real transformation often requires.
             </p>
             <p>
-              The deeper question is not how to become someone else. It is whether this might be the right time to go after what has been calling you—to change direction, pursue what matters more, and create a life with more joy, more ease, and more truth than you once thought possible.
+              The deeper question is not how to become someone else. It is whether you are ready to recognize what is no longer working, change direction where needed, and create a life with more energy, more honesty, and more meaning.
             </p>
           </div>
         </section>
