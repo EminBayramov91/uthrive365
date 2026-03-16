@@ -119,7 +119,7 @@ export default function Home() {
               A Practical Path to Recalibration
             </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                U Thrive 365 helps you better understand where your vitality is going, what patterns may be keeping you stuck, and how to begin making meaningful shifts from the inside out. Through structured reflection, practical tools, and holistic support, you can begin to heal, restore alignment, and create a life that feels more true to who you are now.
+                U-Thrive 365 is a practical, holistic platform for people who want to feel better, live with more intention, and create meaningful change. Through guided tools, structured reflection, and small daily shifts, you can build clarity, restore energy, and begin transforming your life from where you are now.
               </p>
           </div>
 
