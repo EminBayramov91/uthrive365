@@ -81,25 +81,12 @@ export default function Home() {
             </div>
             
             <p 
-              className="mt-6 italic"
+              className="mt-8"
               style={{ 
                 color: '#E6E0D6',
-                fontSize: '1.05rem',
+                fontSize: '1.15rem',
                 fontWeight: 500,
-                opacity: 0.9,
-                letterSpacing: '0.02em'
-              }}
-            >
-              "Small shifts create momentum. Momentum creates transformation."
-            </p>
-            
-            <p 
-              className="mt-4"
-              style={{ 
-                color: '#E6E0D6',
-                fontSize: '1rem',
-                fontWeight: 400,
-                opacity: 0.85,
+                opacity: 0.95,
                 letterSpacing: '0.01em',
                 maxWidth: '600px',
                 margin: '1rem auto 0'
