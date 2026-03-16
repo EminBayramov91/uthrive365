@@ -196,16 +196,16 @@ export default function About() {
               You do not need to have everything figured out before you begin.
             </p>
             <p>
-              You only need a willingness to pause, look honestly at what is no longer working, and consider that another way of living may be possible.
+              You only need a willingness to pause, look honestly at what is no longer working, and consider that a different way of living may be possible.
             </p>
             <p>
-              If something in your life is not sitting right—if "fine" no longer feels good enough, and some part of you is daring to want more—pay attention to that. There may be a reason you found your way here. Another doorway, another opportunity, and another chance to create a life that feels more true to who you are and who you may be destined to become may be opening now.
+              If something in your life is not sitting right—if "fine" no longer feels good enough, and some part of you is ready for more—pay attention to that. There may be a reason you found your way here. Not because everything is clear yet, but because you may be more ready than you think to begin making meaningful changes.
             </p>
             <p>
               U Thrive 365 is here to help you begin.
             </p>
             <p className="font-medium">
-              Start with the PEM Wheel. Explore the foundational resources. Take the next small step that feels true.
+              Start with the PEM Wheel. Explore the foundational resources. Take the next small step that helps you move forward with more clarity, energy, and intention.
             </p>
             
             {/* Optional CTA */}
