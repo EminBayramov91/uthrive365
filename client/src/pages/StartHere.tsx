@@ -8,7 +8,7 @@ export default function StartHere() {
     {
       number: "01",
       title: "Take the PEM Wheel Assessment",
-      description: "Get a quick, practical snapshot of where your life stands right now—what matters most, where your focus or energy is going, and which areas may need attention, support, or change.",
+      description: "Get a quick, practical snapshot of where you are right now—what matters most, where your energy is going, and which areas may need attention, support, or change.",
       icon: PieChart,
       action: "Take Assessment",
       link: "#pem-section",
@@ -17,7 +17,7 @@ export default function StartHere() {
     {
       number: "02",
       title: "Explore the Foundational Resources",
-      description: "Once you have a clearer picture of where you are, begin with the short, practical resources that explain the core ideas behind U Thrive 365 and how meaningful change begins.",
+      description: "Once you have a clearer picture of where you are, begin with the short, practical resources that explain the core ideas behind U-Thrive 365 and how small shifts can build real momentum for change.",
       icon: BookOpen,
       action: "Explore Resources",
       link: "/start",
@@ -38,7 +38,7 @@ export default function StartHere() {
     <MainLayout>
       <PageHeader 
         title="Start Here" 
-        description="If you're wondering where to begin, begin simply. Follow these first steps to understand where you are now, what may be asking for attention, and how to move forward with greater clarity and intention."
+        description="If you're wondering where to begin, start simply. These first steps will help you understand where you are now, make a few meaningful shifts, and begin moving forward with more clarity, energy, and intention."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-12 space-y-8">
@@ -91,7 +91,7 @@ export default function StartHere() {
         <div className="text-center bg-secondary/20 border border-border rounded-2xl p-8">
           <p className="text-lg text-foreground leading-relaxed">
             <span className="font-semibold">Want to go deeper?</span><br />
-            The book <em>The Personal Energy Map (PEM) Wheel: A Practical Guide</em> by Lisa Fitzharris offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Look for it on Amazon for $4.99.
+            The book The Personal Energy Map (PEM) Wheel: A Practical Guide by Lisa Fitzharris offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Available on Amazon for $4.99.
           </p>
         </div>
       </div>

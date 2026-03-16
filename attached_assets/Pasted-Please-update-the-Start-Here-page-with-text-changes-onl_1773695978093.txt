@@ -1,0 +1,98 @@
+Please update the “Start Here” page with text changes only.
+
+Keep the existing:
+- layout
+- card structure
+- numbering (01, 02, 03)
+- buttons
+- colors
+- spacing
+- design
+
+Do not redesign the page.
+Do not change the overall structure.
+Only replace the text in the following areas.
+
+-----------------------------------
+1. PAGE TITLE
+-----------------------------------
+
+Keep the page title exactly as it is:
+Start Here
+
+-----------------------------------
+2. INTRO PARAGRAPH
+-----------------------------------
+
+Replace the current intro paragraph under “Start Here” with this exact text:
+
+If you’re wondering where to begin, start simply. These first steps will help you understand where you are now, make a few meaningful shifts, and begin moving forward with more clarity, energy, and intention.
+
+-----------------------------------
+3. STEP 1 CARD
+-----------------------------------
+
+Keep the step number:
+01
+
+Keep the button text exactly as it is:
+Take Assessment
+
+Keep the step title exactly as it is:
+Take the PEM Wheel Assessment
+
+Replace the descriptive paragraph in Step 1 with this exact text:
+
+Get a quick, practical snapshot of where you are right now—what matters most, where your energy is going, and which areas may need attention, support, or change.
+
+-----------------------------------
+4. STEP 2 CARD
+-----------------------------------
+
+Keep the step number:
+02
+
+Keep the button text exactly as it is:
+Explore Resources
+
+Keep the step title exactly as it is:
+Explore the Foundational Resources
+
+Replace the descriptive paragraph in Step 2 with this exact text:
+
+Once you have a clearer picture of where you are, begin with the short, practical resources that explain the core ideas behind U-Thrive 365 and how small shifts can build real momentum for change.
+
+-----------------------------------
+5. STEP 3 CARD
+-----------------------------------
+
+Keep the step number:
+03
+
+Keep the button text exactly as it is:
+Spin the Wheel
+
+Keep the step title exactly as it is:
+Use the Daily Recalibration
+
+Replace the descriptive paragraph in Step 3 with this exact text:
+
+Use the Daily Spin whenever you want a simple prompt, reflection, or nudge to help you reset, refocus, and take one supportive step forward.
+
+-----------------------------------
+6. BOTTOM BOOK SECTION
+-----------------------------------
+
+Keep the heading:
+Want to go deeper?
+
+Replace the paragraph in that bottom book section with this exact text:
+
+The book The Personal Energy Map (PEM) Wheel: A Practical Guide by Lisa Fitzharris offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Available on Amazon for $4.99.
+
+-----------------------------------
+7. IMPORTANT
+-----------------------------------
+
+Please change text only.
+Do not alter layout, typography, card size, spacing, button placement, or page design unless a very small adjustment is required for the text to fit cleanly.
