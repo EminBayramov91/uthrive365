@@ -92,7 +92,7 @@ export default function Home() {
                 margin: '1rem auto 0'
               }}
             >
-              U Thrive 365 helps people move from autopilot into a healthier, more energized, more intentional life.
+              U Thrive 365 helps people move from autopilot into a healthier, more energized, more intentional way of living.
             </p>
           </motion.div>
         </div>
