@@ -10,7 +10,7 @@ export default function FoundationalResources() {
       title: "Why Change Feels Hard — and Where to Begin",
       description: "A grounded introduction to why so many people stay stuck in old patterns, why change can feel harder than it should, and how to begin without pressure or overwhelm.",
       path: "/resources/module-01",
-      available: false
+      available: true
     },
     {
       number: "02",
