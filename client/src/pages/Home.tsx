@@ -163,7 +163,7 @@ export default function Home() {
       {/* A More Aligned Life Section */}
       <section className="py-20 px-4 bg-[#DDE8E2]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-10">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-10">
             Transformation Starts with Awareness — and Grows Through Action
           </h2>
           
@@ -182,7 +182,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 space-y-6">
-              <h2 className="text-4xl font-display font-bold text-primary">Foundational Resources</h2>
+              <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">Foundational Resources</h2>
               <p className="text-lg text-foreground leading-relaxed">
                 Start with the core tools and ideas that help you understand where you are, make small meaningful shifts, and begin building momentum for real change.
               </p>
