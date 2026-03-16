@@ -1,0 +1,49 @@
+Please update only the “About U Thrive 365” section and the “Why U Thrive 365 Exists” section.
+
+Keep the existing:
+- layout
+- heading sizes
+- colors
+- spacing
+- page structure
+- “Created by Lisa Fitzharris” line unless needed for spacing
+
+Do not redesign the page.
+Do not change any other sections.
+Only replace the text in the areas below.
+
+-----------------------------------
+1. ABOUT U THRIVE 365
+-----------------------------------
+
+Keep the main heading exactly as it is:
+About U Thrive 365
+
+Keep the line:
+Created by Lisa Fitzharris
+
+Replace the short descriptive line under that with this exact text:
+
+A practical, holistic path for people ready to understand what is no longer working, make meaningful shifts, and move toward a healthier, more intentional way of living.
+
+-----------------------------------
+2. WHY U THRIVE 365 EXISTS
+-----------------------------------
+
+Keep the heading exactly as it is:
+Why U Thrive 365 Exists
+
+Replace all body text in that section with the following three paragraphs exactly as written:
+
+U Thrive 365 exists to help people notice what is no longer working, understand the patterns and pressures shaping their lives, and begin making healthier, more honest changes. Many of us learn to override our own signals—pushing past exhaustion, ignoring dissatisfaction, and staying loyal to ways of living that no longer fit who we are becoming. This work is about helping people slow down enough to see clearly, reconnect with themselves, and begin moving forward with more intention.
+
+Many people who find their way here are highly motivated, capable, and outwardly functional, yet quietly aware that something no longer fits. They may feel drained, stuck, disconnected, or increasingly aware that the life they built no longer reflects who they are now—or who they are beginning to become. Others may be navigating unresolved health challenges, chronic stress, burnout, or the growing realization that they want more from life than simply managing what has always been.
+
+U Thrive 365 was created for that moment—the moment when you begin to wonder whether it is still possible to feel better, live more honestly, and create a healthier, more fulfilling future. Whether someone is looking to improve one area of life or begin a much larger transformation, this work begins by helping them see clearly, make meaningful shifts, and build momentum from there.
+
+-----------------------------------
+3. IMPORTANT
+-----------------------------------
+
+Please change text only.
+Do not alter layout, typography, spacing, margins, or design unless a very small adjustment is required for the text to fit cleanly.

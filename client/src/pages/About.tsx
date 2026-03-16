@@ -14,7 +14,7 @@ export default function About() {
           Created by Lisa Fitzharris
         </p>
         <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
-          A practical, holistic path for people ready to pay closer attention to what their life, body, and inner voice may already be telling them.
+          A practical, holistic path for people ready to understand what is no longer working, make meaningful shifts, and move toward a healthier, more intentional way of living.
         </p>
       </section>
 
@@ -28,13 +28,13 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              U Thrive 365 exists to help people pay closer attention to what their life, body, and inner voice may already be telling them. So many of us learn to override our own signals and intuition—pushing past exhaustion, ignoring dissatisfaction, dismissing quiet inner nudges, and setting aside parts of ourselves that once felt alive and true. This work is about helping people slow down enough to notice those messages, understand what they mean, and begin making choices that support a more honest, healthier, more vibrant way of living.
+              U Thrive 365 exists to help people notice what is no longer working, understand the patterns and pressures shaping their lives, and begin making healthier, more honest changes. Many of us learn to override our own signals—pushing past exhaustion, ignoring dissatisfaction, and staying loyal to ways of living that no longer fit who we are becoming. This work is about helping people slow down enough to see clearly, reconnect with themselves, and begin moving forward with more intention.
             </p>
             <p>
-              Many people who find their way here are highly motivated, successful, capable, and outwardly functional, yet quietly aware that something no longer fits. They may feel drained, stuck, disconnected, or increasingly aware that the life they built does not fully reflect who they are now—or who they are yearning to become. Others may be navigating unresolved health challenges, chronic stress, burnout, or a growing sense that there must be more to life than simply managing what has always been.
+              Many people who find their way here are highly motivated, capable, and outwardly functional, yet quietly aware that something no longer fits. They may feel drained, stuck, disconnected, or increasingly aware that the life they built no longer reflects who they are now—or who they are beginning to become. Others may be navigating unresolved health challenges, chronic stress, burnout, or the growing realization that they want more from life than simply managing what has always been.
             </p>
             <p>
-              U Thrive 365 was created for that moment—the moment when you begin to wonder whether it is still possible to feel better, live more honestly, and move toward a life you are only now beginning to realize does not have to be out of reach.
+              U Thrive 365 was created for that moment—the moment when you begin to wonder whether it is still possible to feel better, live more honestly, and create a healthier, more fulfilling future. Whether someone is looking to improve one area of life or begin a much larger transformation, this work begins by helping them see clearly, make meaningful shifts, and build momentum from there.
             </p>
           </div>
         </section>
