@@ -57,12 +57,12 @@ export default function FoundationalResources() {
                 <Link
                   href={module.path}
                   role="button"
-                  className="px-6 py-3 bg-primary text-[#EDE8DE] font-semibold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md flex items-center justify-center gap-2"
+                  className="px-6 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md flex items-center justify-center gap-2"
                 >
-                  Read Module <ArrowRight className="w-4 h-4" />
+                  Read Module {module.number} <ArrowRight className="w-4 h-4" />
                 </Link>
               ) : (
-                <button disabled className="px-6 py-3 bg-muted text-muted-foreground font-semibold rounded-xl cursor-not-allowed w-full md:w-auto flex items-center justify-center gap-2">
+                <button disabled className="px-6 py-3 bg-muted text-[#F4F1EA] font-bold rounded-xl cursor-not-allowed w-full md:w-auto flex items-center justify-center gap-2 opacity-60">
                   <Clock className="w-4 h-4" /> Coming Soon
                 </button>
               )}
