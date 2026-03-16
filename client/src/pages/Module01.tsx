@@ -23,7 +23,7 @@ export default function Module01() {
             Why Change Feels Hard — and Where to Begin
           </h1>
           <p className="text-lg text-muted-foreground">
-            Module 01
+            Module 01 · 5-minute read
           </p>
         </div>
 
