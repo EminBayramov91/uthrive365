@@ -54,7 +54,7 @@ export default function Home() {
                 WebkitTextFillColor: '#E6E0D6'
               }}
             >
-              Move beyond autopilot patterns, restore vitality, and create a healthier, more aligned, more purposeful next chapter.
+              Whether you want a small shift or a life-changing transformation, it starts by seeing clearly and moving forward intentionally.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -90,7 +90,22 @@ export default function Home() {
                 letterSpacing: '0.02em'
               }}
             >
-              "One small shift today. One giant leap in how you live."
+              "Small shifts create momentum. Momentum creates transformation."
+            </p>
+            
+            <p 
+              className="mt-4"
+              style={{ 
+                color: '#E6E0D6',
+                fontSize: '1rem',
+                fontWeight: 400,
+                opacity: 0.85,
+                letterSpacing: '0.01em',
+                maxWidth: '600px',
+                margin: '1rem auto 0'
+              }}
+            >
+              U Thrive 365 helps people move from autopilot into a healthier, more energized, more intentional life.
             </p>
           </motion.div>
         </div>
