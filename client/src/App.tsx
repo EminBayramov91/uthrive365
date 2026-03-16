@@ -11,6 +11,8 @@ import StartHere from "@/pages/StartHere";
 import Blog from "@/pages/Blog";
 import Contact from "@/pages/Contact";
 import DailySpin from "@/pages/DailySpin";
+import FoundationalResources from "@/pages/FoundationalResources";
+import Module01 from "@/pages/Module01";
 
 function Router() {
   return (
@@ -21,6 +23,8 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/contact" component={Contact} />
       <Route path="/spin" component={DailySpin} />
+      <Route path="/resources" component={FoundationalResources} />
+      <Route path="/resources/module-01" component={Module01} />
       
       {/* Fallback to 404 */}
       <Route component={NotFound} />
