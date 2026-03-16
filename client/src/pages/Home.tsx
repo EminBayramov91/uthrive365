@@ -118,7 +118,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-6">
               A Practical Path to Recalibration
             </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 U-Thrive 365 is a practical, holistic platform for people who want to feel better, live with more intention, and create meaningful change. Through guided tools, structured reflection, and small daily shifts, you can build clarity, restore energy, and begin transforming your life from where you are now.
               </p>
           </div>
@@ -183,7 +183,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 space-y-6">
               <h2 className="text-4xl font-display font-bold text-primary">Foundational Resources</h2>
-              <p className="text-lg text-foreground">
+              <p className="text-lg text-foreground leading-relaxed">
                 Start with the core tools and ideas that help you understand where you are, make small meaningful shifts, and begin building momentum for real change.
               </p>
               <ul className="space-y-4 pt-4">
@@ -192,7 +192,7 @@ export default function Home() {
                   "The PEM: A Simple Way to See Your Patterns",
                   "How to Start Mapping Your Life More Clearly"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-foreground font-medium">
+                  <li key={i} className="flex items-center gap-3 text-lg text-foreground leading-relaxed">
                     <div className="w-2 h-2 rounded-full bg-[#B8A58C]" />
                     {item}
                   </li>
