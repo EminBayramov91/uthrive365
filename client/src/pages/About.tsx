@@ -49,7 +49,7 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              I come to this work from an unusual intersection: more than three decades in engineering and highly analytical, structured environments, alongside decades of personal exploration in healing, personal growth, and holistic modalities.
+              I come to this work from an unusual intersection: more than three decades in engineering and highly analytical, structured environments, alongside decades of exploration in healing, personal growth, and holistic modalities.
             </p>
             <p>
               For much of my life, I worked in systems that valued logic, performance, discipline, and problem-solving. That part of me is real, and it has served me well. But the deeper turning point in my life came in my early forties.
@@ -64,7 +64,10 @@ export default function About() {
               That experience changed me. I had to let go of old identities, face fears, and begin looking at health, stress, and life itself in a very different way. During those years, I immersed myself in holistic healing, learning from books, teachers, seminars, retreats, and lived experience. I saw enough real shifts—both in my body and in my life—to convince my engineering mind that there was something here worth paying close attention to.
             </p>
             <p>
-              Over time, I began to rebuild my life with more awareness, more honesty, and a greater sense of freedom. U Thrive 365 grew out of that journey. This work is deeply personal. It is rooted not only in study, but in lived transformation and in the belief that when we begin listening to the signs instead of pushing past them, meaningful change becomes possible.
+              Over time, I began to see that people are shaped by patterns, pressures, habits, and internal signals just as powerfully as any external system. That realization changed how I understood health, healing, and transformation.
+            </p>
+            <p>
+              I rebuilt my life with more awareness, more honesty, and a greater sense of freedom. U Thrive 365 grew out of that journey. This work is deeply personal. It is rooted not only in study, but in lived transformation and in the belief that when we learn to recognize what is no longer working, meaningful change becomes possible.
             </p>
             <p>
               One of the clearest lessons I took from that season was this: I wish I had listened sooner. Part of why I do this work now is to help others recognize the signs earlier—before stress, disconnection, or health challenges take more from them than they need to.
