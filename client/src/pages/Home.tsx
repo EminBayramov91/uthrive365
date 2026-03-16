@@ -131,9 +131,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
                 <Compass className="w-7 h-7 text-[#B8A58C]" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">1. Discover</h3>
+              <h3 className="text-2xl font-bold mb-3 text-primary">Discover</h3>
               <p className="text-foreground leading-relaxed">
-                Discover your baseline. Identify the patterns, pressures, vitality drains, and areas of misalignment that may be shaping your health, choices, and daily life.
+                Identify the patterns, pressures, and energy drains shaping your current life.
               </p>
             </div>
 
@@ -141,9 +141,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
                 <RefreshCcw className="w-7 h-7 text-[#B8A58C]" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">2. Support</h3>
+              <h3 className="text-2xl font-bold mb-3 text-primary">Support</h3>
               <p className="text-foreground leading-relaxed">
-                Use practical tools, reflection, and small restorative shifts to support healing, restore vitality, and create more steadiness, clarity, and self-awareness.
+                Use practical tools and restorative practices to build clarity, steadiness, and momentum.
               </p>
             </div>
 
@@ -151,9 +151,9 @@ export default function Home() {
               <div className="w-14 h-14 rounded-2xl bg-[#3F5F56]/10 flex items-center justify-center mb-6 shadow-inner">
                 <Sparkles className="w-7 h-7 text-[#B8A58C]" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">3. Recalibrate</h3>
+              <h3 className="text-2xl font-bold mb-3 text-primary">Recalibrate</h3>
               <p className="text-foreground leading-relaxed">
-                Build a more intentional way of living—one that supports your well-being, reflects who you are becoming, and helps you create a healthier, more aligned next chapter.
+                Make small, intentional changes that help you feel better now and build a stronger future over time.
               </p>
             </div>
           </div>
@@ -164,15 +164,15 @@ export default function Home() {
       <section className="py-20 px-4 bg-[#DDE8E2]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-10">
-            A More Aligned Life Starts with Awareness
+            Transformation Starts with Awareness — and Grows Through Action
           </h2>
           
           <p className="text-lg text-foreground leading-relaxed mb-8">
-            You are not here by mistake. You may simply be at a point where old patterns, inherited pressures, unresolved health challenges, or familiar ways of living no longer fit who you are becoming or the life you want to create.
+            Most people do not begin with a clear vision for a different life. They begin by realizing something no longer fits. A pattern. A habit. A level of stress. A way of living that has become too small, too draining, or too disconnected from who they want to be.
           </p>
           
           <p className="text-lg text-foreground leading-relaxed">
-            U Thrive 365 is a practical, holistic framework designed to help you better understand where your vitality is going, what may be keeping you stuck, and how to begin making meaningful changes from the inside out. This is not about becoming someone else. It is about reclaiming the parts of yourself that may have been buried under stress, expectation, conditioning, or survival patterns.
+            U-Thrive 365 helps you start there. With awareness. With small shifts. With practical tools that help you build momentum, strengthen self-trust, and move toward a healthier, more intentional, more fulfilling life — whether you want to improve one area or create a much larger transformation.
           </p>
         </div>
       </section>
