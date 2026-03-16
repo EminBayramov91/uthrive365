@@ -154,7 +154,7 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              At U Thrive 365, you'll find tools, reflections, and resources designed to help you better understand yourself and begin making meaningful, sustainable shifts.
+              At U Thrive 365, you'll find practical tools, reflections, and resources designed to help you understand what is shaping your life and begin making meaningful, sustainable shifts.
             </p>
             <p>
               That includes:
@@ -162,23 +162,23 @@ export default function About() {
             <ul className="space-y-3 ml-6">
               <li className="flex items-start gap-3">
                 <span className="text-accent font-bold mt-1">•</span>
-                <span>the PEM Wheel, a practical tool for seeing where your focus or energy is going and where life may be out of balance</span>
+                <span>the PEM Wheel, a practical tool for seeing where your energy is going, what may be out of balance, and where to begin</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent font-bold mt-1">•</span>
-                <span>foundational resources that introduce the core ideas behind U Thrive 365</span>
+                <span>foundational resources that introduce the core ideas behind U Thrive 365 and explain how small shifts can build real momentum for change</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent font-bold mt-1">•</span>
-                <span>reflections and teachings on patterns, healing, vitality, personal growth, and reinvention</span>
+                <span>reflections and teachings on patterns, healing, self-awareness, personal growth, and transformation</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-accent font-bold mt-1">•</span>
-                <span>future tools and resources designed to support daily awareness, better choices, and more intentional living</span>
+                <span>future tools and resources designed to support daily recalibration, better choices, and more intentional living</span>
               </li>
             </ul>
             <p>
-              This is not about fixing yourself. It is about learning to understand yourself more deeply, respond to your life with greater awareness, and create a way of living that feels healthier, truer, and more sustainable—one meaningful shift at a time.
+              This is not about fixing yourself. It is about learning to understand yourself more clearly, respond to life with greater awareness, and build a healthier, more honest, more sustainable way of living—one meaningful shift at a time.
             </p>
           </div>
         </section>
