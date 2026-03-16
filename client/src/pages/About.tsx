@@ -130,16 +130,16 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              U Thrive 365 is for thoughtful, growth-oriented people who sense there is more life in them than the roles, identities, or expectations they've been living.
+              U Thrive 365 is for thoughtful, growth-oriented people who sense they are meant for more than the roles, routines, or expectations they have been living inside.
             </p>
             <p>
-              This work resonates especially with women in midlife and beyond—women who have spent years being responsible, capable, successful, and outwardly functional while quietly carrying old conditioning about what they should be, want, or settle for.
+              This work resonates especially with women in midlife and beyond—women who have spent years being responsible, capable, successful, and outwardly functional, while quietly carrying old conditioning about what they should be, want, or settle for.
             </p>
             <p>
-              It also speaks to others who feel constrained by social expectations, chronic stress, unresolved health challenges, burnout, or a growing sense that the life they built no longer fully fits who they are becoming.
+              It also speaks to others who feel constrained by social expectations, chronic stress, unresolved health challenges, burnout, or the growing realization that the life they built no longer fully reflects who they are—or who they want to become.
             </p>
             <p>
-              Many people arrive here because something inside them knows there is more to life, even if they cannot fully name it yet. They may not feel they are where they thought they would be by this stage of life. They may sense they have drifted from themselves, postponed what mattered, or settled into ways of living that no longer feel fully alive. This space is for people who are ready to be more honest about what they want, clearer about what is getting in the way, and more deliberate about creating a life that feels more true.
+              Many people arrive here because they know something needs to change, even if they cannot fully name it yet. They may feel disconnected from themselves, tired of living on autopilot, or aware that they have postponed what matters for too long. This space is for people who are ready to be more honest about what they want, clearer about what is getting in the way, and more intentional about creating a life that feels healthier, more energizing, and more true.
             </p>
           </div>
         </section>
