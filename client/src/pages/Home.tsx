@@ -175,9 +175,9 @@ export default function Home() {
               </p>
               <ul className="space-y-4 pt-4">
                 {[
-                  "Why Change Is Harder Than It Looks",
-                  "The PEM: A Simple Way to See Your Patterns",
-                  "How to Start Mapping Your Life More Clearly"
+                  "Why Change Feels Hard — and Where to Begin",
+                  "How to See What's Really Shaping Your Life",
+                  "Small Shifts, Real Change"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-lg text-foreground leading-relaxed">
                     <div className="w-2 h-2 rounded-full bg-[#B8A58C]" />
@@ -186,7 +186,7 @@ export default function Home() {
                 ))}
               </ul>
               <div className="pt-4">
-                <Link href="/start" className="inline-flex items-center text-primary font-bold hover:text-accent transition-colors gap-2">
+                <Link href="/resources" className="inline-flex items-center text-primary font-bold hover:text-accent transition-colors gap-2">
                   Explore the Resources <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
