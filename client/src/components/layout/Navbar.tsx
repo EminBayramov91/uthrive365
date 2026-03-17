@@ -14,6 +14,7 @@ export default function Navbar() {
     { label: "About", path: "/about" },
     { label: "Foundational Resources", path: "/resources" },
     { label: "Blog", path: "/blog" },
+    { label: "PEM Wheel", path: "/pem" },
     { label: "Contact", path: "/contact" },
   ];
 
