@@ -41,24 +41,17 @@ export default function PEMWheel() {
     Satisfaction: scores[area]?.satisfaction || 5
   }));
 
-  // Custom tick renderer for category labels with specific positioning adjustments
+  // Custom tick renderer for category labels with uniform radial offset
   const CustomAngleTick = (props) => {
     const { x, y, payload } = props;
-    const label = payload.value;
     
-    // Apply specific adjustments to individual labels only
-    let adjustedX = x;
-    let adjustedY = y;
+    // Calculate radial offset - move all labels outward equally
+    const distance = Math.sqrt(x * x + y * y);
+    if (distance === 0) return null;
     
-    if (label === "Body") {
-      adjustedY = y + 8; // Move Body downward
-    } else if (label === "Love") {
-      adjustedY = y + 16; // Move Love farther downward
-    } else if (label === "Family") {
-      adjustedX = x + 12; // Move Family farther outward
-    } else if (label === "Social") {
-      adjustedX = x + 12; // Move Social farther outward
-    }
+    const offset = 15; // Consistent outward offset for all labels
+    const adjustedX = x + (x / distance) * offset;
+    const adjustedY = y + (y / distance) * offset;
     
     return (
       <g transform={`translate(${adjustedX},${adjustedY})`}>
@@ -71,7 +64,7 @@ export default function PEMWheel() {
           fontSize={12}
           fontWeight={500}
         >
-          {label}
+          {payload.value}
         </text>
       </g>
     );
