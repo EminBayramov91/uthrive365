@@ -166,7 +166,7 @@ export default function Home() {
                 margin: '1rem auto 0'
               }}
             >
-              U Thrive 365 helps people move from autopilot into a healthier, more energized, more intentional way of living.
+              U-Thrive 365 helps people build the inner strength, clarity, and alignment needed to thrive through real life.
             </p>
           </motion.div>
         </div>
