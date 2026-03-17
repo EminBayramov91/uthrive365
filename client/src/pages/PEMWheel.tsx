@@ -49,7 +49,7 @@ export default function PEMWheel() {
     const distance = Math.sqrt(x * x + y * y);
     if (distance === 0) return null;
     
-    const offset = 15; // Consistent outward offset for all labels
+    const offset = 30; // Consistent outward offset for all labels
     const adjustedX = x + (x / distance) * offset;
     const adjustedY = y + (y / distance) * offset;
     
