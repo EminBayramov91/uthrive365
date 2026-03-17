@@ -50,12 +50,14 @@ export default function PEMWheel() {
     let dx = 0;
     let dy = 0;
     
-    if (label === "Love") {
-      dy = 12; // Move Love downward
+    if (label === "Body") {
+      dy = 10; // Move Body downward
+    } else if (label === "Love") {
+      dy = 20; // Move Love farther downward
     } else if (label === "Family") {
-      dx = 8; // Move Family outward
+      dx = 14; // Move Family farther outward
     } else if (label === "Social") {
-      dx = 8; // Move Social outward
+      dx = 14; // Move Social farther outward
     }
     
     return (
@@ -79,12 +81,13 @@ export default function PEMWheel() {
   const CustomRadiusTick = (props) => {
     const { x, y, payload } = props;
     
-    // Move "10" label inward slightly
+    // Move "10" label downward and inward
     const isMaxLabel = payload.value === 10;
-    const adjustedY = isMaxLabel ? y - 8 : y;
+    const adjustedY = isMaxLabel ? y + 6 : y;
+    const adjustedX = isMaxLabel ? x - 4 : x;
     
     return (
-      <g transform={`translate(${x},${adjustedY})`}>
+      <g transform={`translate(${adjustedX},${adjustedY})`}>
         <text
           x={0}
           y={0}
