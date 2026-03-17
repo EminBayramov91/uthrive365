@@ -46,25 +46,25 @@ export default function PEMWheel() {
     const { x, y, payload } = props;
     const label = payload.value;
     
-    // Apply specific adjustments to individual labels
-    let dx = 0;
-    let dy = 0;
+    // Apply specific adjustments to individual labels only
+    let adjustedX = x;
+    let adjustedY = y;
     
     if (label === "Body") {
-      dy = 10; // Move Body downward
+      adjustedY = y + 8; // Move Body downward
     } else if (label === "Love") {
-      dy = 20; // Move Love farther downward
+      adjustedY = y + 16; // Move Love farther downward
     } else if (label === "Family") {
-      dx = 14; // Move Family farther outward
+      adjustedX = x + 12; // Move Family farther outward
     } else if (label === "Social") {
-      dx = 14; // Move Social farther outward
+      adjustedX = x + 12; // Move Social farther outward
     }
     
     return (
-      <g transform={`translate(${x},${y})`}>
+      <g transform={`translate(${adjustedX},${adjustedY})`}>
         <text
-          x={dx}
-          y={dy}
+          x={0}
+          y={0}
           textAnchor="middle"
           dominantBaseline="middle"
           fill="#4F5F5A"
@@ -81,10 +81,15 @@ export default function PEMWheel() {
   const CustomRadiusTick = (props) => {
     const { x, y, payload } = props;
     
-    // Move "10" label downward and inward
+    // Move "10" label downward and slightly inward
     const isMaxLabel = payload.value === 10;
-    const adjustedY = isMaxLabel ? y + 6 : y;
-    const adjustedX = isMaxLabel ? x - 4 : x;
+    let adjustedX = x;
+    let adjustedY = y;
+    
+    if (isMaxLabel) {
+      adjustedY = y + 12; // Move "10" downward
+      adjustedX = x - 6; // Move "10" inward
+    }
     
     return (
       <g transform={`translate(${adjustedX},${adjustedY})`}>
@@ -219,7 +224,7 @@ export default function PEMWheel() {
             <ResponsiveContainer width="100%" height={500}>
               <RadarChart
                 data={chartData}
-                margin={{ top: 30, right: 140, bottom: 30, left: 140 }}
+                margin={{ top: 50, right: 180, bottom: 50, left: 180 }}
               >
                 <PolarGrid 
                   strokeDasharray="0" 
