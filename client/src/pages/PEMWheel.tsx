@@ -70,7 +70,7 @@ export default function PEMWheel() {
       <g transform={`translate(${x},${y})`}>
         <text
           x={-8}
-          y={0}
+          y={5}
           textAnchor="middle"
           dominantBaseline="middle"
           fill="#6F877F"
