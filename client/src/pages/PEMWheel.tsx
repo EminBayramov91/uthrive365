@@ -41,12 +41,22 @@ export default function PEMWheel() {
     Satisfaction: scores[area]?.satisfaction || 5
   }));
 
-  // Custom tick renderer for category labels - default rendering
+  // Custom tick renderer for category labels positioned on spokes with proper spacing
   const CustomAngleTick = (props) => {
     const { x, y, payload } = props;
     
+    // Calculate distance from center and extend outward to position label in margin area
+    const distance = Math.sqrt(x * x + y * y);
+    if (distance === 0) return null;
+    
+    // Position labels at a normalized distance to ensure they're in the margin and not touching the circle
+    const labelDistance = 145; // Position labels at this radius from center
+    const ratio = labelDistance / distance;
+    const labelX = x * ratio;
+    const labelY = y * ratio;
+    
     return (
-      <g transform={`translate(${x},${y})`}>
+      <g transform={`translate(${labelX},${labelY})`}>
         <text
           x={0}
           y={0}
