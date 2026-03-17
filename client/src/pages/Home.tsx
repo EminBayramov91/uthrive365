@@ -200,8 +200,8 @@ export default function Home() {
                 <div className="absolute inset-12 bg-white rounded-2xl -rotate-6 shadow-xl flex items-center justify-center p-8 border border-[#E7DED2]">
                   <div className="text-center">
                     <Sparkles className="w-12 h-12 text-[#B8A58C] mx-auto mb-4" />
-                    <h3 className="font-display font-bold text-xl mb-2 text-primary">Module 01: The Reset</h3>
-                    <p className="text-sm text-muted-foreground">Unlock your potential</p>
+                    <h3 className="font-display font-bold text-xl mb-2 text-primary">Module 01: The Beginning</h3>
+                    <p className="text-sm text-muted-foreground">See clearly. Start honestly.</p>
                   </div>
                 </div>
               </div>
