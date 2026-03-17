@@ -81,18 +81,8 @@ export default function PEMWheel() {
   const CustomRadiusTick = (props) => {
     const { x, y, payload } = props;
     
-    // Move "10" label downward and slightly inward
-    const isMaxLabel = payload.value === 10;
-    let adjustedX = x;
-    let adjustedY = y;
-    
-    if (isMaxLabel) {
-      adjustedY = y + 12; // Move "10" downward
-      adjustedX = x - 6; // Move "10" inward
-    }
-    
     return (
-      <g transform={`translate(${adjustedX},${adjustedY})`}>
+      <g transform={`translate(${x},${y})`}>
         <text
           x={0}
           y={0}
@@ -238,6 +228,7 @@ export default function PEMWheel() {
                 <PolarRadiusAxis 
                   angle={90} 
                   domain={[0, 10]}
+                  ticks={[2, 4, 6, 8, 10]}
                   tick={<CustomRadiusTick />}
                   stroke="#B0B0B0"
                   strokeWidth={2}
