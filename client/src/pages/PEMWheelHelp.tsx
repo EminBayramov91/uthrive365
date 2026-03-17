@@ -86,8 +86,8 @@ export default function PEMWheelHelp() {
             </ul>
           </div>
 
-          <p className="italic text-muted-foreground">
-            For a deeper explanation of how to use and interpret the PEM Wheel, see: The Personal Energy Map (PEM) Wheel: A Practical Guide
+          <p className="text-foreground">
+            For a deeper explanation of how to use and interpret the PEM Wheel, see <em className="italic text-foreground">The Personal Energy Map (PEM) Wheel: A Practical Guide</em>, available on Amazon.
           </p>
         </div>
       </article>
