@@ -4,6 +4,30 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Compass, Sparkles, RefreshCcw, ArrowRight } from "lucide-react";
 
+// Daily rotating quotes
+const dailyQuotes = [
+  "Small shifts create momentum. Momentum creates transformation.",
+  "Awareness is the first step toward intentional change.",
+  "You don't have to see the whole staircase, just the next step.",
+  "Progress over perfection. Small wins compound over time.",
+  "The best time to start was yesterday. The second best time is today.",
+  "Your energy is your most valuable resource. Protect it wisely.",
+  "Clarity comes from taking action, not just thinking about it.",
+  "Every small change is practice for bigger transformation.",
+  "You are not broken. You're just operating with old instructions.",
+  "Recalibration is a practice, not a destination.",
+];
+
+// Get today's quote based on day of year
+function getTodayQuote() {
+  const today = new Date();
+  const start = new Date(today.getFullYear(), 0, 0);
+  const diff = today - start;
+  const oneDay = 1000 * 60 * 60 * 24;
+  const dayOfYear = Math.floor(diff / oneDay);
+  return dailyQuotes[dayOfYear % dailyQuotes.length];
+}
+
 export default function Home() {
   return (
     <MainLayout>
@@ -211,6 +235,20 @@ export default function Home() {
       </section>
 
       <Newsletter />
+
+      {/* Daily Rotating Quote Section */}
+      <section className="py-20 px-4 bg-background">
+        <div className="max-w-3xl mx-auto text-center">
+          <p 
+            className="text-xl md:text-2xl font-semibold leading-relaxed text-foreground italic"
+            style={{
+              letterSpacing: '0.01em'
+            }}
+          >
+            "{getTodayQuote()}"
+          </p>
+        </div>
+      </section>
     </MainLayout>
   );
 }
