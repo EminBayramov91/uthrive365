@@ -15,6 +15,7 @@ import FoundationalResources from "@/pages/FoundationalResources";
 import Module01 from "@/pages/Module01";
 import Module02 from "@/pages/Module02";
 import Module03 from "@/pages/Module03";
+import PEMWheel from "@/pages/PEMWheel";
 
 function Router() {
   return (
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/resources/module-01" component={Module01} />
       <Route path="/resources/module-02" component={Module02} />
       <Route path="/resources/module-03" component={Module03} />
+      <Route path="/pem" component={PEMWheel} />
       
       {/* Fallback to 404 */}
       <Route component={NotFound} />
