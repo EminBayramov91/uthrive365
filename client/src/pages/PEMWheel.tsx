@@ -158,7 +158,7 @@ export default function PEMWheel() {
             <ResponsiveContainer width="100%" height={500}>
               <RadarChart
                 data={chartData}
-                margin={{ top: 10, right: 100, bottom: 10, left: 100 }}
+                margin={{ top: 20, right: 120, bottom: 20, left: 120 }}
               >
                 <PolarGrid 
                   strokeDasharray="0" 
@@ -168,8 +168,8 @@ export default function PEMWheel() {
                 <PolarAngleAxis 
                   dataKey="name" 
                   tick={{ fill: "#4F5F5A", fontSize: 12, fontWeight: 500 }}
-                  dx={12}
-                  dy={8}
+                  dx={20}
+                  dy={12}
                 />
                 <PolarRadiusAxis 
                   angle={90} 
