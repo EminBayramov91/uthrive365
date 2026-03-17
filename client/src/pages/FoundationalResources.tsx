@@ -17,7 +17,7 @@ export default function FoundationalResources() {
       title: "How to See What's Really Shaping Your Life",
       description: "A practical guide to recognizing the habits, pressures, reactions, and assumptions that may be influencing your life more than you realize.",
       path: "/resources/module-02",
-      available: false
+      available: true
     },
     {
       number: "03",

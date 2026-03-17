@@ -1,0 +1,305 @@
+Please update the Foundational Resources area and Module 02 page.
+
+Keep the existing:
+- site design
+- layout
+- fonts
+- colors
+- spacing
+- card structure
+- navigation
+- overall style
+
+Do not redesign the page.
+
+-----------------------------------
+1. FOUNDATIONAL RESOURCES PAGE
+-----------------------------------
+
+On the Foundational Resources page:
+
+For Module 02:
+- change the button text from “Coming Soon” to “Read Module 02”
+- remove the disabled state
+- make the button clickable
+- link it to a standalone page for:
+
+Module 02: How to See What’s Really Shaping Your Life
+
+Keep Module 01 as it is.
+Keep Module 03 as “Coming Soon” and disabled.
+
+-----------------------------------
+2. MODULE 02 PAGE
+-----------------------------------
+
+If a standalone Module 02 page does not already exist, create one.
+
+Page title:
+Module 02: How to See What’s Really Shaping Your Life
+
+Small subtitle line under the title:
+Module 02 · 5-minute read
+
+Keep the page style consistent with Module 01:
+- back link to Foundational Resources
+- same typography
+- same spacing
+- same width / readability
+- same design style
+
+Remove any placeholder or summary text and replace the body of the page with the full Module 02 content below.
+
+Do not summarize or rewrite the content.
+Do not add extra headings, intro sections, or “helpful” summaries.
+The main body of the page should be the exact module text below.
+
+-----------------------------------
+3. MODULE 02 CONTENT
+-----------------------------------
+
+Most people think they know what is shaping their life.
+
+They think they know why they feel tired, stuck, frustrated, disconnected, or unfulfilled.
+
+And sometimes they do.
+
+But often, they are only seeing the surface.
+
+They are seeing the obvious problem, not the pattern underneath it.
+
+They are seeing the stress, but not the habits feeding the stress.
+
+They are seeing the dissatisfaction, but not the assumptions keeping them in place.
+
+They are seeing the result, but not the repeated choices, pressures, and reactions quietly creating that result over time.
+
+That is where this work begins.
+
+Not with judgment.
+
+Not with shame.
+
+With honesty.
+
+One of the hardest parts of real self-reflection is that most people are not used to looking at themselves clearly.
+
+They are used to functioning.
+
+They are used to getting through the day.
+
+They are used to reacting, solving, helping, adjusting, coping, and moving on.
+
+Many people are very good at analyzing other people, other situations, other systems, other problems.
+
+But they are not always as practiced at looking honestly at their own decisions, their own patterns, their own contradictions, or the ways they may be avoiding what is true.
+
+That is not because they are incapable.
+
+It is because most of us are not taught to do that well.
+
+We are taught to perform.
+
+We are taught to adapt.
+
+We are taught to keep going.
+
+We are not always taught to stop and ask:
+
+What is really happening here?
+
+What am I telling myself?
+
+What am I assuming?
+
+What am I avoiding seeing because it feels uncomfortable?
+
+That matters, because if you are not looking clearly, it becomes very easy to make inaccurate conclusions.
+
+You may think you are putting a lot of time into something when, if you looked honestly, you would realize you are not putting much real energy into it at all.
+
+You may think you are worse at something than you are, or better than you are, because you have never really measured it honestly.
+
+You may think something matters deeply to you, but your choices may be showing something different.
+
+That gap between story and reality is where a lot of people get lost.
+
+This is why self-awareness is not just “thinking about yourself.”
+
+It is learning to see what is actually shaping your life.
+
+Your habits shape your life.
+
+Your pressures shape your life.
+
+Your repeated thoughts shape your life.
+
+Your emotional reactions shape your life.
+
+Your assumptions shape your life.
+
+Your autopilot choices shape your life.
+
+And because many of these become familiar, they stop feeling like choices.
+
+They start feeling like “this is just how life is.”
+
+But often, it is not just life.
+
+It is pattern.
+
+For example, someone may say, “I have to stay in this job for five more years because it gives me stability.”
+
+Maybe that is true.
+
+Maybe it is also partly fear.
+
+Maybe it is old conditioning.
+
+Maybe it is an identity built around safety, predictability, and external approval.
+
+Maybe it is a habit of postponing life until some future point that never quite arrives.
+
+Again, this is not about being reckless. It is about being honest.
+
+Especially now, when external stability is not nearly as guaranteed as people like to pretend, it is worth asking whether the life you are protecting is actually a life you want.
+
+Let’s make this practical.
+
+If you sleep eight hours a night, that is roughly one-third of your life.
+
+If you spend a large part of your waking week working, commuting, preparing, recovering, or mentally carrying your work, that becomes another major portion of your life.
+
+So now a huge percentage of your existence is already spoken for.
+
+What is happening in the part that remains?
+
+Are you happy there?
+
+Do you feel like yourself there?
+
+Are you doing things that energize you, challenge you, nourish you, or make you feel more alive?
+
+Or are you mostly recovering, distracting yourself, numbing out, and waiting for weekends, vacations, or some future version of life that will finally begin later?
+
+That is not a small question.
+
+That is your life.
+
+And this same kind of honest look applies everywhere.
+
+Maybe work is not the issue for you.
+
+Maybe your relationships are draining you.
+
+Maybe your habits are draining you.
+
+Maybe your inner talk is draining you.
+
+Maybe you keep saying something matters, but your calendar, your choices, and your energy tell a different story.
+
+This is why honest reflection matters.
+
+Because transformation does not begin with what you wish were true.
+
+It begins with what is true.
+
+When people first start looking at their life more honestly, they often want to rush past this part.
+
+They want to score themselves higher.
+
+They want to soften the truth.
+
+They want to grade themselves on effort, intention, hope, or future potential.
+
+But awareness does not work that way.
+
+If you are using a tool like the PEM Wheel, the goal is not to score yourself according to who you want to be.
+
+The goal is to notice where you actually are.
+
+That is where the value is.
+
+Because honesty creates leverage.
+
+If you see clearly that something is out of balance, you can work with it.
+
+If you blur it, minimize it, or idealize it, you lose the very information that could help you change it.
+
+This is not criticism.
+
+This is calibration.
+
+And calibration only works when it is real.
+
+A scale that lies to you is useless.
+
+A map that flatters you is useless.
+
+And self-awareness that avoids the truth is not really self-awareness.
+
+It is protection.
+
+Real growth begins when you stop grading your life by intention and start looking at it through the lens of reality.
+
+That can be uncomfortable.
+
+It can also be freeing.
+
+Because the moment you stop pretending, you can finally begin working with what is actually there.
+
+So where do you begin with this?
+
+You begin by being honest enough to notice the gap between what you say matters and what your life is currently showing.
+
+Not to shame yourself.
+
+Not to panic.
+
+Just to see.
+
+Where might you be glossing over something?
+
+Where might you be giving yourself credit for intention instead of action?
+
+Where might you be staying loyal to a story that no longer feels true?
+
+Where might you be calling something stability when it is really fear, habit, or postponement?
+
+This week, choose one area of your life and look at it honestly.
+
+Not dramatically. Honestly.
+
+Your health.
+
+Your work.
+
+Your energy.
+
+Your relationships.
+
+Your time.
+
+Your peace of mind.
+
+Ask yourself:
+
+What is actually shaping this area of my life right now?
+
+Then listen carefully.
+
+Because once you can see more clearly, you can begin to change more intelligently.
+
+And that is where real transformation starts.
+
+-----------------------------------
+4. IMPORTANT
+-----------------------------------
+
+Please:
+- keep Module 01 unchanged
+- keep Module 03 as Coming Soon
+- change only what is needed for Module 02
+- do not redesign the site
+- do not add extra summaries or duplicate content
+- keep readability and spacing consistent with Module 01
