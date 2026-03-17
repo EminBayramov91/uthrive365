@@ -1,5 +1,6 @@
 import MainLayout from "@/components/layout/MainLayout";
 import { useState } from "react";
+import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, Tooltip, ResponsiveContainer } from "recharts";
 
 export default function PEMWheel() {
   const lifeAreas = [
@@ -31,6 +32,15 @@ export default function PEMWheel() {
       }
     });
   };
+
+  // Format data for the radar chart
+  const chartData = lifeAreas.map((area) => ({
+    name: area,
+    Priority: scores[area]?.priority || 5,
+    Time: scores[area]?.time || 5,
+    Satisfaction: scores[area]?.satisfaction || 5
+  }));
+
   return (
     <MainLayout>
       <div className="max-w-4xl mx-auto px-4 py-12">
@@ -141,11 +151,66 @@ export default function PEMWheel() {
           </div>
         </section>
 
-        {/* Wheel/Chart Preview Placeholder */}
+        {/* PEM Wheel Chart */}
         <section className="mb-12">
           <h2 className="text-2xl font-display font-bold text-primary mb-6">Your PEM Wheel</h2>
-          <div className="bg-background border border-border p-8 rounded-2xl min-h-[300px] flex items-center justify-center text-center">
-            <p className="text-muted-foreground">Your Personal Energy Map wheel visualization will appear here</p>
+          <div className="bg-background border border-border p-8 rounded-2xl">
+            <ResponsiveContainer width="100%" height={500}>
+              <RadarChart
+                data={chartData}
+                margin={{ top: 20, right: 80, bottom: 20, left: 80 }}
+              >
+                <PolarGrid strokeDasharray="3 3" stroke="#E0E0E0" />
+                <PolarAngleAxis 
+                  dataKey="name" 
+                  tick={{ fill: "#4F5F5A", fontSize: 12 }}
+                />
+                <PolarRadiusAxis 
+                  angle={90} 
+                  domain={[0, 10]} 
+                  tick={{ fill: "#6F877F", fontSize: 11 }}
+                />
+                <Radar
+                  name="Priority"
+                  dataKey="Priority"
+                  stroke="#DC2626"
+                  fill="#DC2626"
+                  fillOpacity={0.25}
+                  isAnimationActive={true}
+                />
+                <Radar
+                  name="Time"
+                  dataKey="Time"
+                  stroke="#2563EB"
+                  fill="#2563EB"
+                  fillOpacity={0.25}
+                  isAnimationActive={true}
+                />
+                <Radar
+                  name="Satisfaction"
+                  dataKey="Satisfaction"
+                  stroke="#16A34A"
+                  fill="#16A34A"
+                  fillOpacity={0.25}
+                  isAnimationActive={true}
+                />
+                <Tooltip 
+                  contentStyle={{
+                    backgroundColor: "#FFFFFF",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "8px",
+                    color: "#4F5F5A"
+                  }}
+                  cursor={{ stroke: "#B8A58C", strokeWidth: 1 }}
+                />
+                <Legend 
+                  verticalAlign="bottom" 
+                  height={30}
+                  wrapperStyle={{ paddingTop: "20px" }}
+                  iconType="line"
+                />
+              </RadarChart>
+            </ResponsiveContainer>
           </div>
         </section>
 
