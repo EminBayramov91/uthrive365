@@ -84,7 +84,7 @@ export default function PEMWheel() {
     return (
       <g transform={`translate(${x},${y})`}>
         <text
-          x={0}
+          x={-8}
           y={0}
           textAnchor="middle"
           dominantBaseline="middle"
