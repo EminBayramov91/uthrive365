@@ -108,25 +108,25 @@ export default function PEMWheel() {
           <style>
             body {
               font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              margin: 40px;
+              margin: 20px;
               color: #4F5F5A;
             }
             h1 {
               text-align: center;
               color: #3F5E54;
-              margin-bottom: 10px;
-              font-size: 28px;
+              margin-bottom: 14px;
+              font-size: 38px;
             }
             .date {
               text-align: center;
               color: #6F877F;
-              margin-bottom: 30px;
-              font-size: 14px;
+              margin-bottom: 41px;
+              font-size: 19px;
             }
             .chart-container {
               display: flex;
               justify-content: center;
-              margin: 30px 0;
+              margin: 41px 0;
             }
             img {
               max-width: 100%;
