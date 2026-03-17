@@ -1,0 +1,124 @@
+Please update only the Blog page.
+
+Keep the existing:
+- overall page design
+- fonts
+- colors
+- spacing
+- navigation
+- general visual style
+
+Do not redesign the website.
+
+Replace the current visible list of blog article cards with a weekly archive layout.
+
+-----------------------------------
+BLOG PAGE HEADING
+-----------------------------------
+
+Keep:
+
+Title:
+Articles & Insights
+
+Subheading:
+Short articles and practical insights for building a stronger, clearer, more intentional life.
+
+-----------------------------------
+WEEKLY ARCHIVE BOXES
+-----------------------------------
+
+Create six clean weekly archive boxes/cards on the Blog page with these exact labels:
+
+1. Week of March 30, 2026
+2. Week of April 6, 2026
+3. Week of April 13, 2026
+4. Week of April 20, 2026
+5. Week of April 27, 2026
+6. Week of May 4, 2026
+
+Each weekly box should look clean, readable, and clickable.
+
+-----------------------------------
+ONLY THE FIRST WEEK IS LIVE
+-----------------------------------
+
+Make only this first weekly box clickable and live:
+
+Week of March 30, 2026
+
+When clicked, it should go to a standalone page for that week.
+
+That weekly page should list these five blog article cards:
+
+1. Do Not Confuse Familiar with Right
+2. Why Clarity Matters More Than Motivation
+3. A Life Can Look Successful and Still Feel Wrong
+4. Small Shifts Build the Life Big Promises Never Could
+5. What You Keep Tolerating Will Keep Writing Your Future
+
+For each of those five article cards:
+- show the title
+- show the label: 2-minute read
+- make each card clickable
+- link each card to its own standalone blog page
+
+-----------------------------------
+OTHER WEEKS
+-----------------------------------
+
+The other five weekly archive boxes should remain visible on the Blog page, but not live yet.
+
+For now, show them as:
+Coming Soon
+
+Do not create their article lists yet.
+
+-----------------------------------
+BLOG WEEK PAGE
+-----------------------------------
+
+If the standalone page for:
+
+Week of March 30, 2026
+
+does not already exist, create it.
+
+Keep it simple and consistent with the rest of the site.
+
+That page should include:
+- title: Week of March 30, 2026
+- a simple back link to the Blog page
+- the five clickable blog article cards listed above
+
+-----------------------------------
+BLOG ARTICLE PAGES
+-----------------------------------
+
+If the five standalone blog pages do not already exist, create them.
+
+Each blog page should include:
+- the blog title
+- a simple subtitle line: 2-minute read
+- a back link to the Week of March 30, 2026 page
+- one clean readable content area where I can paste the blog text later
+
+Do not add placeholder summaries.
+Do not add fake content.
+Do not add extra sections.
+Keep the pages simple and consistent with the rest of the site.
+
+-----------------------------------
+IMPORTANT
+-----------------------------------
+
+Please build only:
+- the Blog page weekly archive layout
+- the six weekly archive boxes
+- the Week of March 30, 2026 page
+- the five article cards for that week
+- the five empty standalone blog pages
+
+Do not create future week content yet.
+Do not redesign other pages.
+Only make these changes.

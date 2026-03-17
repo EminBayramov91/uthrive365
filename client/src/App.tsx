@@ -22,6 +22,7 @@ import BlogPost2 from "@/pages/BlogPost2";
 import BlogPost3 from "@/pages/BlogPost3";
 import BlogPost4 from "@/pages/BlogPost4";
 import BlogPost5 from "@/pages/BlogPost5";
+import WeekMarch30 from "@/pages/WeekMarch30";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/start" component={StartHere} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/week-march-30" component={WeekMarch30} />
       <Route path="/blog/post-1" component={BlogPost1} />
       <Route path="/blog/post-2" component={BlogPost2} />
       <Route path="/blog/post-3" component={BlogPost3} />

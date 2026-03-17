@@ -8,11 +8,11 @@ export default function BlogPost3() {
       {/* Back Link */}
       <div className="max-w-3xl mx-auto px-4 pt-8 pb-4">
         <Link
-          href="/blog"
+          href="/blog/week-march-30"
           className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Blog
+          Back to Week of March 30, 2026
         </Link>
       </div>
 
