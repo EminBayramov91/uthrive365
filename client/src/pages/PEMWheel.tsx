@@ -41,6 +41,64 @@ export default function PEMWheel() {
     Satisfaction: scores[area]?.satisfaction || 5
   }));
 
+  // Custom tick renderer for category labels with specific positioning adjustments
+  const CustomAngleTick = (props) => {
+    const { x, y, payload } = props;
+    const label = payload.value;
+    
+    // Apply specific adjustments to individual labels
+    let dx = 0;
+    let dy = 0;
+    
+    if (label === "Love") {
+      dy = 12; // Move Love downward
+    } else if (label === "Family") {
+      dx = 8; // Move Family outward
+    } else if (label === "Social") {
+      dx = 8; // Move Social outward
+    }
+    
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text
+          x={dx}
+          y={dy}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fill="#4F5F5A"
+          fontSize={12}
+          fontWeight={500}
+        >
+          {label}
+        </text>
+      </g>
+    );
+  };
+
+  // Custom tick renderer for radius axis labels
+  const CustomRadiusTick = (props) => {
+    const { x, y, payload } = props;
+    
+    // Move "10" label inward slightly
+    const isMaxLabel = payload.value === 10;
+    const adjustedY = isMaxLabel ? y - 8 : y;
+    
+    return (
+      <g transform={`translate(${x},${adjustedY})`}>
+        <text
+          x={0}
+          y={0}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fill="#6F877F"
+          fontSize={10}
+        >
+          {payload.value}
+        </text>
+      </g>
+    );
+  };
+
   return (
     <MainLayout>
       <div className="max-w-4xl mx-auto px-4 py-12">
@@ -167,12 +225,12 @@ export default function PEMWheel() {
                 />
                 <PolarAngleAxis 
                   dataKey="name" 
-                  tick={{ fill: "#4F5F5A", fontSize: 12, fontWeight: 500 }}
+                  tick={<CustomAngleTick />}
                 />
                 <PolarRadiusAxis 
                   angle={90} 
                   domain={[0, 10]}
-                  tick={{ fill: "#6F877F", fontSize: 10 }}
+                  tick={<CustomRadiusTick />}
                   stroke="#B0B0B0"
                   strokeWidth={2}
                 />
