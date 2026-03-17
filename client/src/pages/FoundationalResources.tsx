@@ -24,7 +24,7 @@ export default function FoundationalResources() {
       title: "Small Shifts, Real Change",
       description: "An encouraging explanation of how meaningful transformation begins through small, sustainable changes that build momentum over time.",
       path: "/resources/module-03",
-      available: false
+      available: true
     }
   ];
 
