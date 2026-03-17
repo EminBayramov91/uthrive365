@@ -20,7 +20,7 @@ export default function Module01() {
         {/* Header */}
         <div className="mb-12 pb-8 border-b border-border">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
-            Why Change Feels Hard — and Where to Begin
+            Why the First Steps Feel Hard — and Where to Begin
           </h1>
           <p className="text-lg text-muted-foreground">
             Module 01 · 5-minute read
