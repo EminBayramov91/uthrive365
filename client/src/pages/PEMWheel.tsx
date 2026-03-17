@@ -1,6 +1,36 @@
 import MainLayout from "@/components/layout/MainLayout";
+import { useState } from "react";
 
 export default function PEMWheel() {
+  const lifeAreas = [
+    "Body",
+    "Mental",
+    "Emotional",
+    "Spiritual",
+    "Family",
+    "Love",
+    "Social",
+    "Wealth",
+    "Purpose",
+    "Character"
+  ];
+
+  const [scores, setScores] = useState(
+    lifeAreas.reduce((acc, area) => ({
+      ...acc,
+      [area]: { priority: 5, time: 5, satisfaction: 5 }
+    }), {})
+  );
+
+  const handleScoreChange = (area, category, value) => {
+    setScores({
+      ...scores,
+      [area]: {
+        ...scores[area],
+        [category]: parseInt(value)
+      }
+    });
+  };
   return (
     <MainLayout>
       <div className="max-w-4xl mx-auto px-4 py-12">
@@ -55,11 +85,59 @@ export default function PEMWheel() {
           </ul>
         </section>
 
-        {/* Scoring Table Placeholder */}
+        {/* Scoring Table */}
         <section className="mb-12">
           <h2 className="text-2xl font-display font-bold text-primary mb-6">Rate Your Life Areas</h2>
-          <div className="bg-background border border-border p-8 rounded-2xl min-h-[200px] flex items-center justify-center text-center">
-            <p className="text-muted-foreground">Scoring table will appear here</p>
+          <div className="bg-background border border-border rounded-2xl overflow-hidden">
+            {/* Table Header */}
+            <div className="grid grid-cols-4 gap-4 p-4 bg-primary/5 border-b border-border">
+              <div className="font-semibold text-primary">Area</div>
+              <div className="font-semibold text-primary text-center">Priority</div>
+              <div className="font-semibold text-primary text-center">Time</div>
+              <div className="font-semibold text-primary text-center">Satisfaction</div>
+            </div>
+
+            {/* Table Rows */}
+            <div className="divide-y divide-border">
+              {lifeAreas.map((area, idx) => (
+                <div key={idx} className="grid grid-cols-4 gap-4 p-4 items-center hover:bg-primary/2 transition-colors">
+                  <div className="font-medium text-foreground">{area}</div>
+                  
+                  {/* Priority Dropdown */}
+                  <select
+                    value={scores[area]?.priority || 5}
+                    onChange={(e) => handleScoreChange(area, "priority", e.target.value)}
+                    className="px-3 py-2 rounded-lg border border-border bg-background text-foreground text-center hover:border-primary transition-colors cursor-pointer"
+                  >
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                      <option key={num} value={num}>{num}</option>
+                    ))}
+                  </select>
+
+                  {/* Time Dropdown */}
+                  <select
+                    value={scores[area]?.time || 5}
+                    onChange={(e) => handleScoreChange(area, "time", e.target.value)}
+                    className="px-3 py-2 rounded-lg border border-border bg-background text-foreground text-center hover:border-primary transition-colors cursor-pointer"
+                  >
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                      <option key={num} value={num}>{num}</option>
+                    ))}
+                  </select>
+
+                  {/* Satisfaction Dropdown */}
+                  <select
+                    value={scores[area]?.satisfaction || 5}
+                    onChange={(e) => handleScoreChange(area, "satisfaction", e.target.value)}
+                    className="px-3 py-2 rounded-lg border border-border bg-background text-foreground text-center hover:border-primary transition-colors cursor-pointer"
+                  >
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                      <option key={num} value={num}>{num}</option>
+                    ))}
+                  </select>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
