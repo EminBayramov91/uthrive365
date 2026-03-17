@@ -1,0 +1,89 @@
+Please make two simple content updates to the PEM Wheel flow.
+
+========================
+1) UPDATE THE MAIN PEM WHEEL PAGE
+========================
+
+Find the instruction text that tells users to rate each area from 1 to 10.
+
+Replace it with this exact wording:
+
+Rate each area from 1 to 10, where 1 = low and 10 = high.
+
+If there is room for one short clarification line directly underneath, add this:
+
+10 means the highest level of Priority, Time, or Satisfaction.
+
+Do not add extra explanation on the main PEM page beyond that.
+Keep this page simple and clean.
+
+========================
+2) ADD A HELP / INFO OPTION
+========================
+
+Add a simple button, link, or radio-style option on the PEM Wheel page labeled exactly:
+
+How to Read Your PEM Wheel
+
+When clicked, it should open a simple page, modal, drawer, or section with the following content.
+
+========================
+PAGE / MODAL TITLE
+========================
+
+How to Read Your PEM Wheel
+
+========================
+BODY COPY
+========================
+
+A PEM Wheel is not about making every area of life perfect. It is a simple way to notice where your energy, attention, and satisfaction are working together—and where they may be out of sync.
+
+Rounder wheels tend to feel smoother  
+A more balanced shape often reflects a life where your energy is being supported across several areas, not just one or two.
+
+Uneven is normal  
+Life moves in seasons. At different times, some areas naturally need more attention—such as work, family, healing, or finances. A wheel does not need to look perfectly even to be healthy or meaningful.
+
+Repeating low areas matter  
+If the same areas stay low over time, your wheel may be showing you something important. It can be a sign that an area of life is consistently under-supported, neglected, or quietly draining your energy.
+
+Three common patterns to notice
+
+1. The scores are aligned  
+If Priority, Time, and Satisfaction are fairly similar in one area—even if the numbers are lower—that often means:  
+“This is okay for now.”
+
+2. Priority is high, but Time is low  
+This often means:  
+“This matters to me, but it is not getting enough attention.”
+
+3. Time is high, but Satisfaction is low  
+This often means:  
+“This is taking a lot from me, but not giving much back.”
+
+Ebb and flow  
+A balanced life does not mean every area is a 10 all the time. Your wheel will shift as life shifts. The value of the PEM is that it helps you notice whether an imbalance is seasonal and intentional—or chronic and draining.
+
+A simple rhythm  
+Try filling out your PEM once a week for four weeks. Patterns become easier to see with repetition. If you want a deeper view, repeat it weekly for three months.
+
+Quick scan  
+High Priority + Low Time + Low Satisfaction = an important area that may be neglected  
+High Time + Low Satisfaction = a possible drain, obligation, or misalignment  
+Low Time + High Satisfaction = something nourishing that gives a lot back  
+Similar scores across all three = an area that may feel stable and integrated
+
+For a deeper explanation of how to use and interpret the PEM Wheel, see:
+The Personal Energy Map (PEM) Wheel: A Practical Guide
+
+========================
+STYLE / UX NOTES
+========================
+
+- Keep the design simple and consistent with the existing PEM page.
+- Do not call this an appendix.
+- Do not make this page too long or overly styled.
+- This is meant to be a quick explanation, not the full book.
+- If a modal or slide-out panel is easier than a full new page, that is fine.
+- Preserve mobile readability and clean spacing.

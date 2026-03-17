@@ -16,6 +16,7 @@ import Module01 from "@/pages/Module01";
 import Module02 from "@/pages/Module02";
 import Module03 from "@/pages/Module03";
 import PEMWheel from "@/pages/PEMWheel";
+import PEMWheelHelp from "@/pages/PEMWheelHelp";
 import EnergyGainDrain from "@/pages/EnergyGainDrain";
 import BlogPost1 from "@/pages/BlogPost1";
 import BlogPost2 from "@/pages/BlogPost2";
@@ -44,6 +45,7 @@ function Router() {
       <Route path="/resources/module-02" component={Module02} />
       <Route path="/resources/module-03" component={Module03} />
       <Route path="/pem" component={PEMWheel} />
+      <Route path="/pem/help" component={PEMWheelHelp} />
       <Route path="/energy" component={EnergyGainDrain} />
       
       {/* Fallback to 404 */}

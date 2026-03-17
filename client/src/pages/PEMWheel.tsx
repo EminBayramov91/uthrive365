@@ -99,12 +99,27 @@ export default function PEMWheel() {
           <p className="text-lg text-foreground leading-relaxed">
             Use this tool to rate 10 areas of your life across three categories: Priority, Time, and Satisfaction.
           </p>
-          <p className="text-lg text-foreground leading-relaxed">
-            Rate each area from 1 to 10.
-          </p>
+          <div>
+            <p className="text-lg text-foreground leading-relaxed">
+              Rate each area from 1 to 10, where 1 = low and 10 = high.
+            </p>
+            <p className="text-lg text-foreground leading-relaxed text-muted-foreground mt-2">
+              10 means the highest level of Priority, Time, or Satisfaction.
+            </p>
+          </div>
           <p className="text-lg text-foreground leading-relaxed">
             The goal is not perfection. The goal is clarity.
           </p>
+        </section>
+
+        {/* Help Button Section */}
+        <section className="mb-12">
+          <a
+            href="/pem/help"
+            className="inline-block px-6 py-3 bg-secondary text-primary font-bold rounded-xl hover:bg-secondary/90 transition-colors"
+          >
+            How to Read Your PEM Wheel
+          </a>
         </section>
 
         {/* Directions Section */}
