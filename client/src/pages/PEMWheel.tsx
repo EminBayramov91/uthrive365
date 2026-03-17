@@ -158,56 +158,69 @@ export default function PEMWheel() {
             <ResponsiveContainer width="100%" height={500}>
               <RadarChart
                 data={chartData}
-                margin={{ top: 20, right: 80, bottom: 20, left: 80 }}
+                margin={{ top: 10, right: 100, bottom: 10, left: 100 }}
               >
-                <PolarGrid strokeDasharray="3 3" stroke="#E0E0E0" />
+                <PolarGrid 
+                  strokeDasharray="0" 
+                  stroke="#C0C0C0" 
+                  radialLines={{ stroke: "#C0C0C0", strokeWidth: 1.5 }}
+                />
                 <PolarAngleAxis 
                   dataKey="name" 
-                  tick={{ fill: "#4F5F5A", fontSize: 12 }}
+                  tick={{ fill: "#4F5F5A", fontSize: 12, fontWeight: 500 }}
+                  dx={12}
+                  dy={8}
                 />
                 <PolarRadiusAxis 
                   angle={90} 
-                  domain={[0, 10]} 
-                  tick={{ fill: "#6F877F", fontSize: 11 }}
+                  domain={[0, 10]}
+                  tick={{ fill: "#6F877F", fontSize: 10 }}
+                  stroke="#B0B0B0"
+                  strokeWidth={2}
                 />
                 <Radar
                   name="Priority"
                   dataKey="Priority"
                   stroke="#DC2626"
+                  strokeWidth={2.5}
                   fill="#DC2626"
-                  fillOpacity={0.25}
+                  fillOpacity={0.15}
                   isAnimationActive={true}
                 />
                 <Radar
                   name="Time"
                   dataKey="Time"
                   stroke="#2563EB"
+                  strokeWidth={2.5}
                   fill="#2563EB"
-                  fillOpacity={0.25}
+                  fillOpacity={0.15}
                   isAnimationActive={true}
                 />
                 <Radar
                   name="Satisfaction"
                   dataKey="Satisfaction"
                   stroke="#16A34A"
+                  strokeWidth={2.5}
                   fill="#16A34A"
-                  fillOpacity={0.25}
+                  fillOpacity={0.15}
                   isAnimationActive={true}
                 />
                 <Tooltip 
                   contentStyle={{
                     backgroundColor: "#FFFFFF",
-                    border: "1px solid #E0E0E0",
+                    border: "1px solid #D0D0D0",
                     borderRadius: "8px",
-                    color: "#4F5F5A"
+                    color: "#4F5F5A",
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
                   }}
-                  cursor={{ stroke: "#B8A58C", strokeWidth: 1 }}
+                  cursor={{ stroke: "#B8A58C", strokeWidth: 1.5 }}
                 />
                 <Legend 
                   verticalAlign="bottom" 
-                  height={30}
-                  wrapperStyle={{ paddingTop: "20px" }}
+                  height={25}
+                  wrapperStyle={{ paddingTop: "30px" }}
                   iconType="line"
+                  wrapperClassName="text-sm"
                 />
               </RadarChart>
             </ResponsiveContainer>
