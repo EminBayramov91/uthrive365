@@ -6,6 +6,13 @@ import { BookOpen, ArrowRight, Clock } from "lucide-react";
 export default function FoundationalResources() {
   const modules = [
     {
+      number: "Intro",
+      title: "Introduction: Energy Gain / Energy Drain",
+      description: "A practical introduction to noticing what gives you energy, what drains it, and how to begin seeing your life more clearly through that lens.",
+      path: "/energy",
+      available: true
+    },
+    {
       number: "01",
       title: "Why Change Feels Hard — and Where to Begin",
       description: "A grounded introduction to why so many people stay stuck in old patterns, why change can feel harder than it should, and how to begin without pressure or overwhelm.",
@@ -59,7 +66,7 @@ export default function FoundationalResources() {
                   role="button"
                   className="px-6 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md flex items-center justify-center gap-2"
                 >
-                  Read Module {module.number} <ArrowRight className="w-4 h-4" />
+                  {module.number === "Intro" ? "Read Introduction" : `Read Module ${module.number}`} <ArrowRight className="w-4 h-4" />
                 </Link>
               ) : (
                 <button disabled className="px-6 py-3 bg-muted text-[#F4F1EA] font-bold rounded-xl cursor-not-allowed w-full md:w-auto flex items-center justify-center gap-2 opacity-60">
