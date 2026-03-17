@@ -17,6 +17,11 @@ import Module02 from "@/pages/Module02";
 import Module03 from "@/pages/Module03";
 import PEMWheel from "@/pages/PEMWheel";
 import EnergyGainDrain from "@/pages/EnergyGainDrain";
+import BlogPost1 from "@/pages/BlogPost1";
+import BlogPost2 from "@/pages/BlogPost2";
+import BlogPost3 from "@/pages/BlogPost3";
+import BlogPost4 from "@/pages/BlogPost4";
+import BlogPost5 from "@/pages/BlogPost5";
 
 function Router() {
   return (
@@ -25,6 +30,11 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/start" component={StartHere} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/post-1" component={BlogPost1} />
+      <Route path="/blog/post-2" component={BlogPost2} />
+      <Route path="/blog/post-3" component={BlogPost3} />
+      <Route path="/blog/post-4" component={BlogPost4} />
+      <Route path="/blog/post-5" component={BlogPost5} />
       <Route path="/contact" component={Contact} />
       <Route path="/spin" component={DailySpin} />
       <Route path="/resources" component={FoundationalResources} />

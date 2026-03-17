@@ -1,0 +1,83 @@
+Please update only the Blog page.
+
+Keep the existing:
+- overall page design
+- fonts
+- colors
+- spacing
+- card style
+- layout style
+- navigation
+- overall visual structure
+
+Do not redesign the website.
+
+Remove the current placeholder/sample blog cards and replace them with one clean weekly blog section.
+
+Use this structure:
+
+-----------------------------------
+BLOG PAGE HEADING
+-----------------------------------
+
+Title:
+Articles & Insights
+
+Subheading:
+Short articles and practical insights for building a stronger, clearer, more intentional life.
+
+-----------------------------------
+FIRST BLOG BLOCK
+-----------------------------------
+
+Create one block/section labeled:
+
+Week of March 30, 2026
+
+Inside that weekly block, add these five blog article cards:
+
+1. Do Not Confuse Familiar with Right
+2. Why Clarity Matters More Than Motivation
+3. A Life Can Look Successful and Still Feel Wrong
+4. Small Shifts Build the Life Big Promises Never Could
+5. What You Keep Tolerating Will Keep Writing Your Future
+
+For each blog card:
+- show the title
+- show the label: 2-minute read
+- make each card clickable
+- link each card to its own standalone blog page
+
+Keep the layout clean, readable, and professional.
+
+-----------------------------------
+BLOG PAGES
+-----------------------------------
+
+If the five blog pages do not already exist, create them as standalone pages.
+
+Each blog page should include:
+- the blog title
+- a simple subtitle line: 2-minute read
+- a back link to the Blog page
+- one clean readable content area where I can paste the blog text later
+
+Do not add placeholder summary boxes.
+Do not add fake content.
+Do not add dates inside each blog page unless needed later.
+Keep the pages simple and consistent with the rest of the site.
+
+-----------------------------------
+IMPORTANT
+-----------------------------------
+
+Please build only:
+- the updated Blog page heading/subheading
+- the first weekly block: Week of March 30, 2026
+- the five article cards
+- the five empty standalone blog pages they link to
+
+Do not create future weeks yet.
+Do not add extra placeholder articles.
+Do not redesign other pages.
+Only make these changes.

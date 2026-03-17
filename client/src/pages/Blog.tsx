@@ -1,81 +1,67 @@
 import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
+import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 
 export default function Blog() {
-  const posts = [
+  const weeklyPosts = [
     {
-      title: "The Architecture of a Shutdown Sequence",
-      date: "Oct 12, 2023",
-      category: "Frameworks",
-      isWitty: true
+      title: "Do Not Confuse Familiar with Right",
+      path: "/blog/post-1"
     },
     {
-      title: "Why 'Just Pushing Through' is Bad Math",
-      date: "Oct 05, 2023",
-      category: "Mental State",
-      isWitty: false
+      title: "Why Clarity Matters More Than Motivation",
+      path: "/blog/post-2"
     },
     {
-      title: "Somatic Anchoring for High-Stress Scenarios",
-      date: "Sep 28, 2023",
-      category: "Physical State",
-      isWitty: false
+      title: "A Life Can Look Successful and Still Feel Wrong",
+      path: "/blog/post-3"
     },
     {
-      title: "Auditing Your Energy Portfolio",
-      date: "Sep 21, 2023",
-      category: "Frameworks",
-      isWitty: true
+      title: "Small Shifts Build the Life Big Promises Never Could",
+      path: "/blog/post-4"
     },
     {
-      title: "The Myth of Balance (And What to Seek Instead)",
-      date: "Sep 14, 2023",
-      category: "Philosophy",
-      isWitty: false
-    },
-    {
-      title: "Micro-Dosing Rest Throughout the Day",
-      date: "Sep 07, 2023",
-      category: "Habits",
-      isWitty: true
+      title: "What You Keep Tolerating Will Keep Writing Your Future",
+      path: "/blog/post-5"
     }
   ];
 
   return (
     <MainLayout>
       <PageHeader 
-        title="Journal & Insights" 
-        description="Essays, frameworks, and micro-modules to upgrade your system."
+        title="Articles & Insights" 
+        description="Short articles and practical insights for building a stronger, clearer, more intentional life."
       />
 
-      <div className="max-w-7xl mx-auto px-4 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((post, idx) => (
-            <article 
-              key={idx} 
-              className="group flex flex-col bg-background border border-border p-6 rounded-3xl hover-elevate cursor-pointer h-full"
-            >
-              <div className="flex items-center justify-between mb-6">
-                <span className="px-3 py-1 bg-secondary text-primary text-xs font-bold uppercase tracking-wider rounded-full">
-                  {post.category}
-                </span>
-                <span className="text-sm text-muted-foreground">{post.date}</span>
-              </div>
-              
-              <h3 className="text-2xl font-bold font-display text-foreground mb-4 group-hover:text-primary transition-colors leading-tight">
-                {post.title}
-              </h3>
-              
-              <div className="mt-auto pt-6 flex items-center justify-between">
-                <span className="text-sm font-medium text-muted-foreground">2-minute read</span>
-                {post.isWitty && (
-                  <span className="text-xs font-medium text-accent italic bg-accent/10 px-2 py-1 rounded-md">
-                    Witty Wednesday
-                  </span>
-                )}
-              </div>
-            </article>
-          ))}
+      <div className="max-w-4xl mx-auto px-4 pb-24">
+        {/* Weekly Block */}
+        <div className="mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold font-display text-primary mb-8">
+            Week of March 30, 2026
+          </h2>
+          
+          <div className="space-y-4">
+            {weeklyPosts.map((post, idx) => (
+              <Link
+                key={idx}
+                href={post.path}
+                className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-background border border-border p-6 rounded-3xl hover:border-primary hover:shadow-md transition-all group cursor-pointer"
+              >
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold font-display text-foreground group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    2-minute read
+                  </p>
+                </div>
+                <div className="shrink-0">
+                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </MainLayout>
