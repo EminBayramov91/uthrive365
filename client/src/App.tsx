@@ -16,6 +16,7 @@ import Module01 from "@/pages/Module01";
 import Module02 from "@/pages/Module02";
 import Module03 from "@/pages/Module03";
 import PEMWheel from "@/pages/PEMWheel";
+import EnergyGainDrain from "@/pages/EnergyGainDrain";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/resources/module-02" component={Module02} />
       <Route path="/resources/module-03" component={Module03} />
       <Route path="/pem" component={PEMWheel} />
+      <Route path="/energy" component={EnergyGainDrain} />
       
       {/* Fallback to 404 */}
       <Route component={NotFound} />
