@@ -116,7 +116,7 @@ export default function PEMWheel() {
         <section className="mb-12">
           <a
             href="/pem/help"
-            className="inline-block px-6 py-3 bg-secondary text-primary font-bold rounded-xl hover:bg-secondary/90 transition-colors"
+            className="inline-block px-6 py-3 bg-secondary text-[#F4F1EA] font-bold rounded-xl hover:bg-secondary/90 transition-colors"
           >
             How to Read Your PEM Wheel
           </a>
