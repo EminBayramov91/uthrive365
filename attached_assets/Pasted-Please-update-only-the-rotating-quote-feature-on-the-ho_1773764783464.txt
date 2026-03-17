@@ -1,0 +1,98 @@
+Please update only the rotating quote feature on the homepage.
+
+Keep the existing:
+- quote area location near the bottom of the homepage
+- quote styling
+- fonts
+- colors
+- spacing
+- overall design
+- one-quote-per-day rotation behavior
+
+Do not redesign the homepage.
+Do not change any other sections.
+
+Make these changes only:
+
+1. Remove any placeholder or automatically generated quotes currently being used.
+
+2. Use only the approved quote list I provide below.
+Do not invent new quotes.
+Do not paraphrase them.
+Do not replace them with similar lines.
+
+3. Keep the same logic:
+- show one quote per day
+- keep the same quote for the full day
+- move to the next quote the next day
+- after the last quote, loop back to the beginning
+
+4. Keep the quotes centered and styled exactly like the current homepage quote area.
+
+Use this exact quote list and nothing else:
+
+[
+  "Do not spend your life becoming excellent at a path you never meant to walk.",
+  "Some lives are built by default. Better lives are built by decision.",
+  "If the life you built no longer fits, that is not failure. That is information.",
+  "You are allowed to outgrow the life that once made sense.",
+  "There comes a moment when staying the same costs more than change.",
+  "Not every stable life is a satisfying one.",
+  "The next chapter is not something you find. It is something you write.",
+  "Your life is already telling a story. The question is whether it still sounds like you.",
+  "You do not need a new life overnight. You need a truer one over time.",
+  "A better future rarely begins with certainty. It begins with honesty.",
+  "Sometimes the bravest move is not starting over. It is starting true.",
+  "The path forward becomes visible when the pretending stops.",
+  "Stop organizing your life around what no longer belongs in it.",
+  "You can keep adapting to a life that drains you, or you can change it.",
+  "Do not wait for disruption to begin the change you already know is needed.",
+  "The life you want will ask you to stop protecting the one you have outgrown.",
+  "What you keep tolerating will keep writing your future.",
+  "A life can look successful and still feel profoundly wrong.",
+  "If you’re walking a path, make sure it’s yours.",
+  "Do not confuse familiar with right.",
+  "The next chapter does not write itself.",
+  "One honest shift can change the direction of an entire life.",
+  "If the path no longer fits, you are allowed to change direction.",
+  "The life you’re living is a story in progress. Write the next chapter on purpose.",
+  "You do not have to keep living a life that no longer feels like yours.",
+  "The moment you tell the truth, the path begins to change.",
+  "A life built on someone else’s expectations will never feel fully like home.",
+  "When the path is truly yours, even hard steps feel different.",
+  "A turning point rarely arrives as convenience. It arrives as truth.",
+  "What feels like disruption may be the beginning of alignment.",
+  "The cost of denial is usually paid later, with interest.",
+  "You do not have to wait for collapse to begin choosing differently.",
+  "The longer you ignore what is wrong, the louder life usually gets.",
+  "Sometimes life whispers first. Then it removes the floorboards.",
+  "There is no prize for staying loyal to what no longer fits.",
+  "The life you built is allowed to evolve. So are you.",
+  "A quiet truth can be more powerful than a dramatic plan.",
+  "You are not failing because change feels hard. You are training for a different life.",
+  "Growth often begins where excuse-making ends.",
+  "You do not need permission to stop living in a way that is shrinking you.",
+  "Small changes today can become a completely different life tomorrow.",
+  "Small shifts build the life big promises never could.",
+  "What you repeat becomes your direction.",
+  "A better life is often built in smaller moves than people expect.",
+  "You do not need a giant leap. You need honest traction.",
+  "Small shifts done consistently can outrun dramatic intentions every time.",
+  "The future changes when repetition changes.",
+  "You build self-trust the same way you build strength: one repetition at a time.",
+  "A different life begins with a different pattern repeated long enough to matter.",
+  "You do not need more pressure. You need better repetition.",
+  "Momentum is built in ordinary moments, not dramatic speeches.",
+  "One better choice repeated often enough can redraw an entire life.",
+  "Your habits are writing more of your future than your hopes are.",
+  "Lasting change rarely announces itself. It accumulates.",
+  "The life you want is hidden inside the choices you repeat.",
+  "You do not become someone new all at once. You become someone new by practice.",
+  "What feels small today may be the beginning of everything.",
+  "The first step does not need to impress you. It needs to be repeated.",
+  "A small shift you can sustain is more powerful than a perfect plan you abandon.",
+  "Real transformation is often quieter than expected and stronger than imagined."
+]
+
+Do not add quotation marks on the displayed homepage quote unless the current design already uses them.
+Do not change anything else.
