@@ -211,20 +211,6 @@ export default function Home() {
       </section>
 
       <Newsletter />
-
-      {/* Featured Quote Section */}
-      <section className="py-20 px-4 bg-background">
-        <div className="max-w-3xl mx-auto text-center">
-          <p 
-            className="text-xl md:text-2xl font-semibold leading-relaxed text-foreground italic"
-            style={{
-              letterSpacing: '0.01em'
-            }}
-          >
-            "Small shifts create momentum. Momentum creates transformation."
-          </p>
-        </div>
-      </section>
     </MainLayout>
   );
 }
