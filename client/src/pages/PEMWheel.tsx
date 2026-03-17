@@ -1,8 +1,16 @@
 import MainLayout from "@/components/layout/MainLayout";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, Tooltip, ResponsiveContainer } from "recharts";
+import { format } from "date-fns";
+import { Printer } from "lucide-react";
 
 export default function PEMWheel() {
+  const chartRef = useRef(null);
+  const exportRef = useRef(null);
+
+  // Format current date
+  const currentDate = format(new Date(), "MMMM d, yyyy");
+
   const lifeAreas = [
     "Body",
     "Mental",
@@ -80,6 +88,63 @@ export default function PEMWheel() {
         </text>
       </g>
     );
+  };
+
+
+  // Handle print/PDF
+  const handlePrint = () => {
+    const printWindow = window.open("", "", "height=800,width=1200");
+    if (!printWindow) {
+      alert("Please allow popups to print.");
+      return;
+    }
+
+    const exportContent = exportRef.current?.innerHTML || "";
+    printWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Personal Energy Map (PEM) Wheel</title>
+          <style>
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+              margin: 40px;
+              color: #4F5F5A;
+            }
+            h1 {
+              text-align: center;
+              color: #3F5E54;
+              margin-bottom: 10px;
+              font-size: 28px;
+            }
+            .date {
+              text-align: center;
+              color: #6F877F;
+              margin-bottom: 30px;
+              font-size: 14px;
+            }
+            .chart-container {
+              display: flex;
+              justify-content: center;
+              margin: 30px 0;
+            }
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>Personal Energy Map (PEM) Wheel</h1>
+          <p class="date">Completed on ${currentDate}</p>
+          <div class="chart-container">
+            ${exportContent}
+          </div>
+        </body>
+      </html>
+    `);
+    printWindow.document.close();
+    printWindow.print();
   };
 
   return (
@@ -195,7 +260,7 @@ export default function PEMWheel() {
         {/* PEM Wheel Chart */}
         <section className="mb-12">
           <h2 className="text-2xl font-display font-bold text-primary mb-6">Your PEM Wheel</h2>
-          <div className="bg-background border border-border p-8 rounded-2xl">
+          <div className="bg-background border border-border p-8 rounded-2xl" ref={exportRef}>
             <ResponsiveContainer width="100%" height={500}>
               <RadarChart
                 data={chartData}
@@ -267,11 +332,16 @@ export default function PEMWheel() {
           </div>
         </section>
 
-        {/* Action Buttons Placeholder */}
+        {/* Action Buttons */}
         <section className="mb-12 flex flex-col sm:flex-row gap-4 justify-center pt-4">
-          <div className="px-8 py-3 bg-background border border-border rounded-xl text-center text-muted-foreground">
-            Action buttons will appear here
-          </div>
+          <button
+            onClick={handlePrint}
+            className="flex items-center gap-2 px-8 py-3 bg-primary text-white rounded-xl font-medium hover:bg-primary/90 transition-colors shadow-sm"
+            data-testid="button-print-pdf"
+          >
+            <Printer size={18} />
+            Print / Save as PDF
+          </button>
         </section>
       </div>
     </MainLayout>
