@@ -41,20 +41,12 @@ export default function PEMWheel() {
     Satisfaction: scores[area]?.satisfaction || 5
   }));
 
-  // Custom tick renderer for category labels with uniform radial offset
+  // Custom tick renderer for category labels - default rendering
   const CustomAngleTick = (props) => {
     const { x, y, payload } = props;
     
-    // Calculate radial offset - move all labels outward equally
-    const distance = Math.sqrt(x * x + y * y);
-    if (distance === 0) return null;
-    
-    const offset = 30; // Consistent outward offset for all labels
-    const adjustedX = x + (x / distance) * offset;
-    const adjustedY = y + (y / distance) * offset;
-    
     return (
-      <g transform={`translate(${adjustedX},${adjustedY})`}>
+      <g transform={`translate(${x},${y})`}>
         <text
           x={0}
           y={0}
