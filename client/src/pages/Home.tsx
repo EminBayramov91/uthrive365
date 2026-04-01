@@ -238,11 +238,11 @@ export default function Home() {
           </h2>
           
           <p className="text-lg text-foreground leading-relaxed mb-8">
-            Most people do not begin with a clear vision for a different life. They begin by realizing something no longer fits. A pattern. A habit. A level of stress. A way of living that has become too small, too draining, or too disconnected from who they want to be.
+            Most people do not begin with a clear vision of a different life. They begin by realizing something no longer fits — a pattern, a habit, a level of stress, or a way of living that has become too small, too draining, or too disconnected from who they want to be.
           </p>
           
           <p className="text-lg text-foreground leading-relaxed">
-            U-Thrive 365 helps you start there. With awareness. With small shifts. With practical tools that help you build momentum, strengthen self-trust, and move toward a healthier, more intentional, more fulfilling life — whether you want to improve one area or create a much larger transformation.
+            U Thrive 365 helps you start there. With awareness. With practical tools. With small shifts that build momentum, strengthen self-trust, and help you move toward a healthier, more intentional, more fulfilling life.
           </p>
         </div>
       </section>
