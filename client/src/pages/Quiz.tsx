@@ -11,29 +11,33 @@ export default function Quiz() {
     "Do you feel stuck when it comes to making meaningful changes in your life?",
     "Are you unclear about what you truly want next?",
     "Does your daily life leave you feeling more drained than energized?",
-    "Are you open to looking at yourself honestly and trying new approaches to create change?"
+    "Are you willing to look at yourself honestly and try new approaches to create meaningful change?"
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [yesCount, setYesCount] = useState(0);
+  const [readinessAnswer, setReadinessAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
 
   const handleAnswer = (isYes) => {
-    if (isYes) {
+    // For questions 0-5, count "Yes" answers for scoring
+    if (currentQuestion < 6 && isYes) {
       setYesCount(yesCount + 1);
     }
 
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
+    // For question 6 (readiness question), track the answer separately
+    if (currentQuestion === 6) {
+      setReadinessAnswer(isYes);
       setShowResult(true);
+    } else if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
     }
   };
 
   const getResultText = () => {
     if (yesCount <= 2) {
       return "You may be doing fairly well right now. Even so, a little more awareness could help you fine-tune what is working, notice what may be draining you, and make small shifts that support more clarity and energy.";
-    } else if (yesCount <= 5) {
+    } else if (yesCount <= 4) {
       return "There is likely a real opportunity for change. Some part of your life may be feeling off, stuck, or more draining than it needs to be. This is often a sign that it is time to take a closer look at your patterns, your energy, and what may no longer fit.";
     } else {
       return "It may be time for a deeper reset. Your answers suggest that important parts of your life may feel out of sync, draining, or unclear. This is a strong sign that stepping back, building awareness, and looking at your current life direction more honestly could create meaningful change.";
@@ -41,6 +45,25 @@ export default function Quiz() {
   };
 
   if (showResult) {
+    // If readiness answer is No, show the "not ready" message
+    if (readinessAnswer === false) {
+      return (
+        <MainLayout>
+          <div className="max-w-3xl mx-auto px-4 py-16">
+            <div className="text-center mb-12">
+              <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6">
+                Thank You for Your Honesty
+              </h1>
+              <p className="text-lg text-foreground leading-relaxed">
+                Your answers suggest there may be areas of your life that want attention or change. But real change only happens when you are willing to look honestly at what is not working and try something different. If you are not ready for that right now, that is okay. Come back when you are ready to take a deeper look.
+              </p>
+            </div>
+          </div>
+        </MainLayout>
+      );
+    }
+
+    // If readiness answer is Yes, show the score-based result
     return (
       <MainLayout>
         <div className="max-w-3xl mx-auto px-4 py-16">
