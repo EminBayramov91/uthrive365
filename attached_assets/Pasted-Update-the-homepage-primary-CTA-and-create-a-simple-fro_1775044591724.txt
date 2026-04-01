@@ -1,0 +1,64 @@
+Update the homepage primary CTA and create a simple front-door quiz flow.
+
+Homepage changes:
+
+* Replace the current primary button text “Start with the PEM Wheel (Free)” with:
+  **Take the Recalibration Quiz**
+* Keep the secondary button as:
+  **Daily Recalibration (Spin)**
+
+Quiz experience:
+Create a simple, clean, visually consistent quiz page or modal that matches the current grounded, nature-based aesthetic of the site.
+
+Quiz title:
+**Is It Time to Recalibrate Your Life?**
+
+Quiz subtitle:
+**Answer 7 quick yes-or-no questions to see whether something in your life may be asking for change.**
+
+Questions:
+
+1. Does some part of your life feel off, even if you can’t fully explain why?
+2. Do you often feel like you are going through the motions instead of fully living?
+3. Are you less excited about your life than you want to be?
+4. Do you feel stuck when it comes to making meaningful changes in your life?
+5. Are you unclear about what you truly want next?
+6. Does your daily life leave you feeling more drained than energized?
+7. Are you open to looking at yourself honestly and trying new approaches to create change?
+
+Quiz behavior:
+
+* Each question should have simple **Yes** and **No** buttons or toggles.
+* Track the total number of “Yes” answers.
+* After the final question, show one of these 3 results based on score:
+
+Result for 0–2 Yes:
+**You may be doing fairly well right now. Even so, a little more awareness could help you fine-tune what is working, notice what may be draining you, and make small shifts that support more clarity and energy.**
+
+Result for 3–5 Yes:
+**There is likely a real opportunity for change. Some part of your life may be feeling off, stuck, or more draining than it needs to be. This is often a sign that it is time to take a closer look at your patterns, your energy, and what may no longer fit.**
+
+Result for 6–7 Yes:
+**It may be time for a deeper reset. Your answers suggest that important parts of your life may feel out of sync, draining, or unclear. This is a strong sign that stepping back, building awareness, and looking at your current life direction more honestly could create meaningful change.**
+
+Below the result, add a next-step section with a clear button:
+**Next step: Explore the PEM Wheel**
+Support text:
+**The PEM Wheel helps you see where your energy, time, and satisfaction may be out of balance so you can start making meaningful shifts.**
+
+Functionality:
+
+* Keep the scoring simple.
+* No complicated charts or analytics needed right now.
+* Just store the score for the session if needed and display the matching result.
+* Make sure mobile layout is clean and easy to use.
+
+Design direction:
+
+* Keep the site’s existing look and feel.
+* Calm, clear, grounded, modern.
+* Do not overcomplicate the interface.
+* Prioritize clarity, ease, and readability.
+
+Goal:
+The quiz should become the new front door for first-time visitors who do not yet know what the PEM Wheel is. The PEM Wheel should now be introduced as the next step after the quiz, not the first thing they see.
