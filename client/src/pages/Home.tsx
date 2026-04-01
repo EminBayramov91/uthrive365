@@ -128,7 +128,7 @@ export default function Home() {
                 WebkitTextFillColor: '#E6E0D6'
               }}
             >
-              Whether you want a small shift or a life-changing transformation, it starts by seeing clearly and moving forward intentionally.
+              We use a systems-based approach and practical holistic tools to help you understand what feels off, clear old patterns, gain more energy and clarity, and create a life that feels more true to who you are.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -166,7 +166,7 @@ export default function Home() {
                 margin: '1rem auto 0'
               }}
             >
-              U-Thrive 365 helps people build the inner strength, clarity, and alignment needed to thrive through real life.
+              Awareness comes first. U Thrive 365 helps you see where you are, understand what is keeping you stuck, and make meaningful shifts toward the life you want.
             </p>
           </motion.div>
         </div>
