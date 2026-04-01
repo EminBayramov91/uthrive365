@@ -146,7 +146,7 @@ export default function Home() {
                 className="w-full sm:w-auto px-10 py-4 rounded-xl font-semibold bg-[#B9A68C] text-[#1F2A25] shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-[6px] hover:bg-[#A99379] hover:text-[#1F2A25] hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-2 opacity-100"
               >
                 <RefreshCcw className="w-5 h-5 text-[#1F2A25]" />
-                Daily Recalibration (Spin)
+                Spin for Today's Focus
               </Link>
             </div>
             
