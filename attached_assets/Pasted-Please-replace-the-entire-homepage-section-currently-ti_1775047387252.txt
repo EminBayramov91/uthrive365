@@ -1,0 +1,41 @@
+Please replace the entire homepage section currently titled **“A Practical Path to Recalibration”** (including the three boxes: Discover / Support / Recalibrate) with a new human-centered introduction section.
+
+Goal:
+Replace the current generic framework section with a more personal, trust-building section that introduces Lisa, helps visitors feel seen, and explains the heart of the work in a grounded, emotionally resonant way.
+
+Design direction:
+
+* Keep the current clean, calm, understated aesthetic of the site.
+* Make the section feel warm, human, and spacious.
+* Include a circular or softly framed photo of Lisa near the top or integrated into the section.
+* Prioritize readability and emotional connection.
+* The section should feel elegant and grounded, not overly salesy.
+
+New section content:
+
+Headline:
+**Do you feel like something in your life no longer fits?**
+
+Body copy:
+**Maybe your energy is lower than it should be.
+Maybe your health, stress, or daily patterns are asking for your attention in a way you can no longer ignore.
+Maybe you know you want change, but you are not fully sure what needs to change — or where to begin.
+Maybe part of you senses there is more life, more clarity, and more possibility available to you than the version you’ve been living.
+You are not alone in that.**
+
+**I’m Lisa Fitzharris.**
+**After 30 years designing systems and solving complex problems in engineering, I came to see that people need more than information to change. We need awareness, honest reflection, practical tools, and space to create lives that truly support who we are becoming.**
+
+**That is the work I do now — helping people understand what is shaping their lives, reclaim their energy, and create meaningful change from where they are today.**
+
+Optional small link or button at the bottom:
+**Learn more about Lisa**
+
+Layout suggestion:
+
+* Lisa’s photo at the top center, or photo on one side with text on the other if that looks better in the current design system.
+* Keep plenty of white space.
+* Use typographic hierarchy similar to the rest of the homepage.
+* Make sure it looks good on desktop and mobile.
+
+Please remove the old “Practical Path to Recalibration” title, paragraph, and all three feature boxes completely and replace that section with this new one.

@@ -168,50 +168,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Where's your SOP section */}
+      {/* About Lisa Section */}
       <section className="py-24 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-6">
-              A Practical Path to Recalibration
-            </h2>
-              <p className="text-lg text-foreground leading-relaxed">
-                U-Thrive 365 is a practical, holistic platform for people who want to feel better, live with more intention, and create meaningful change. Through guided tools, structured reflection, and small daily shifts, you can build clarity, restore energy, and begin transforming your life from where you are now.
-              </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 relative">
-            {/* Connection line behind cards */}
-            <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-[#B8A58C]/20 to-transparent -translate-y-1/2 z-0" />
-
-            <div className="glass-card hover-elevate p-8 rounded-3xl relative z-10 bg-background">
-              <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
-                <Compass className="w-7 h-7 text-[#B8A58C]" />
-              </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">Discover</h3>
-              <p className="text-foreground leading-relaxed">
-                Identify the patterns, pressures, and energy drains shaping your current life.
-              </p>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
+            {/* Headline */}
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-8">
+                Do you feel like something in your life no longer fits?
+              </h2>
             </div>
 
-            <div className="glass-card hover-elevate p-8 rounded-3xl relative z-10 bg-background">
-              <div className="w-14 h-14 rounded-2xl bg-[#B8A58C]/10 flex items-center justify-center mb-6 shadow-inner">
-                <RefreshCcw className="w-7 h-7 text-[#B8A58C]" />
+            {/* Main Content with optional photo space */}
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              {/* Photo placeholder - replace src with actual Lisa photo path */}
+              <div className="flex justify-center">
+                <div className="w-64 h-64 rounded-full bg-secondary/20 flex items-center justify-center overflow-hidden border-4 border-secondary/30 shadow-lg">
+                  {/* Replace with actual image: <img src="path-to-lisa-photo" alt="Lisa Fitzharris" className="w-full h-full object-cover" /> */}
+                  <span className="text-muted-foreground">Lisa's Photo</span>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">Support</h3>
-              <p className="text-foreground leading-relaxed">
-                Use practical tools and restorative practices to build clarity, steadiness, and momentum.
-              </p>
-            </div>
 
-            <div className="glass-card hover-elevate p-8 rounded-3xl relative z-10 bg-background">
-              <div className="w-14 h-14 rounded-2xl bg-[#3F5F56]/10 flex items-center justify-center mb-6 shadow-inner">
-                <Sparkles className="w-7 h-7 text-[#B8A58C]" />
+              {/* Body Content */}
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <p className="text-lg text-foreground leading-relaxed">
+                    Maybe your energy is lower than it should be.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed">
+                    Maybe your health, stress, or daily patterns are asking for your attention in a way you can no longer ignore.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed">
+                    Maybe you know you want change, but you are not fully sure what needs to change — or where to begin.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed">
+                    Maybe part of you senses there is more life, more clarity, and more possibility available to you than the version you've been living.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed font-semibold">
+                    You are not alone in that.
+                  </p>
+                </div>
+
+                <div className="space-y-4 pt-4 border-t border-border">
+                  <p className="text-lg text-foreground leading-relaxed">
+                    <span className="font-semibold">I'm Lisa Fitzharris.</span>
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed">
+                    After 30 years designing systems and solving complex problems in engineering, I came to see that people need more than information to change. We need awareness, honest reflection, practical tools, and space to create lives that truly support who we are becoming.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed">
+                    That is the work I do now — helping people understand what is shaping their lives, reclaim their energy, and create meaningful change from where they are today.
+                  </p>
+                </div>
+
+                <div className="pt-4">
+                  <a
+                    href="#"
+                    className="inline-block text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >
+                    Learn more about Lisa →
+                  </a>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary">Recalibrate</h3>
-              <p className="text-foreground leading-relaxed">
-                Make small, intentional changes that help you feel better now and build a stronger future over time.
-              </p>
             </div>
           </div>
         </div>
