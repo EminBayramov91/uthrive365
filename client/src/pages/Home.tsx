@@ -170,65 +170,60 @@ export default function Home() {
       </section>
 
       {/* About Lisa Section */}
-      <section className="py-24 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
-            {/* Headline */}
-            <div className="text-center max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-8">
-                Do you feel like something in your life no longer fits?
-              </h2>
+      <section className="py-20 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-10 text-center">
+            {/* Photo */}
+            <div className="flex justify-center">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-secondary/30 shadow-lg">
+                <img src={lisaPhoto} alt="Lisa Fitzharris" className="w-full h-full object-cover" />
+              </div>
             </div>
 
-            {/* Main Content with optional photo space */}
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              {/* Photo placeholder - replace src with actual Lisa photo path */}
-              <div className="flex justify-center">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-secondary/30 shadow-lg">
-                  <img src={lisaPhoto} alt="Lisa Fitzharris" className="w-full h-full object-cover" />
-                </div>
+            {/* Headline */}
+            <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">
+              Do you feel like something in your life no longer fits?
+            </h2>
+
+            {/* Body Content */}
+            <div className="space-y-6 text-center">
+              <div className="space-y-4">
+                <p className="text-lg text-foreground leading-relaxed">
+                  Maybe your energy is lower than it should be.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed">
+                  Maybe your health, stress, or daily patterns are asking for your attention in a way you can no longer ignore.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed">
+                  Maybe you know you want change, but you are not fully sure what needs to change — or where to begin.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed">
+                  Maybe part of you senses there is more life, more clarity, and more possibility available to you than the version you've been living.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed font-semibold">
+                  You are not alone in that.
+                </p>
               </div>
 
-              {/* Body Content */}
-              <div className="space-y-6">
-                <div className="space-y-4">
-                  <p className="text-lg text-foreground leading-relaxed">
-                    Maybe your energy is lower than it should be.
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    Maybe your health, stress, or daily patterns are asking for your attention in a way you can no longer ignore.
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    Maybe you know you want change, but you are not fully sure what needs to change — or where to begin.
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    Maybe part of you senses there is more life, more clarity, and more possibility available to you than the version you've been living.
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed font-semibold">
-                    You are not alone in that.
-                  </p>
-                </div>
+              <div className="space-y-4 pt-6 border-t border-border">
+                <p className="text-lg text-foreground leading-relaxed">
+                  <span className="font-semibold">I'm Lisa Fitzharris.</span>
+                </p>
+                <p className="text-lg text-foreground leading-relaxed">
+                  After 30 years designing systems and solving complex problems in engineering, I came to see that people need more than information to change. We need awareness, honest reflection, practical tools, and space to create lives that truly support who we are becoming.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed">
+                  That is the work I do now — helping people understand what is shaping their lives, reclaim their energy, and create meaningful change from where they are today.
+                </p>
+              </div>
 
-                <div className="space-y-4 pt-4 border-t border-border">
-                  <p className="text-lg text-foreground leading-relaxed">
-                    <span className="font-semibold">I'm Lisa Fitzharris.</span>
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    After 30 years designing systems and solving complex problems in engineering, I came to see that people need more than information to change. We need awareness, honest reflection, practical tools, and space to create lives that truly support who we are becoming.
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    That is the work I do now — helping people understand what is shaping their lives, reclaim their energy, and create meaningful change from where they are today.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <a
-                    href="#"
-                    className="inline-block text-primary hover:text-primary/80 font-semibold transition-colors"
-                  >
-                    Learn more about Lisa →
-                  </a>
-                </div>
+              <div className="pt-2">
+                <a
+                  href="#"
+                  className="inline-block text-primary hover:text-primary/80 font-semibold transition-colors"
+                >
+                  Learn more about Lisa →
+                </a>
               </div>
             </div>
           </div>
