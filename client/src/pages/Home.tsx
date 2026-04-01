@@ -3,6 +3,7 @@ import Newsletter from "@/components/Newsletter";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Compass, Sparkles, RefreshCcw, ArrowRight } from "lucide-react";
+import lisaPhoto from "@assets/OoyIfIo2E788hVgX_1775047543366.png";
 
 // Daily rotating quotes
 const dailyQuotes = [
@@ -183,9 +184,8 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-start">
               {/* Photo placeholder - replace src with actual Lisa photo path */}
               <div className="flex justify-center">
-                <div className="w-64 h-64 rounded-full bg-secondary/20 flex items-center justify-center overflow-hidden border-4 border-secondary/30 shadow-lg">
-                  {/* Replace with actual image: <img src="path-to-lisa-photo" alt="Lisa Fitzharris" className="w-full h-full object-cover" /> */}
-                  <span className="text-muted-foreground">Lisa's Photo</span>
+                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-secondary/30 shadow-lg">
+                  <img src={lisaPhoto} alt="Lisa Fitzharris" className="w-full h-full object-cover" />
                 </div>
               </div>
 
