@@ -118,8 +118,8 @@ export default function Home() {
               className="text-5xl md:text-7xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px] mx-auto"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
-              Recalibrate Your <br className="hidden md:block" />
-              <span className="text-[#EDE8DE]">Personal Operating System.</span>
+              Your next chapter isn't <br className="hidden md:block" />
+              <span className="text-[#EDE8DE]">out of reach. It's just out of alignment.</span>
             </h1>
             <p 
               className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed text-balance opacity-100 font-semibold"
@@ -129,7 +129,7 @@ export default function Home() {
                 WebkitTextFillColor: '#E6E0D6'
               }}
             >
-              We use a systems-based approach and practical holistic tools to help you understand what feels off, clear old patterns, gain more energy and clarity, and create a life that feels more true to who you are.
+              Like any finely-tuned system, small adjustments can create powerful shifts. U Thrive 365 helps you see what's out of alignment, reclaim your energy, and step into a life that feels more true, intentional, and fully your own.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
