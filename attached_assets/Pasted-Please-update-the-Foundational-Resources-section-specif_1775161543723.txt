@@ -1,0 +1,124 @@
+Please update the “Foundational Resources” section specifically for the resource/article titled:
+
+“Introduction: Energy Gain / Energy Drain”
+
+Replace the existing introduction and body copy for that resource with the following updated content. Keep the existing page layout, styling, fonts, spacing, colors, buttons, and overall design the same unless small spacing adjustments are needed for readability.
+
+Also add an estimated read time near the title if that pattern already exists on the site. Use:
+Estimated read time: 6–7 minutes
+
+Use the following replacement copy exactly:
+
+Title:
+“Introduction: Energy Gain / Energy Drain”
+
+Estimated Read Time:
+“6–7 min read”
+
+Body:
+“Understanding Where Your Energy Is Going — and What It’s Costing You
+
+Most people have no idea where their energy is actually going.
+
+They know when they feel tired. They know when they feel stretched thin, reactive, or just slightly off. But they rarely stop long enough to ask the more useful question:
+
+What in my life is giving me energy — and what is quietly taking it away?
+
+That question sounds simple. But it can change the way you see almost everything.
+
+What Energy Actually Means Here
+
+When I use the word energy, I am not talking about anything mystical or complicated.
+
+I am talking about something you already know — you just may not have named it yet.
+
+Energy is your focus, your attention, your emotional bandwidth, your mental clarity, your physical vitality, and your inner steadiness. It is the difference between something leaving you feeling more clear, grounded, and alive — or more tense, depleted, heavy, and off.
+
+And here is the part that most high performers miss entirely:
+
+The voice in your head is one of the biggest drains of all.
+
+The one that runs quietly in the background saying:
+
+I should be doing more  
+I am already behind  
+I cannot rest yet  
+Do not disappoint anyone  
+Keep pushing  
+You should have figured this out by now
+
+That voice can drain enormous energy over time — often more than the actual demands of your day. So can unresolved decisions you keep circling. So can the conversation you know you need to have but keep postponing. Sometimes delay feels like relief. But chronic delay compounds stress and costs far more than the action itself ever would have.
+
+That is where this lens begins — not with your calendar or your habits, but with what is actually running underneath them.
+
+Nothing Is Truly Neutral
+
+Some things give energy. Some things drain it. Very little sits perfectly in the middle.
+
+A nourishing meal, a genuine conversation, meaningful work, real rest, honest alignment — these restore energy.
+
+Overcommitment, chronic self-criticism, unresolved conflict, living out of sync with what you actually value — these quietly drain it.
+
+But here is what makes this framework personal rather than prescriptive:
+
+What energizes you may drain someone else entirely.
+
+A packed schedule may feel electric to one person and suffocating to another. Solitude may feel restorative to one person and isolating to another. A role you once found meaningful may now feel like a weight you have been carrying too long without questioning.
+
+This is not about building a universal list of what is good or bad. It is about becoming more honest about what is actually true for you — right now, in this season of your life.
+
+Because seasons change. And if you never pause to notice what is gaining or draining your energy now, it is easy to stay loyal to a version of your life that no longer fits.
+
+The Distinction That Changes Everything
+
+Not every drain is a problem.
+
+A hard workout is tiring — and still energizing overall. A difficult conversation may temporarily cost you — and still be worth every bit of it. A meaningful project requires real effort — and still feeds something essential in you.
+
+So the question is never simply: Did this feel hard?
+
+The better question is:
+
+Is this draining me in a way that is temporary and purposeful — or chronic and misaligned?
+
+That distinction matters enormously — especially for high-performing people who have normalized chronic depletion as just the price of ambition.
+
+An acute drain is situational. It passes. It often serves something.
+
+A chronic drain is a signal. That something is unresolved. That something no longer fits. That your energy is going somewhere that deserves your honest attention.
+
+Once you learn to tell the difference, you stop calling everything stress. You stop assuming everything is just normal. You stop living quite so automatically on autopilot.
+
+How to Begin
+
+You do not need to overhaul anything today.
+
+You simply need to begin noticing.
+
+Throughout your day, ask two questions:
+
+Is this giving me energy or draining it?  
+Then: Is this temporary — or is it becoming a pattern?
+
+That is enough to start. You may notice that a certain routine leaves you sharper. A certain relationship leaves you heavier. A certain part of your day consistently restores you — and another consistently costs more than you realized.
+
+That kind of noticing is not small. It is how people begin to see their lives more clearly. And once you can see where your energy is actually going, you can begin making more conscious decisions about what to keep, what needs attention, and what may be ready to change.
+
+Not forcing. Not fixing everything at once. Not judging yourself.
+
+Just seeing more honestly.
+
+And from that clarity — you can build.
+
+Ready to see where your energy is going right now? Take the PEM Wheel Assessment and get an honest snapshot of where your priorities, time, and satisfaction are aligned — and where they may not be.”
+
+Important:
+- Update only this specific resource/article
+- Do not change other foundational resources
+- Preserve paragraph spacing and section headers for readability
+- If the site supports rich text formatting, make the internal section headers stand out:
+  - What Energy Actually Means Here
+  - Nothing Is Truly Neutral
+  - The Distinction That Changes Everything
+  - How to Begin
+- Keep the final CTA sentence as regular body text unless the current design uses a button or linked callout
