@@ -163,7 +163,7 @@ export default function Home() {
                 margin: '1rem auto 0'
               }}
             >
-              Awareness comes first. U Thrive 365 helps you see where you are, understand what is keeping you stuck, and make meaningful shifts toward the life you want.
+              Practical tools. Deep inner work. One clear framework to help you reconnect with what's actually true for you.
             </p>
           </motion.div>
         </div>
