@@ -270,7 +270,7 @@ export default function Home() {
             <a
               href="#"
               role="button"
-              className="px-8 py-3 bg-secondary text-primary font-bold rounded-xl hover:bg-secondary/90 transition-colors flex items-center justify-center gap-2"
+              className="px-8 py-3 bg-secondary text-[#F4F1EA] font-bold rounded-xl hover:bg-secondary/90 transition-colors flex items-center justify-center gap-2"
             >
               Get the Book
               <ArrowRight className="w-4 h-4" />
