@@ -189,31 +189,34 @@ export default function Home() {
             <div className="space-y-6 text-center">
               <div className="space-y-4">
                 <p className="text-lg text-foreground leading-relaxed">
-                  Maybe your energy is lower than it should be.
+                  Maybe you've been the capable one for so long you've forgotten to ask what you actually need.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed">
-                  Maybe your health, stress, or daily patterns are asking for your attention in a way you can no longer ignore.
+                  Maybe your energy is lower than it should be, and you sense it's about more than sleep or stress.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed">
-                  Maybe you know you want change, but you are not fully sure what needs to change — or where to begin.
+                  Maybe you know something needs to change — but the map you've been following no longer leads anywhere that feels true.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed">
-                  Maybe part of you senses there is more life, more clarity, and more possibility available to you than the version you've been living.
+                  Maybe part of you suspects your most alive, most aligned chapter hasn't happened yet.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed font-semibold">
-                  You are not alone in that.
+                  You're not lost. You're just overdue for recalibration.
                 </p>
               </div>
 
               <div className="space-y-4 pt-6 border-t border-border">
                 <p className="text-lg text-foreground leading-relaxed">
-                  <span className="font-semibold">I'm Lisa Fitzharris.</span>
+                  <span className="font-semibold">I'm Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.</span>
                 </p>
                 <p className="text-lg text-foreground leading-relaxed">
-                  After 30 years designing systems and solving complex problems in engineering, I came to see that people need more than information to change. We need awareness, honest reflection, practical tools, and space to create lives that truly support who we are becoming.
+                  For 30 years, I designed complex hydraulic systems from the ground up — specifying, testing, and tuning every component for peak performance. At the same time, I spent 25 years exploring a different kind of system: the human one. Through meditation, sound and frequency work, energy practices, and other healing modalities, I kept returning to the deeper question of what it means to live in genuine alignment.
                 </p>
                 <p className="text-lg text-foreground leading-relaxed">
-                  That is the work I do now — helping people understand what is shaping their lives, reclaim their energy, and create meaningful change from where they are today.
+                  At 56 I stopped running someone else's program and started designing my own. That decision changed everything.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed">
+                  Now I bring those worlds together here — engineering precision, athletic discipline, and spiritual curiosity — to help people stop living on autopilot and start living from what is actually true for them.
                 </p>
               </div>
 

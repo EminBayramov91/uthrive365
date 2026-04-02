@@ -1,0 +1,23 @@
+Please update only the second section of the homepage (the section with Lisa’s photo, the “Do you feel…” heading area, the reflective copy, and the short Lisa introduction). Keep the existing layout, image, styling, spacing, fonts, colors, divider line, and “Learn more about Lisa” link exactly the same.
+
+Make these text changes only:
+
+1. Replace the current section heading with:
+"Do you feel like something in your life no longer fits?"
+
+2. Replace the current reflective body copy under that heading with exactly this:
+"Maybe you've been the capable one for so long you've forgotten to ask what you actually need.
+Maybe your energy is lower than it should be, and you sense it's about more than sleep or stress.
+Maybe you know something needs to change — but the map you've been following no longer leads anywhere that feels true.
+Maybe part of you suspects your most alive, most aligned chapter hasn't happened yet.
+You're not lost. You're just overdue for recalibration."
+
+3. Replace the current “I’m Lisa Fitzharris…” bio paragraph section with exactly this:
+"I’m Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.
+For 30 years, I designed complex hydraulic systems from the ground up — specifying, testing, and tuning every component for peak performance. At the same time, I spent 25 years exploring a different kind of system: the human one. Through meditation, sound and frequency work, energy practices, and other healing modalities, I kept returning to the deeper question of what it means to live in genuine alignment.
+At 56 I stopped running someone else’s program and started designing my own. That decision changed everything.
+Now I bring those worlds together here — engineering precision, athletic discipline, and spiritual curiosity — to help people stop living on autopilot and start living from what is actually true for them."
+
+4. Keep the “Learn more about Lisa” link/button text as it is.
+5. Do not change anything else on the homepage.
+6. Preserve punctuation, apostrophes, em dashes, and capitalization exactly as written above.
