@@ -1,19 +1,33 @@
 import MainLayout from "@/components/layout/MainLayout";
-import PageHeader from "@/components/ui/PageHeader";
+import { Link } from "wouter";
+import { ArrowLeft } from "lucide-react";
 
 export default function EnergyGainDrain() {
   return (
     <MainLayout>
-      <PageHeader
-        title="Introduction: Energy Gain / Energy Drain"
-        description="Understanding where your energy is going and what is shaping your life."
-      />
+      {/* Back Link */}
+      <div className="max-w-3xl mx-auto px-4 pt-8 pb-4">
+        <Link
+          href="/resources"
+          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to Foundational Resources
+        </Link>
+      </div>
 
-      <div className="max-w-3xl mx-auto px-4 pb-24">
-        <div className="text-sm text-muted-foreground mb-8">
-          Estimated read time: 6–7 min read
+      <article className="max-w-3xl mx-auto px-4 py-12">
+        {/* Header */}
+        <div className="mb-12 pb-8 border-b border-border">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
+            Introduction: Energy Gain / Energy Drain
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            Introduction · 7-minute read
+          </p>
         </div>
 
+        {/* Content */}
         <div className="prose prose-lg max-w-none space-y-4 text-foreground">
           <h2 className="text-2xl font-bold font-display text-primary mt-8 mb-4">Understanding Where Your Energy Is Going — and What It's Costing You</h2>
 
@@ -111,7 +125,7 @@ Then: Is this temporary — or is it becoming a pattern?</p>
 
           <p>Ready to see where your energy is going right now? Take the PEM Wheel Assessment and get an honest snapshot of where your priorities, time, and satisfaction are aligned — and where they may not be.</p>
         </div>
-      </div>
+      </article>
     </MainLayout>
   );
 }
