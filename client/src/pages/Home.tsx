@@ -286,13 +286,13 @@ export default function Home() {
             <div className="flex-1 space-y-6">
               <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">Foundational Resources</h2>
               <p className="text-lg text-foreground leading-relaxed">
-                Start with the core tools and ideas that help you understand where you are, make small meaningful shifts, and begin building momentum for real change.
+                Every journey begins with a single honest look. These resources help you see clearly, shift gently, and build real momentum — one small step at a time.
               </p>
               <ul className="space-y-4 pt-4">
                 {[
-                  "Why Change Feels Hard — and Where to Begin",
-                  "How to See What's Really Shaping Your Life",
-                  "Small Shifts, Real Change"
+                  "The Patterns That Keep You Here",
+                  "What Is Actually Running Your Life",
+                  "Small Shifts, Sacred Change"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-lg text-foreground leading-relaxed">
                     <div className="w-2 h-2 rounded-full bg-[#B8A58C]" />
