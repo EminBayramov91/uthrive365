@@ -20,7 +20,7 @@ export default function Module02() {
         {/* Header */}
         <div className="mb-12 pb-8 border-b border-border">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
-            How to See What's Really Shaping Your Life
+            What Is Actually Running Your Life
           </h1>
           <p className="text-lg text-muted-foreground">
             Module 02 · 5-minute read
@@ -30,28 +30,22 @@ export default function Module02() {
         {/* Content */}
         <div className="space-y-6 text-lg text-foreground leading-relaxed">
           <p>
-            Most people think they know what is shaping their life.
+            Most people believe they understand what is shaping their life.
           </p>
           <p>
-            They think they know why they feel tired, stuck, frustrated, disconnected, or unfulfilled.
+            They can name the pressures. They can describe the stress. They can point to the relationships, the workload, the health issue, the difficult transition. And they are not wrong — those things are real.
           </p>
           <p>
-            And sometimes they do.
+            But beneath every visible pressure lives something older and quieter. A set of beliefs formed before you had the perspective to question them. Patterns of reaction so practiced they no longer feel like reactions — they feel like personality. Assumptions about what you deserve, what is possible, and what kind of person you are allowed to become that have been running silently in the background for decades.
           </p>
           <p>
-            But often, they are only seeing the surface.
+            Most people are seeing the surface of their life.
           </p>
           <p>
-            They are seeing the obvious problem, not the pattern underneath it.
+            This work begins one layer deeper.
           </p>
           <p>
-            They are seeing the stress, but not the habits feeding the stress.
-          </p>
-          <p>
-            They are seeing the dissatisfaction, but not the assumptions keeping them in place.
-          </p>
-          <p>
-            They are seeing the result, but not the repeated choices, pressures, and reactions quietly creating that result over time.
+            Not with judgment. Not with shame. With honesty.
           </p>
           <p>
             That is where this work begins.
@@ -313,6 +307,9 @@ export default function Module02() {
           </p>
           <p>
             Because the moment you stop pretending, you can finally begin working with what is actually there.
+          </p>
+          <p>
+            This is precisely what the Personal Energy Map is designed to reveal. Not what you hope is true. Not what you intend to prioritize. What your life is actually showing — right now, in this season. The PEM Wheel does not judge the picture it reflects. It simply makes it visible. And visibility, as you are beginning to understand, is where everything starts.
           </p>
           <p>
             So where do you begin with this?

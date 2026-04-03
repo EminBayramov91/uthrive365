@@ -1,0 +1,266 @@
+Update Foundational Resources Module 02 only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, fonts, line breaks, divider lines, alignment, and page structure exactly the same.
+- Do not redesign anything.
+- Do not change the “Back to Foundational Resources” link.
+- Keep the module metadata line exactly as it is in format and styling:
+  Module 02 · 5-minute read
+- Only change the module title and replace the full body text with the new copy below.
+- Preserve responsiveness across desktop and mobile.
+
+Make these exact changes:
+
+MODULE TITLE:
+Replace the current title:
+How to See What's Really Shaping Your Life
+
+With:
+What Is Actually Running Your Life
+
+MODULE META LINE:
+Keep exactly as-is:
+Module 02 · 5-minute read
+
+MODULE BODY:
+Replace the full current body text with the following paragraphs exactly as written below:
+
+Most people believe they understand what is shaping their life.
+
+They can name the pressures. They can describe the stress. They can point to the relationships, the workload, the health issue, the difficult transition. And they are not wrong — those things are real.
+
+But beneath every visible pressure lives something older and quieter. A set of beliefs formed before you had the perspective to question them. Patterns of reaction so practiced they no longer feel like reactions — they feel like personality. Assumptions about what you deserve, what is possible, and what kind of person you are allowed to become that have been running silently in the background for decades.
+
+Most people are seeing the surface of their life.
+
+This work begins one layer deeper.
+
+Not with judgment. Not with shame. With honesty.
+
+That is where this work begins.
+
+Not with judgment.
+
+Not with shame.
+
+With honesty.
+
+One of the hardest parts of real self-reflection is that most people are not used to looking at themselves clearly.
+
+They are used to functioning.
+
+They are used to getting through the day.
+
+They are used to reacting, solving, helping, adjusting, coping, and moving on.
+
+Many people are very good at analyzing other people, other situations, other systems, other problems.
+
+But they are not always as practiced at looking honestly at their own decisions, their own patterns, their own contradictions, or the ways they may be avoiding what is true.
+
+That is not because they are incapable.
+
+It is because most of us are not taught to do that well.
+
+We are taught to perform.
+
+We are taught to adapt.
+
+We are taught to keep going.
+
+We are not always taught to stop and ask:
+
+What is really happening here?
+
+What am I telling myself?
+
+What am I assuming?
+
+What am I avoiding seeing because it feels uncomfortable?
+
+That matters, because if you are not looking clearly, it becomes very easy to make inaccurate conclusions.
+
+You may think you are putting a lot of time into something when, if you looked honestly, you would realize you are not putting much real energy into it at all.
+
+You may think you are worse at something than you are, or better than you are, because you have never really measured it honestly.
+
+You may think something matters deeply to you, but your choices may be showing something different.
+
+That gap between story and reality is where a lot of people get lost.
+
+This is why self-awareness is not just "thinking about yourself."
+
+It is learning to see what is actually shaping your life.
+
+Your habits shape your life.
+
+Your pressures shape your life.
+
+Your repeated thoughts shape your life.
+
+Your emotional reactions shape your life.
+
+Your assumptions shape your life.
+
+Your autopilot choices shape your life.
+
+And because many of these become familiar, they stop feeling like choices.
+
+They start feeling like "this is just how life is."
+
+But often, it is not just life.
+
+It is pattern.
+
+For example, someone may say, "I have to stay in this job for five more years because it gives me stability."
+
+Maybe that is true.
+
+Maybe it is also partly fear.
+
+Maybe it is old conditioning.
+
+Maybe it is an identity built around safety, predictability, and external approval.
+
+Maybe it is a habit of postponing life until some future point that never quite arrives.
+
+Again, this is not about being reckless. It is about being honest.
+
+Especially now, when external stability is not nearly as guaranteed as people like to pretend, it is worth asking whether the life you are protecting is actually a life you want.
+
+Let's make this practical.
+
+If you sleep eight hours a night, that is roughly one-third of your life.
+
+If you spend a large part of your waking week working, commuting, preparing, recovering, or mentally carrying your work, that becomes another major portion of your life.
+
+So now a huge percentage of your existence is already spoken for.
+
+What is happening in the part that remains?
+
+Are you happy there?
+
+Do you feel like yourself there?
+
+Are you doing things that energize you, challenge you, nourish you, or make you feel more alive?
+
+Or are you mostly recovering, distracting yourself, numbing out, and waiting for weekends, vacations, or some future version of life that will finally begin later?
+
+That is not a small question.
+
+That is your life.
+
+And this same kind of honest look applies everywhere.
+
+Maybe work is not the issue for you.
+
+Maybe your relationships are draining you.
+
+Maybe your habits are draining you.
+
+Maybe your inner talk is draining you.
+
+Maybe you keep saying something matters, but your calendar, your choices, and your energy tell a different story.
+
+This is why honest reflection matters.
+
+Because transformation does not begin with what you wish were true.
+
+It begins with what is true.
+
+When people first start looking at their life more honestly, they often want to rush past this part.
+
+They want to score themselves higher.
+
+They want to soften the truth.
+
+They want to grade themselves on effort, intention, hope, or future potential.
+
+But awareness does not work that way.
+
+If you are using a tool like the PEM Wheel, the goal is not to score yourself according to who you want to be.
+
+The goal is to notice where you actually are.
+
+That is where the value is.
+
+Because honesty creates leverage.
+
+If you see clearly that something is out of balance, you can work with it.
+
+If you blur it, minimize it, or idealize it, you lose the very information that could help you change it.
+
+This is not criticism.
+
+This is calibration.
+
+And calibration only works when it is real.
+
+A scale that lies to you is useless.
+
+A map that flatters you is useless.
+
+And self-awareness that avoids the truth is not really self-awareness.
+
+It is protection.
+
+Real growth begins when you stop grading your life by intention and start looking at it through the lens of reality.
+
+That can be uncomfortable.
+
+It can also be freeing.
+
+Because the moment you stop pretending, you can finally begin working with what is actually there.
+
+This is precisely what the Personal Energy Map is designed to reveal. Not what you hope is true. Not what you intend to prioritize. What your life is actually showing — right now, in this season. The PEM Wheel does not judge the picture it reflects. It simply makes it visible. And visibility, as you are beginning to understand, is where everything starts.
+
+So where do you begin with this?
+
+You begin by being honest enough to notice the gap between what you say matters and what your life is currently showing.
+
+Not to shame yourself.
+
+Not to panic.
+
+Just to see.
+
+Where might you be glossing over something?
+
+Where might you be giving yourself credit for intention instead of action?
+
+Where might you be staying loyal to a story that no longer feels true?
+
+Where might you be calling something stability when it is really fear, habit, or postponement?
+
+This week, choose one area of your life and look at it honestly.
+
+Not dramatically. Honestly.
+
+Your health.
+
+Your work.
+
+Your energy.
+
+Your relationships.
+
+Your time.
+
+Your peace of mind.
+
+Ask yourself:
+
+What is actually shaping this area of my life right now?
+
+Then listen carefully.
+
+Because once you can see more clearly, you can begin to change more intelligently.
+
+And that is where real transformation starts.
+
+After making the changes:
+1. Verify that only Module 02 text changed.
+2. Confirm the title is now “What Is Actually Running Your Life.”
+3. Confirm the module line still reads “Module 02 · 5-minute read.”
+4. Confirm all colors, spacing, layout, and styling remain unchanged.
+5. Confirm the page still displays correctly on desktop and mobile.
