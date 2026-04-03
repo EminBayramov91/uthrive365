@@ -1,0 +1,248 @@
+Update Foundational Resources Module 03 only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, fonts, line breaks, divider lines, alignment, and page structure exactly the same.
+- Do not redesign anything.
+- Do not change the “Back to Foundational Resources” link.
+- Keep the module metadata line exactly as it is in format and styling:
+  Module 03 · 5-minute read
+- Only change the module title and replace the full body text with the new copy below.
+- Preserve responsiveness across desktop and mobile.
+
+Make these exact changes:
+
+MODULE TITLE:
+Replace the current title:
+Small Shifts, Real Change
+
+With:
+Small Shifts, Sacred Change
+
+MODULE META LINE:
+Keep exactly as-is:
+Module 03 · 5-minute read
+
+MODULE BODY:
+Replace the full current body text with the following paragraphs exactly as written below:
+
+Most people are waiting for the moment that changes everything.
+
+The breakthrough. The revelation. The decision so clear and powerful that transformation becomes inevitable. And sometimes that moment arrives — a health scare, a loss, a quiet morning where something finally becomes undeniable.
+
+But more often, the moments that actually change a life are the ones nobody notices at the time.
+
+The pause before the old reaction. The choice that costs nothing but attention. The small boundary honored when no one is watching. The morning you got up ten minutes earlier and used them differently. The conversation you finally had — or didn't have.
+
+These are the moments that build a different life. Not dramatically. Quietly. Consistently. One unremarkable choice at a time.
+
+Either way — whether change arrives as a shock or a whisper — the opportunity is the same: to begin making more honest, intentional choices before life has to keep forcing the issue.
+
+And yet, even when people know something needs to change, they often assume the answer has to be dramatic.
+
+They think they need to overhaul everything at once.
+
+They think they need to become a different person overnight.
+
+They think lasting change should feel powerful immediately.
+
+But most lasting change does not come from one dramatic moment.
+
+It comes from what you repeat after that moment passes.
+
+That is where many people get discouraged.
+
+They decide they are finally going to change something. They are going to eat better, stop procrastinating, exercise every day, speak up more, sleep more, drink less, stop people-pleasing, or finally take control of their life.
+
+Then they try to change too much at once.
+
+They go from zero to one hundred.
+
+They ask their nervous system, their habits, and their daily life to become a different person overnight.
+
+And when that does not hold, they assume they failed.
+
+But that is usually not the real problem.
+
+One of the biggest misconceptions about transformation is that it has to start big.
+
+People often believe that if change is real, it should look dramatic.
+
+They think it should feel powerful right away.
+
+They think they should wake up inspired, know exactly what to do, and suddenly become the version of themselves they have been imagining.
+
+But that is not how most change works.
+
+Most people do not fail because they are incapable.
+
+They fail because they overload the system.
+
+They try to force a complete overhaul before they have built the capacity, rhythm, or repetition to sustain it.
+
+A healthier beginning usually looks much smaller.
+
+One honest choice.
+
+One better boundary.
+
+One healthier habit.
+
+One repeated pause.
+
+One change in how you speak to yourself.
+
+One action that may look unimpressive from the outside, but begins changing direction from the inside.
+
+That is the part people often underestimate.
+
+Small shifts matter because they are repeatable.
+
+And what is repeatable becomes trainable.
+
+What is trainable becomes sustainable.
+
+What is sustainable begins to reshape your life.
+
+This is true in the body.
+
+It is true in the mind.
+
+It is true in relationships.
+
+It is true in work.
+
+It is true in identity.
+
+You do not usually build a new life by proving how intense you can be for three days.
+
+You build it by becoming someone who can repeat better choices often enough that they start to feel natural.
+
+Think about exercise.
+
+If someone has not worked out in years, and they suddenly decide they are going to train hard every day for ninety minutes, what usually happens?
+
+They get sore.
+
+They get overwhelmed.
+
+They miss a day.
+
+Then another.
+
+Then they tell themselves they are bad at consistency.
+
+But that story is usually wrong.
+
+The real issue is that they tried to jump too far ahead of their current conditioning.
+
+A much wiser beginning might be twenty minutes.
+
+That may not feel impressive.
+
+But if you repeat twenty minutes often enough, you begin building strength, confidence, and capacity. Then over time, what once felt hard becomes normal.
+
+That is how real training works.
+
+And the same principle applies everywhere else.
+
+You do not have to quit sugar forever by tomorrow morning to begin changing your relationship with food.
+
+You might begin by reducing it gradually, noticing what triggers the craving, or replacing one draining reward with something that actually restores you.
+
+You do not have to reinvent your whole schedule to become more intentional.
+
+You might start by planning ten minutes ahead instead of living the whole day in reaction mode.
+
+You do not have to transform your life in one leap.
+
+You begin by getting traction.
+
+That matters because many people live in what feels like a rut. They keep trying to climb out, but the old groove keeps pulling them back in. The answer is not always one giant jump. Sometimes it is small, repeated traction that slowly changes the angle. Even a one-degree shift, repeated over time, can send you in a completely different direction.
+
+This is where momentum matters.
+
+Momentum is not magic.
+
+Momentum is built.
+
+It is what happens when a small shift is repeated enough times that it begins to carry you forward.
+
+At first, you may have to remind yourself.
+
+At first, it may feel like effort.
+
+At first, the old habit may still feel stronger than the new one.
+
+That is normal.
+
+But once a healthier pattern starts to take hold, the experience changes. You do not have to push as hard because the new direction begins to support itself.
+
+Leverage matters too.
+
+People often say they cannot change, but under the right conditions, they suddenly can. Change becomes easier when the reason is strong enough, the reward is meaningful enough, or the cost of staying the same becomes too obvious to ignore.
+
+That means hopeless is usually the wrong conclusion.
+
+More often, the issue is that the structure, repetition, or leverage has not been built yet.
+
+And that is good news.
+
+Because structure can be built.
+
+Repetition can be built.
+
+Momentum can be built.
+
+So where do you begin?
+
+Not with the whole mountain.
+
+Not with the fantasy version of your future self.
+
+Not with a list so long that you shut down before you ever get traction.
+
+You begin with one small shift.
+
+One that is real.
+
+One that is doable.
+
+One that helps.
+
+Ask yourself:
+
+What is one small change that would make my life even 5% better right now?
+
+What is one habit I could repeat for the next seven days?
+
+What is one draining pattern I could interrupt with something more supportive?
+
+Then do that.
+
+Not perfectly.
+
+Repeatedly.
+
+Because small shifts may not look dramatic in the beginning.
+
+But small shifts build momentum.
+
+And momentum creates transformation.
+
+That is how real change happens.
+
+Not all at once.
+
+But often enough, and honestly enough, that one day you look back and realize the person standing here is not the person who started. The path changed because the steps changed. And the steps changed because you decided — quietly, repeatedly, without waiting for permission — that a truer life was worth building one small moment at a time.
+
+That is sacred change.
+
+And it has already begun.
+
+After making the changes:
+1. Verify that only Module 03 text changed.
+2. Confirm the title is now “Small Shifts, Sacred Change.”
+3. Confirm the module line still reads “Module 03 · 5-minute read.”
+4. Confirm all colors, spacing, layout, and styling remain unchanged.
+5. Confirm the page still displays correctly on desktop and mobile.

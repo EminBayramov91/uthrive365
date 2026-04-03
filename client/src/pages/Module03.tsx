@@ -20,7 +20,7 @@ export default function Module03() {
         {/* Header */}
         <div className="mb-12 pb-8 border-b border-border">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
-            Small Shifts, Real Change
+            Small Shifts, Sacred Change
           </h1>
           <p className="text-lg text-muted-foreground">
             Module 03 · 5-minute read
@@ -30,49 +30,22 @@ export default function Module03() {
         {/* Content */}
         <div className="space-y-6 text-lg text-foreground leading-relaxed">
           <p>
-            A lot of people think change begins with a dramatic decision.
+            Most people are waiting for the moment that changes everything.
           </p>
           <p>
-            A new year.
+            The breakthrough. The revelation. The decision so clear and powerful that transformation becomes inevitable. And sometimes that moment arrives — a health scare, a loss, a quiet morning where something finally becomes undeniable.
           </p>
           <p>
-            A big promise.
+            But more often, the moments that actually change a life are the ones nobody notices at the time.
           </p>
           <p>
-            A bold declaration.
+            The pause before the old reaction. The choice that costs nothing but attention. The small boundary honored when no one is watching. The morning you got up ten minutes earlier and used them differently. The conversation you finally had — or didn't have.
           </p>
           <p>
-            A sudden burst of motivation.
+            These are the moments that build a different life. Not dramatically. Quietly. Consistently. One unremarkable choice at a time.
           </p>
           <p>
-            Sometimes it does.
-          </p>
-          <p>
-            But change can also begin when life gets your attention.
-          </p>
-          <p>
-            A health scare.
-          </p>
-          <p>
-            Burnout.
-          </p>
-          <p>
-            A relationship ending.
-          </p>
-          <p>
-            A loss of energy.
-          </p>
-          <p>
-            A growing sense that the life you are living no longer fits.
-          </p>
-          <p>
-            Some people choose change.
-          </p>
-          <p>
-            Others are pushed toward it when something becomes too uncomfortable to ignore.
-          </p>
-          <p>
-            Either way, the opportunity is the same: to begin making more honest, intentional choices before life has to keep forcing the issue.
+            Either way — whether change arrives as a shock or a whisper — the opportunity is the same: to begin making more honest, intentional choices before life has to keep forcing the issue.
           </p>
           <p>
             And yet, even when people know something needs to change, they often assume the answer has to be dramatic.
@@ -369,7 +342,13 @@ export default function Module03() {
             Not all at once.
           </p>
           <p>
-            But often enough that, one day, you look back and realize you are no longer where you started.
+            But often enough, and honestly enough, that one day you look back and realize the person standing here is not the person who started. The path changed because the steps changed. And the steps changed because you decided — quietly, repeatedly, without waiting for permission — that a truer life was worth building one small moment at a time.
+          </p>
+          <p>
+            That is sacred change.
+          </p>
+          <p>
+            And it has already begun.
           </p>
         </div>
       </article>
