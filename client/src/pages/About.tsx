@@ -14,7 +14,7 @@ export default function About() {
           Created by Lisa Fitzharris
         </p>
         <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
-          A practical, holistic path for people ready to understand what is no longer working, make meaningful shifts, and move toward a healthier, more intentional way of living.
+          You are not broken. You may have simply lost touch with the part of you that knows what is true. U Thrive 365 exists to help you find your way back.
         </p>
       </section>
 
@@ -28,13 +28,16 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              U Thrive 365 exists to help people notice what is no longer working, understand the patterns and pressures shaping their lives, and begin making healthier, more honest changes. Many of us learn to override our own signals—pushing past exhaustion, ignoring dissatisfaction, and staying loyal to ways of living that no longer fit who we are becoming. This work is about helping people slow down enough to see clearly, reconnect with themselves, and begin moving forward with more intention.
+              Most high-performing people don't arrive here because life fell apart. They arrive because something quieter happened — a growing sense that the life they built, the roles they accepted, and the version of themselves they've been presenting to the world no longer fully fits.
             </p>
             <p>
-              Many people who find their way here are highly motivated, capable, and outwardly functional, yet quietly aware that something no longer fits. They may feel drained, stuck, disconnected, or increasingly aware that the life they built no longer reflects who they are now—or who they are beginning to become. Others may be navigating unresolved health challenges, chronic stress, burnout, or the growing realization that they want more from life than simply managing what has always been.
+              They are capable. Accomplished. Often admired. And quietly running on empty.
             </p>
             <p>
-              U Thrive 365 was created for that moment—the moment when you begin to wonder whether it is still possible to feel better, live more honestly, and create a healthier, more fulfilling future. Whether someone is looking to improve one area of life or begin a much larger transformation, this work begins by helping them see clearly, make meaningful shifts, and build momentum from there.
+              U Thrive 365 exists for that moment — when the external metrics look fine but something internal is signaling otherwise. When rest doesn't restore you. When success doesn't satisfy you. When you can feel the gap between the life you're living and the one pulling at you from somewhere deeper.
+            </p>
+            <p>
+              This work begins with one simple, honest question: where is your energy actually going — and is it taking you where you truly want to go?
             </p>
           </div>
         </section>

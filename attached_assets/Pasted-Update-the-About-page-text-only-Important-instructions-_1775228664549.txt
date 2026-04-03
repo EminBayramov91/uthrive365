@@ -1,0 +1,41 @@
+Update the About page text only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, fonts, alignment, and section structure exactly the same.
+- Do not redesign anything.
+- Do not change the page title.
+- Do not change any buttons, navigation, spacing, or layout behavior.
+- Preserve responsiveness across desktop and mobile.
+- Only replace the requested text content on the About page.
+
+Make these exact changes:
+
+PAGE TITLE:
+Keep exactly as-is:
+About U Thrive 365
+
+PAGE SUBTEXT:
+Replace the current subtitle/subtext with:
+You are not broken. You may have simply lost touch with the part of you that knows what is true. U Thrive 365 exists to help you find your way back.
+
+SECTION HEADING:
+Keep exactly as-is:
+Why U Thrive 365 Exists
+
+SECTION BODY:
+Replace the full current body text under “Why U Thrive 365 Exists” with the following four paragraphs:
+
+Most high-performing people don't arrive here because life fell apart. They arrive because something quieter happened — a growing sense that the life they built, the roles they accepted, and the version of themselves they've been presenting to the world no longer fully fits.
+
+They are capable. Accomplished. Often admired. And quietly running on empty.
+
+U Thrive 365 exists for that moment — when the external metrics look fine but something internal is signaling otherwise. When rest doesn't restore you. When success doesn't satisfy you. When you can feel the gap between the life you're living and the one pulling at you from somewhere deeper.
+
+This work begins with one simple, honest question: where is your energy actually going — and is it taking you where you truly want to go?
+
+After making the changes:
+1. Verify that only the About page text changed.
+2. Confirm the page title and section heading remain exactly the same.
+3. Confirm all colors, spacing, layout, and styling remain unchanged.
+4. Confirm the page still displays correctly on desktop and mobile.
