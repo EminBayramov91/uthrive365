@@ -88,37 +88,19 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              U Thrive 365 is different because it blends systems thinking with holistic transformation.
+              U Thrive 365 is not built from a methodology borrowed from someone else's experience. It is built from three lived archetypes that converge in one person.
             </p>
             <p>
-              This is not generic life coaching or a collection of disconnected wellness ideas. It is a practical, structured approach designed to help you understand what is shaping your life, where your energy is going, and how to begin making meaningful changes with more clarity and intention.
+              The Engineer — 30 years designing complex hydraulic systems from the ground up. Every variable specified. Every sub-system tested. Every system tuned for peak performance. That same precision now applies to human systems — because the patterns shaping your life are as mappable as any mechanical one, once you know how to look.
             </p>
             <p>
-              My approach brings together:
-            </p>
-            <ul className="space-y-3 ml-6">
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>analytical thinking and pattern recognition</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>self-awareness tools and structured reflection</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>practical support for healing, growth, and daily recalibration</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>a broader view of change that includes the body, mind, habits, identity, and overall direction of your life</span>
-              </li>
-            </ul>
-            <p>
-              In other words, this approach is both grounded and expansive. It offers enough structure for thoughtful people who want clarity and practical tools, while leaving room for the deeper shifts that real transformation often requires.
+              The Athlete — A natural competitor from the start. Collegiate soccer player, all-state softball player, and a woman currently training to compete at 58. Not coaching from memory. Coaching from the arena.
             </p>
             <p>
-              The deeper question is not how to become someone else. It is whether you are ready to recognize what is no longer working, change direction where needed, and create a life with more energy, more honesty, and more meaning.
+              The Self-Healer — Facing health challenges that medicine could not resolve, the deeper lesson learned was this: healing is not something you force. It is something you allow — by removing what is blocking the system and trusting what the body was always designed to do. That insight runs through everything taught here.
+            </p>
+            <p>
+              Together these three archetypes produce something genuinely rare: a guide who speaks fluent engineer, athlete, and mystic simultaneously — and who has applied all three to her own life in real time.
             </p>
           </div>
         </section>

@@ -1,0 +1,35 @@
+Update the About page section “Why This Approach Is Different” text only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, fonts, alignment, paragraph spacing, and section structure exactly the same.
+- Do not redesign anything.
+- Do not change the section title.
+- Do not change any other content on the About page.
+- Preserve responsiveness across desktop and mobile.
+- Only replace the body text under this section.
+
+Make these exact changes:
+
+SECTION TITLE:
+Keep exactly as-is:
+Why This Approach Is Different
+
+SECTION BODY:
+Replace the full current text under “Why This Approach Is Different” with the following five paragraphs:
+
+U Thrive 365 is not built from a methodology borrowed from someone else's experience. It is built from three lived archetypes that converge in one person.
+
+The Engineer — 30 years designing complex hydraulic systems from the ground up. Every variable specified. Every sub-system tested. Every system tuned for peak performance. That same precision now applies to human systems — because the patterns shaping your life are as mappable as any mechanical one, once you know how to look.
+
+The Athlete — A natural competitor from the start. Collegiate soccer player, all-state softball player, and a woman currently training to compete at 58. Not coaching from memory. Coaching from the arena.
+
+The Self-Healer — Facing health challenges that medicine could not resolve, the deeper lesson learned was this: healing is not something you force. It is something you allow — by removing what is blocking the system and trusting what the body was always designed to do. That insight runs through everything taught here.
+
+Together these three archetypes produce something genuinely rare: a guide who speaks fluent engineer, athlete, and mystic simultaneously — and who has applied all three to her own life in real time.
+
+After making the changes:
+1. Verify that only the body text in this section changed.
+2. Confirm the section title remains exactly the same.
+3. Confirm all colors, layout, spacing, and styling remain unchanged.
+4. Confirm the page still displays correctly on desktop and mobile.
