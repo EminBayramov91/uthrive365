@@ -166,19 +166,19 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              You do not need to have everything figured out before you begin.
+              You don't need to have everything figured out before you begin.
             </p>
             <p>
-              You only need a willingness to pause, look honestly at what is no longer working, and consider that a different way of living may be possible.
+              You only need a willingness to pause, look honestly at what is no longer working, and consider that a truer way of living is possible — and closer than it appears.
             </p>
             <p>
-              If something in your life is not sitting right—if "fine" no longer feels good enough, and some part of you is ready for more—pay attention to that. There may be a reason you found your way here. Not because everything is clear yet, but because you may be more ready than you think to begin making meaningful changes.
+              If something in your life is not sitting right. If "fine" no longer feels good enough. If some part of you is ready for more — pay attention to that. There may be a reason you found your way here.
             </p>
             <p>
-              U Thrive 365 is here to help you begin.
+              Your next chapter isn't out of reach. It's just out of alignment.
             </p>
             <p className="font-medium">
-              Start with the PEM Wheel. Explore the foundational resources. Take the next small step that helps you move forward with more clarity, energy, and intention.
+              Start with the PEM Wheel. Explore the Foundational Resources. Take the next small step.
             </p>
             
             {/* Optional CTA */}
