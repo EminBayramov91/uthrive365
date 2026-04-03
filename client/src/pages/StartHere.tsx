@@ -8,7 +8,7 @@ export default function StartHere() {
     {
       number: "01",
       title: "Take the PEM Wheel Assessment",
-      description: "Get a quick, practical snapshot of where you are right now—what matters most, where your energy is going, and which areas may need attention, support, or change.",
+      description: "The first act of change is seeing clearly. The Personal Energy Map gives you an honest snapshot of where your energy is actually going — what matters most, what's being neglected, and where the quiet drain is coming from.",
       icon: PieChart,
       action: "Take Assessment",
       link: "#pem-section",
@@ -17,7 +17,7 @@ export default function StartHere() {
     {
       number: "02",
       title: "Explore the Foundational Resources",
-      description: "Once you have a clearer picture of where you are, begin with the short, practical resources that explain the core ideas behind U-Thrive 365 and how small shifts can build real momentum for change.",
+      description: "Once you can see the pattern, you can begin to understand it. These short, grounded modules explain why change feels hard, what's really running your life beneath the surface, and how small shifts accumulate into something real.",
       icon: BookOpen,
       action: "Explore Resources",
       link: "/start",
@@ -26,7 +26,7 @@ export default function StartHere() {
     {
       number: "03",
       title: "Use the Daily Recalibration",
-      description: "Use the Daily Spin whenever you want a simple prompt, reflection, or nudge to help you reset, refocus, and take one supportive step forward.",
+      description: "Transformation lives in the ordinary moments — not the dramatic ones. The Daily Spin offers a simple prompt, reflection, or nudge to help you return to yourself, reset your focus, and take one aligned step forward.",
       icon: RefreshCcw,
       action: "Spin the Wheel",
       link: "/spin",
@@ -38,7 +38,7 @@ export default function StartHere() {
     <MainLayout>
       <PageHeader 
         title="Start Here" 
-        description="If you're wondering where to begin, start simply. These first steps will help you understand where you are now, make a few meaningful shifts, and begin moving forward with more clarity, energy, and intention."
+        description="You don't need a perfect plan. You need an honest starting point. These three steps will help you see where you are, understand what's shaping your experience, and begin moving toward a life that feels more genuinely yours."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-12 space-y-8">
@@ -91,7 +91,7 @@ export default function StartHere() {
         <div className="text-center bg-secondary/20 border border-border rounded-2xl p-8">
           <p className="text-lg text-foreground leading-relaxed">
             <span className="font-semibold">Want to go deeper?</span><br />
-            The book The Personal Energy Map (PEM) Wheel: A Practical Guide by Lisa Fitzharris offers additional guidance, reflection, and support for people who want a fuller understanding of the framework behind the Wheel. Available on Amazon for $4.99.
+            The Personal Energy Map (PEM) Wheel: A Practical Guide by Lisa Fitzharris offers additional reflection, interpretation, and support for anyone who wants a fuller understanding of what their Wheel is revealing. Available on Amazon for $4.99.
           </p>
         </div>
       </div>

@@ -1,0 +1,42 @@
+Update the “Start Here” page content only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, fonts, button styles, borders, icons, and section/card layout exactly the same.
+- Keep the page title the same: “Start Here”
+- Do not redesign anything.
+- Do not change any colors.
+- Do not change any existing structure except for replacing the text content.
+- Preserve responsiveness across desktop and mobile.
+- Keep bold styling where titles are already bold.
+- Only update the text on this page with the following:
+
+PAGE TITLE:
+Start Here
+
+PAGE SUBTEXT:
+You don't need a perfect plan. You need an honest starting point. These three steps will help you see where you are, understand what's shaping your experience, and begin moving toward a life that feels more genuinely yours.
+
+SECTION 01
+Label: 01
+Title: Take the PEM Wheel Assessment
+Description: The first act of change is seeing clearly. The Personal Energy Map gives you an honest snapshot of where your energy is actually going — what matters most, what's being neglected, and where the quiet drain is coming from.
+
+SECTION 02
+Label: 02
+Title: Explore the Foundational Resources
+Description: Once you can see the pattern, you can begin to understand it. These short, grounded modules explain why change feels hard, what's really running your life beneath the surface, and how small shifts accumulate into something real.
+
+SECTION 03
+Label: 03
+Title: Use the Daily Recalibration
+Description: Transformation lives in the ordinary moments — not the dramatic ones. The Daily Spin offers a simple prompt, reflection, or nudge to help you return to yourself, reset your focus, and take one aligned step forward.
+
+BOTTOM CALLOUT BOX
+Title: Want to go deeper?
+Body: The Personal Energy Map (PEM) Wheel: A Practical Guide by Lisa Fitzharris offers additional reflection, interpretation, and support for anyone who wants a fuller understanding of what their Wheel is revealing. Available on Amazon for $4.99.
+
+After making the changes:
+1. Verify that only the text content changed.
+2. Confirm that all colors, layout, spacing, and styling remain unchanged.
+3. Confirm the page still looks the same structurally on desktop and mobile.
