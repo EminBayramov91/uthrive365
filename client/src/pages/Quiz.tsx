@@ -8,9 +8,9 @@ export default function Quiz() {
     "Does some part of your life feel off, even if you can't fully explain why?",
     "Do you often feel like you are going through the motions instead of fully living?",
     "Are you less excited about your life than you want to be?",
-    "Do you feel stuck when it comes to making meaningful changes in your life?",
+    "Do you find yourself knowing what needs to change but unable to make it happen?",
     "Are you unclear about what you truly want next?",
-    "Does your daily life leave you feeling more drained than energized?",
+    "Do you end most days feeling depleted rather than restored?",
     "Are you willing to look at yourself honestly and try new approaches to create meaningful change?"
   ];
 
@@ -102,7 +102,7 @@ export default function Quiz() {
       <div className="max-w-3xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
-            Is It Time to Recalibrate Your Life?
+            Is Something Calling You Forward?
           </h1>
           <p className="text-lg text-foreground leading-relaxed">
             Answer 7 quick yes-or-no questions to see whether something in your life may be asking for change.
