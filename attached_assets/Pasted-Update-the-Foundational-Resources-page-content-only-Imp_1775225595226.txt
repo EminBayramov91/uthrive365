@@ -1,0 +1,50 @@
+Update the “Foundational Resources” page content only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, button styles, borders, icons, and card/block layout exactly the same.
+- Keep the page header title the same: “Foundational Resources”
+- Keep the current overall visual design unchanged.
+- Keep the titles bold as they are now.
+- Do not redesign anything.
+- Do not change the block colors.
+- Do not change the order of the sections.
+- Only replace the text content on this page with the following:
+
+PAGE TITLE:
+Foundational Resources
+
+PAGE SUBTEXT:
+Every journey begins with a single honest look. These resources are your first steps — practical, grounded, and designed to help you see clearly, shift gently, and move forward with intention.
+
+CARD 1
+Label: Intro
+Title: Energy Gain / Energy Drain — Where It All Begins
+Description: Before anything changes, something must be seen. This introduction invites you to start noticing what fills you and what quietly empties you — and why that distinction changes everything.
+Button text: Read Introduction
+
+CARD 2
+Label: 01
+Title: The Patterns That Keep You Here
+Description: Most people aren't stuck because they lack willpower. They're held in place by invisible patterns — inherited beliefs, old identities, and well-practiced habits mistaken for truth. This module names them so they lose their grip.
+Button text: Read Module 01
+
+CARD 3
+Label: 02
+Title: What Is Actually Running Your Life
+Description: Beneath your schedule, your decisions, and your daily reactions lives a deeper architecture — one most people never examine. This module helps you see the forces shaping your life so you can begin choosing differently.
+Button text: Read Module 02
+
+CARD 4
+Label: 03
+Title: Small Shifts, Sacred Change
+Description: Transformation rarely arrives as a dramatic moment. It accumulates — quietly, consistently, in the small choices most people overlook. This module shows you why the ordinary moments are the ones that matter most.
+Button text: Read Module 03
+
+BOTTOM QUOTE:
+“What feels small today may be the beginning of everything.”
+
+After making the changes:
+1. Verify that only the text changed.
+2. Confirm that the layout and colors remain identical to the current page.
+3. Preserve responsiveness across desktop and mobile.

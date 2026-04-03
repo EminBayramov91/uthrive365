@@ -7,29 +7,29 @@ export default function FoundationalResources() {
   const modules = [
     {
       number: "Intro",
-      title: "Introduction: Energy Gain / Energy Drain",
-      description: "A practical introduction to noticing what gives you energy, what drains it, and how to begin seeing your life more clearly through that lens.",
+      title: "Energy Gain / Energy Drain — Where It All Begins",
+      description: "Before anything changes, something must be seen. This introduction invites you to start noticing what fills you and what quietly empties you — and why that distinction changes everything.",
       path: "/energy",
       available: true
     },
     {
       number: "01",
-      title: "Why the First Steps Feel Hard — and Where to Begin",
-      description: "A grounded introduction to why so many people stay stuck in old patterns, why change can feel harder than it should, and how to begin without pressure or overwhelm.",
+      title: "The Patterns That Keep You Here",
+      description: "Most people aren't stuck because they lack willpower. They're held in place by invisible patterns — inherited beliefs, old identities, and well-practiced habits mistaken for truth. This module names them so they lose their grip.",
       path: "/resources/module-01",
       available: true
     },
     {
       number: "02",
-      title: "How to See What's Really Shaping Your Life",
-      description: "A practical guide to recognizing the habits, pressures, reactions, and assumptions that may be influencing your life more than you realize.",
+      title: "What Is Actually Running Your Life",
+      description: "Beneath your schedule, your decisions, and your daily reactions lives a deeper architecture — one most people never examine. This module helps you see the forces shaping your life so you can begin choosing differently.",
       path: "/resources/module-02",
       available: true
     },
     {
       number: "03",
-      title: "Small Shifts, Real Change",
-      description: "An encouraging explanation of how meaningful transformation begins through small, sustainable changes that build momentum over time.",
+      title: "Small Shifts, Sacred Change",
+      description: "Transformation rarely arrives as a dramatic moment. It accumulates — quietly, consistently, in the small choices most people overlook. This module shows you why the ordinary moments are the ones that matter most.",
       path: "/resources/module-03",
       available: true
     }
@@ -39,7 +39,7 @@ export default function FoundationalResources() {
     <MainLayout>
       <PageHeader
         title="Foundational Resources"
-        description="Start with the core ideas and practical tools that help you understand where you are, make meaningful shifts, and begin building momentum for real change."
+        description="Every journey begins with a single honest look. These resources are your first steps — practical, grounded, and designed to help you see clearly, shift gently, and move forward with intention."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-24 space-y-8">
@@ -87,7 +87,7 @@ export default function FoundationalResources() {
               letterSpacing: '0.01em'
             }}
           >
-            "Small shifts create momentum. Momentum creates transformation."
+            "What feels small today may be the beginning of everything."
           </p>
         </div>
       </section>
