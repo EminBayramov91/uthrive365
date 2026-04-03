@@ -139,31 +139,19 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              At U Thrive 365, you'll find practical tools, reflections, and resources designed to help you understand what is shaping your life and begin making meaningful, sustainable shifts.
+              U Thrive 365 offers a structured, soulful path through three phases — each one building on the last.
             </p>
             <p>
-              That includes:
+              The Personal Energy Map is your starting point. A revealing diagnostic that shows you where your energy is actually going, what matters most to you, where satisfaction is low, and where the quiet drain is coming from. You cannot change what you cannot see. The PEM Wheel helps you see.
             </p>
-            <ul className="space-y-3 ml-6">
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>the PEM Wheel, a practical tool for seeing where your energy is going, what may be out of balance, and where to begin</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>foundational resources that introduce the core ideas behind U Thrive 365 and explain how small shifts can build real momentum for change</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>reflections and teachings on patterns, healing, self-awareness, personal growth, and transformation</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-1">•</span>
-                <span>future tools and resources designed to support daily recalibration, better choices, and more intentional living</span>
-              </li>
-            </ul>
             <p>
-              This is not about fixing yourself. It is about learning to understand yourself more clearly, respond to life with greater awareness, and build a healthier, more honest, more sustainable way of living—one meaningful shift at a time.
+              The Foundational Resources give you language and context for what the map reveals — grounded modules that explain why change feels hard, what is actually running your life beneath the surface, and how small, consistent shifts accumulate into something real.
+            </p>
+            <p>
+              The Daily Recalibration keeps you connected between the bigger work — a simple prompt, reflection, or nudge to help you return to yourself and take one aligned step forward each day.
+            </p>
+            <p>
+              This is not about fixing yourself. It is about remembering who you were before the world told you who to be.
             </p>
           </div>
         </section>
