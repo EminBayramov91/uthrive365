@@ -115,16 +115,16 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              U Thrive 365 is for thoughtful, growth-oriented people who sense they are meant for more than the roles, routines, or expectations they have been living inside.
+              This work is for thoughtful, growth-oriented people who sense they have outgrown the life they built — the roles they accepted, the patterns they inherited, the version of themselves they were told to be.
             </p>
             <p>
-              This work resonates especially with women in midlife and beyond—women who have spent years being responsible, capable, successful, and outwardly functional, while quietly carrying old conditioning about what they should be, want, or settle for.
+              You may be outwardly successful and inwardly hollow. You may be facing a health challenge conventional medicine hasn't resolved. You may be emerging from grief, burnout, or a transition that stripped away the old identity before a new one was ready. Or you may simply feel a quiet but persistent pull — toward more aliveness, more truth, more purpose.
             </p>
             <p>
-              It also speaks to others who feel constrained by social expectations, chronic stress, unresolved health challenges, burnout, or the growing realization that the life they built no longer fully reflects who they are—or who they want to become.
+              The common thread is not demographic. It is energetic. Something is draining you in a way you can feel but haven't yet been able to map.
             </p>
             <p>
-              Many people arrive here because they know something needs to change, even if they cannot fully name it yet. They may feel disconnected from themselves, tired of living on autopilot, or aware that they have postponed what matters for too long. This space is for people who are ready to be more honest about what they want, clearer about what is getting in the way, and more intentional about creating a life that feels healthier, more energizing, and more true.
+              That mapping is where this work begins.
             </p>
           </div>
         </section>
