@@ -1,0 +1,51 @@
+Update the About page section “My Story / What Led Me Here” text only.
+
+Important instructions:
+- Keep the existing layout exactly the same.
+- Keep all styling, spacing, colors, fonts, alignment, paragraph spacing, and section structure exactly the same.
+- Do not redesign anything.
+- Do not change the section title.
+- Do not change any other content on the About page.
+- Preserve responsiveness across desktop and mobile.
+- Only replace the body text under this section.
+
+Make these exact changes:
+
+SECTION TITLE:
+Keep exactly as-is:
+My Story / What Led Me Here
+
+SECTION BODY:
+Replace the full current text under “My Story / What Led Me Here” with the following paragraphs exactly as written below:
+
+I didn't come to this work through a curriculum. I came through a breaking point.
+
+For most of my adult life I operated in two worlds simultaneously — and kept them carefully separate. By day I was an engineer, eventually running a multi-million dollar hydraulic systems company, managing complex projects and high-stakes delivery environments with the precision and discipline that world demands. Quietly, in parallel, I was beginning a very different kind of education entirely.
+
+The turning point came in my early forties. The company I was leading had just lost its founder suddenly, and I found myself carrying more responsibility than I had ever held — while quietly running myself into the ground. Poor nutrition. No real recovery. The kind of sustained depletion that high-performers specialize in ignoring because everything still appears to be functioning.
+
+Then my body said no.
+
+Three hospitalizations in three months. A racing heart. Blood pressure that wouldn't settle. Doctors who ran every test available and came back with very little to offer. What they did find was significant — and the intervention they recommended sent me into a level of fear I had never experienced before. What followed were years of panic, nervous system dysregulation, and a dismantling of the identity I had spent decades building.
+
+I could not engineer my way out of it. That was the first real lesson.
+
+What I could do — and did, with everything I had — was begin learning a completely different language. Reiki. Acupuncture. Nutrition. Sound healing. Shamanic practice. Meditation that actually worked. Sedona. Deepak Chopra. Frans Stein. Years of immersion in modalities I would have dismissed entirely five years earlier. I became a Reiki Master. I built a healing practitioner community inside one of our vacant engineering buildings — because by then, both worlds had become equally real to me.
+
+The healing was not linear. It was not dramatic. It was slow, honest, and deeply personal — and it required me to face things I had been avoiding that had nothing to do with medicine.
+
+That is the part I will share more of when the time is right.
+
+What I know now is this: the body keeps the score, but it also holds the map. When I finally stopped trying to override my system and started learning to work with it — removing what was blocking it, trusting what it was designed to do — things began to shift. Not all at once. One honest step at a time.
+
+At 58, I am training to compete in the Ohio State Senior Games. I am building U Thrive 365. I am actively in the arena in every domain I teach.
+
+I am not coaching from theory. I am coaching from the other side of the breakdown — and from the quiet, hard-won knowledge of what it actually takes to come back to yourself.
+
+— Lisa
+
+After making the changes:
+1. Verify that only the body text in this section changed.
+2. Confirm the section title remains exactly the same.
+3. Confirm all colors, layout, spacing, and styling remain unchanged.
+4. Confirm the page still displays correctly on desktop and mobile.

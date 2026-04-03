@@ -52,28 +52,40 @@ export default function About() {
           </h2>
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              I come to this work from an unusual intersection: more than three decades in engineering and highly analytical, structured environments, alongside decades of exploration in healing, personal growth, and holistic modalities.
+              I didn't come to this work through a curriculum. I came through a breaking point.
             </p>
             <p>
-              For much of my life, I worked in systems that valued logic, performance, discipline, and problem-solving. That part of me is real, and it has served me well. But the deeper turning point in my life came in my early forties.
+              For most of my adult life I operated in two worlds simultaneously — and kept them carefully separate. By day I was an engineer, eventually running a multi-million dollar hydraulic systems company, managing complex projects and high-stakes delivery environments with the precision and discipline that world demands. Quietly, in parallel, I was beginning a very different kind of education entirely.
             </p>
             <p>
-              At the time, I was running an engineering consulting company and found myself under an intense level of stress almost overnight. I was working hard, pushing past warning signs, and not taking care of myself the way I should have been. Then I got very sick.
+              The turning point came in my early forties. The company I was leading had just lost its founder suddenly, and I found myself carrying more responsibility than I had ever held — while quietly running myself into the ground. Poor nutrition. No real recovery. The kind of sustained depletion that high-performers specialize in ignoring because everything still appears to be functioning.
             </p>
             <p>
-              What followed was not a quick fix. Over the next several months, I was in and out of hospitals, searching for answers, trying different doctors, and realizing that the problems were not going away. In many ways, it felt like the life I had built had shattered, and rebuilding it would take years.
+              Then my body said no.
             </p>
             <p>
-              That experience changed me. I had to let go of old identities, face fears, and begin looking at health, stress, and life itself in a very different way. During those years, I immersed myself in holistic healing, learning from books, teachers, seminars, retreats, and lived experience. I saw enough real shifts—both in my body and in my life—to convince my engineering mind that there was something here worth paying close attention to.
+              Three hospitalizations in three months. A racing heart. Blood pressure that wouldn't settle. Doctors who ran every test available and came back with very little to offer. What they did find was significant — and the intervention they recommended sent me into a level of fear I had never experienced before. What followed were years of panic, nervous system dysregulation, and a dismantling of the identity I had spent decades building.
             </p>
             <p>
-              Over time, I began to see that people are shaped by patterns, pressures, habits, and internal signals just as powerfully as any external system. That realization changed how I understood health, healing, and transformation.
+              I could not engineer my way out of it. That was the first real lesson.
             </p>
             <p>
-              I rebuilt my life with more awareness, more honesty, and a greater sense of freedom. U Thrive 365 grew out of that journey. This work is deeply personal. It is rooted not only in study, but in lived transformation and in the belief that when we learn to recognize what is no longer working, meaningful change becomes possible.
+              What I could do — and did, with everything I had — was begin learning a completely different language. Reiki. Acupuncture. Nutrition. Sound healing. Shamanic practice. Meditation that actually worked. Sedona. Deepak Chopra. Frans Stein. Years of immersion in modalities I would have dismissed entirely five years earlier. I became a Reiki Master. I built a healing practitioner community inside one of our vacant engineering buildings — because by then, both worlds had become equally real.
             </p>
             <p>
-              One of the clearest lessons I took from that season was this: I wish I had listened sooner. Part of why I do this work now is to help others recognize the signs earlier—before stress, disconnection, or health challenges take more from them than they need to.
+              The healing was not linear. It was not dramatic. It was slow, honest, and deeply personal — and it required me to face things I had been avoiding that had nothing to do with medicine.
+            </p>
+            <p>
+              What I know now is this: the body keeps the score, but it also holds the map. When I finally stopped trying to override my system and started learning to work with it — removing what was blocking it, trusting what it was designed to do — things began to shift. Not all at once. One honest step at a time.
+            </p>
+            <p>
+              At 58, I am training to compete in the Ohio State Senior Games. I am building U Thrive 365. I am actively in the arena in every domain I teach.
+            </p>
+            <p>
+              I am not coaching from theory. I am coaching from the other side of the breakdown — and from the quiet, hard-won knowledge of what it actually takes to come back to yourself.
+            </p>
+            <p className="text-right italic">
+              — Lisa
             </p>
           </div>
         </section>
