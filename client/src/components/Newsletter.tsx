@@ -30,13 +30,13 @@ export default function Newsletter() {
           className="text-lg mb-3 max-w-2xl mx-auto"
           style={{ color: '#E6E0D6' }}
         >
-          Start with a practical snapshot of where you are now—what may be draining your energy, where you may be stuck, and where to begin.
+          Your energy is telling a story right now. The PEM Wheel helps you read it — where it's going, what's draining it, and where to begin reclaiming it.
         </p>
         <p 
           className="text-base mb-8 max-w-xl mx-auto"
           style={{ color: '#E6E0D6', opacity: 0.95 }}
         >
-          Enter your email to access the PEM Wheel and get started.
+          Enter your email to access your free PEM Wheel and take the first honest look.
         </p>
 
         {subscribe.isSuccess ? (

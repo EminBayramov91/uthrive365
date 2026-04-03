@@ -1,0 +1,46 @@
+Update the home page PEM Wheel signup section only.
+
+Important instructions:
+- Keep the existing layout, colors, fonts, spacing, border radius, shadows, and overall design style the same.
+- Do not change the section heading.
+- Do not change the CTA button text.
+- Only update the two lines of copy requested below.
+- Fix the email input placeholder in code so it reads exactly: "Enter your email address"
+- If needed for better fit, slightly widen the email input field or stack the input above the CTA button on smaller widths only.
+- Preserve the current desktop look as much as possible.
+- Maintain responsiveness across desktop and mobile.
+- Do not redesign the section.
+
+Make these exact changes in the home page section:
+
+HEADING:
+Keep exactly as-is:
+Take the Free PEM Wheel Assessment
+
+SUBTEXT:
+Replace the current subtext with:
+Your energy is telling a story right now. The PEM Wheel helps you read it — where it's going, what's draining it, and where to begin reclaiming it.
+
+EMAIL PROMPT LINE:
+Replace the current email prompt line with:
+Enter your email to access your free PEM Wheel and take the first honest look.
+
+CTA BUTTON:
+Keep exactly as-is:
+Get the Free PEM Wheel
+
+EMAIL INPUT PLACEHOLDER:
+Make sure the placeholder text in the code is exactly:
+Enter your email address
+
+LAYOUT NOTE:
+- The full placeholder text must exist correctly in the code even if it appears visually shortened on some smaller screens.
+- If needed, make the input slightly larger so the full placeholder fits better.
+- If that creates layout issues, stack the email input above the button rather than shrinking or altering the design too much.
+
+After making the changes:
+1. Verify that only this PEM Wheel signup section was changed.
+2. Confirm the heading and CTA button text remain exactly unchanged.
+3. Confirm the placeholder in code includes the full word "address".
+4. Take a screenshot of the updated section for comparison.
+5. Then stop so we can move on to the About page next.
