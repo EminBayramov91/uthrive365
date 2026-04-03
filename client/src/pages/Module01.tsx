@@ -20,7 +20,7 @@ export default function Module01() {
         {/* Header */}
         <div className="mb-12 pb-8 border-b border-border">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
-            Why the First Steps Feel Hard — and Where to Begin
+            The Patterns That Keep You Here
           </h1>
           <p className="text-lg text-muted-foreground">
             Module 01 · 5-minute read
@@ -30,13 +30,13 @@ export default function Module01() {
         {/* Content */}
         <div className="space-y-6 text-lg text-foreground leading-relaxed">
           <p>
-            Most people do not resist change because they are lazy, weak, or not motivated enough.
+            Most people don't arrive at a moment of change because they suddenly became motivated. They arrive because something finally got loud enough to hear.
           </p>
           <p>
-            They resist change because, for a long time, they have been living inside patterns that feel normal.
+            For years — sometimes decades — life has been running a program in the background. Familiar patterns. Inherited beliefs. Automatic reactions mistaken for personality. And because those patterns feel normal, they are almost impossible to see from inside them. That is not a character flaw. It is simply how deeply the human system learns to protect what it knows.
           </p>
           <p>
-            They have been moving quickly. Taking care of responsibilities. Managing schedules. Showing up for work. Taking care of family. Handling the next thing, and then the next thing after that. For many people, life starts to feel less like something they are consciously living and more like an obstacle course they are trying to get through. They keep telling themselves that next week will be better, next month will be calmer, and eventually they will have time to focus on themselves. But that time often never arrives on its own.
+            They have been moving quickly. Taking care of responsibilities. Managing schedules. Showing up for work. Taking care of family. Handling the next thing, and then the next thing after that. For many people, life starts to feel less like something they are consciously living and more like an obstacle course they are trying to get through. They keep telling themselves that next week will be better, next month will be calmer, and eventually they will have time to focus on themselves.
           </p>
           <p>
             That is one reason change feels hard.
@@ -273,37 +273,28 @@ export default function Module01() {
             For now, that is enough.
           </p>
           <p>
-            Your only job this week is to notice.
+            Your only job right now is to notice.
           </p>
           <p>
-            Notice one repeating pattern.
+            Not fix. Not solve. Not overhaul.
           </p>
           <p>
-            Notice one energy leak.
+            Notice one repeating pattern. One energy leak. One habit, thought, or reaction that may be shaping your life more than you realized.
           </p>
           <p>
-            Notice one habit, thought, reaction, or routine that may be shaping your life more than you realized.
+            Don't judge it. Don't rush past it. Just let yourself see it clearly — perhaps for the first time.
           </p>
           <p>
-            Do not judge it.
+            Because awareness is not a passive act. It is the first courageous step. It is the moment the pattern loses its invisibility — and invisibility is the only power it ever had.
           </p>
           <p>
-            Just notice it.
+            That is where real change begins.
           </p>
           <p>
-            Because that is where real change begins.
+            Not with force. Not with shame. With a single honest look.
           </p>
           <p>
-            Not with shame.
-          </p>
-          <p>
-            Not with force.
-          </p>
-          <p>
-            With awareness.
-          </p>
-          <p>
-            And from there, you can begin.
+            And from that look, everything becomes possible.
           </p>
         </div>
       </article>
