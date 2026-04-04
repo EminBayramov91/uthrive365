@@ -329,7 +329,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA]">
         <div className="max-w-full mx-auto text-center overflow-x-auto">
           <p 
-            className="text-2xl md:text-4xl lg:text-5xl font-bold font-display text-primary whitespace-nowrap inline-block"
+            className="text-lg md:text-3xl lg:text-4xl font-bold font-display text-primary whitespace-nowrap inline-block"
             style={{
               letterSpacing: '0.01em'
             }}
