@@ -233,20 +233,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Daily Rotating Quote Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA]">
-        <div className="max-w-3xl mx-auto text-center">
-          <p 
-            className="text-3xl md:text-5xl lg:text-6xl font-bold font-display leading-relaxed text-primary"
-            style={{
-              letterSpacing: '0.01em'
-            }}
-          >
-            "{getTodayQuote()}"
-          </p>
-        </div>
-      </section>
-
       {/* Framework Section */}
       <section className="py-24 px-4 bg-[#DDE8E2]">
         <div className="max-w-3xl mx-auto text-center">
@@ -336,6 +322,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Daily Rotating Quote Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA]">
+        <div className="max-w-3xl mx-auto text-center">
+          <p 
+            className="text-3xl md:text-5xl lg:text-6xl font-bold font-display leading-relaxed text-primary"
+            style={{
+              letterSpacing: '0.01em'
+            }}
+          >
+            "{getTodayQuote()}"
+          </p>
         </div>
       </section>
 
