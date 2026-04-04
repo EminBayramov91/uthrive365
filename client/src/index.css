@@ -90,3 +90,18 @@
 .animate-spin-pulse {
   animation: spin-pulse 2s infinite;
 }
+
+/* Scrolling quote animation */
+@keyframes scroll-quote {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-quote {
+  animation: scroll-quote 35s linear infinite;
+  will-change: transform;
+}

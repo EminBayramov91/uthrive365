@@ -326,10 +326,10 @@ export default function Home() {
       </section>
 
       {/* Daily Rotating Quote Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA]">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA] overflow-hidden">
+        <div className="relative h-24 flex items-center">
           <p 
-            className="text-base md:text-2xl lg:text-3xl font-bold font-display text-primary"
+            className="text-base md:text-2xl lg:text-3xl font-bold font-display text-primary animate-scroll-quote whitespace-nowrap"
             style={{
               letterSpacing: '0.01em'
             }}
