@@ -327,9 +327,9 @@ export default function Home() {
 
       {/* Daily Rotating Quote Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA]">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-full mx-auto text-center overflow-x-auto">
           <p 
-            className="text-3xl md:text-5xl lg:text-6xl font-bold font-display leading-relaxed text-primary"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold font-display text-primary whitespace-nowrap inline-block"
             style={{
               letterSpacing: '0.01em'
             }}
