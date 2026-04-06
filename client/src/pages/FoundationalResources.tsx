@@ -39,7 +39,7 @@ export default function FoundationalResources() {
     <MainLayout>
       <PageHeader
         title="Foundational Resources"
-        description="Every journey begins with a single honest look. These resources are your first steps — practical, grounded, and designed to help you see clearly, shift gently, and move forward with intention."
+        description="These resources are your starting point — practical, grounded, and designed to cut through the noise, name what's actually running your life, and give you the clarity to move forward with intention."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-24 space-y-8">
