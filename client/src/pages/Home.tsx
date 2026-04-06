@@ -3,7 +3,7 @@ import Newsletter from "@/components/Newsletter";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Compass, Sparkles, RefreshCcw, ArrowRight } from "lucide-react";
-import lisaPhoto from "@assets/OoyIfIo2E788hVgX_1775047543366.png";
+import lisaPhoto from "@assets/hn7HaSnQUTFaJWJ2_1775489779357.png";
 
 // Daily rotating quotes
 const dailyQuotes = [
