@@ -181,7 +181,7 @@ export default function About() {
               You don't need to have everything figured out before you begin.
             </p>
             <p>
-              You only need a willingness to pause, look honestly at what is no longer working, and consider that a truer way of living is possible — and closer than it appears.
+              You only need enough honesty to admit something isn't working and enough courage to look at why.
             </p>
             <p>
               If something in your life is not sitting right. If "fine" no longer feels good enough. If some part of you is ready for more — pay attention to that. There may be a reason you found your way here.
