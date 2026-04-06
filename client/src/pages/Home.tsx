@@ -307,9 +307,9 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="flex-1 relative flex items-center justify-center">
+            <div className="flex-1 relative flex items-center justify-center -ml-8">
               {/* Foundational Resources SVG Graphic */}
-              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="max-w-md">
+              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="max-w-lg scale-125 origin-center">
                 <defs>
                   <clipPath id="card-clip">
                     <rect x="140" y="40" width="400" height="340" rx="16"/>
