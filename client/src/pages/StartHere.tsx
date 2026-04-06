@@ -38,7 +38,7 @@ export default function StartHere() {
     <MainLayout>
       <PageHeader 
         title="Start Here" 
-        description="You don't need a perfect plan. You need an honest starting point. These three steps will help you see where you are, understand what's shaping your experience, and begin moving toward a life that feels more genuinely yours."
+        description="You've already tried things. You know something needs to shift. You're just not sure what or why nothing has fully landed yet. These three steps cut through that. No hand-holding, just clarity."
       />
 
       <div className="max-w-4xl mx-auto px-4 pb-12 space-y-8">
