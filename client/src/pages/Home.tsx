@@ -307,19 +307,60 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="flex-1 relative">
-              {/* Abstract graphic representing modules */}
-              <div className="aspect-square max-w-md mx-auto relative">
-                <div className="absolute inset-0 bg-[#B8A58C] rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute inset-8 bg-gradient-to-tr from-[#3F5F56] to-[#B8A58C]/80 rounded-3xl rotate-12 opacity-80 backdrop-blur-3xl shadow-2xl"></div>
-                <div className="absolute inset-12 bg-white rounded-2xl -rotate-6 shadow-xl flex items-center justify-center p-8 border border-[#E7DED2]">
-                  <div className="text-center">
-                    <Sparkles className="w-12 h-12 text-[#B8A58C] mx-auto mb-4" />
-                    <h3 className="font-display font-bold text-xl mb-2 text-primary">Introduction</h3>
-                    <p className="text-sm text-muted-foreground">Energy Gain / Energy Drain</p>
-                  </div>
-                </div>
-              </div>
+            <div className="flex-1 relative flex items-center justify-center">
+              {/* Foundational Resources SVG Graphic */}
+              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="max-w-md">
+                <defs>
+                  <clipPath id="card-clip">
+                    <rect x="140" y="40" width="400" height="340" rx="16"/>
+                  </clipPath>
+                </defs>
+
+                <rect x="140" y="40" width="400" height="340" rx="16" fill="#2d4a3e"/>
+
+                <g clipPath="url(#card-clip)">
+                  <ellipse cx="340" cy="520" rx="280" ry="220" fill="#1e3329" opacity="0.7"/>
+                  <ellipse cx="200" cy="180" rx="120" ry="80" fill="#3d6b54" opacity="0.4"/>
+                  <ellipse cx="480" cy="300" rx="100" ry="70" fill="#3d6b54" opacity="0.3"/>
+
+                  <line x1="200" y1="80" x2="480" y2="80" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="200" y1="110" x2="480" y2="110" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="200" y1="140" x2="480" y2="140" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="200" y1="170" x2="480" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+
+                  <line x1="200" y1="80" x2="200" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="250" y1="80" x2="250" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="300" y1="80" x2="300" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="350" y1="80" x2="350" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="400" y1="80" x2="400" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="450" y1="80" x2="450" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <line x1="480" y1="80" x2="480" y2="170" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+
+                  <circle cx="340" cy="240" r="90" fill="none" stroke="#c8a96e" strokeWidth="0.8" opacity="0.5"/>
+                  <circle cx="340" cy="240" r="65" fill="none" stroke="#c8a96e" strokeWidth="0.5" opacity="0.4"/>
+                  <circle cx="340" cy="240" r="40" fill="none" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3"/>
+
+                  <line x1="340" y1="150" x2="340" y2="330" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3"/>
+                  <line x1="250" y1="240" x2="430" y2="240" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3"/>
+                  <line x1="276" y1="176" x2="404" y2="304" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3"/>
+                  <line x1="404" y1="176" x2="276" y2="304" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3"/>
+
+                  <path d="M180 360 Q220 320 260 340 Q300 360 330 320 Q360 280 400 300 Q430 315 460 290 Q490 265 510 280" fill="none" stroke="#5a8f6a" strokeWidth="2" opacity="0.8"/>
+                  <path d="M140 380 Q200 350 260 365 Q320 380 370 350 Q420 320 480 335 Q520 345 540 360" fill="none" stroke="#4a7a5a" strokeWidth="1.5" opacity="0.6"/>
+
+                  <circle cx="340" cy="240" r="8" fill="#c8a96e" opacity="0.9"/>
+                  <circle cx="340" cy="240" r="3" fill="#f0d9a0"/>
+                </g>
+
+                <rect x="140" y="40" width="400" height="340" rx="16" fill="none" stroke="#c8a96e" strokeWidth="1" opacity="0.4"/>
+
+                <text x="340" y="346" textAnchor="middle" fontFamily="Georgia, serif" fontSize="13" fill="#f0d9a0" opacity="0.95" letterSpacing="3">FOUNDATIONAL RESOURCES</text>
+                <text x="340" y="366" textAnchor="middle" fontFamily="Georgia, serif" fontSize="10" fill="#c8a96e" opacity="0.7" letterSpacing="1">map · build · become</text>
+
+                <text x="174" y="100" fontFamily="Georgia, serif" fontSize="9" fill="#c8a96e" opacity="0.55" letterSpacing="1">STRUCTURE</text>
+                <text x="420" y="290" fontFamily="Georgia, serif" fontSize="9" fill="#5a8f6a" opacity="0.6" letterSpacing="1">FLOW</text>
+                <text x="290" y="258" fontFamily="Georgia, serif" fontSize="9" fill="#c8a96e" opacity="0.5" letterSpacing="1">CENTRE</text>
+              </svg>
             </div>
           </div>
         </div>
