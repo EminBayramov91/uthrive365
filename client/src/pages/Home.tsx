@@ -309,7 +309,7 @@ export default function Home() {
             
             <div className="flex-1 relative flex items-center justify-center -ml-8">
               {/* Foundational Resources SVG Graphic */}
-              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="max-w-2xl scale-150 origin-center">
+              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="max-w-2xl origin-center" style={{transform: 'scale(1.65)'}}>
                 <defs>
                   <clipPath id="card-clip">
                     <rect x="140" y="40" width="400" height="340" rx="16"/>
