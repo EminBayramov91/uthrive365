@@ -13,7 +13,7 @@ export default function Navbar() {
     { label: "Start Here", path: "/start" },
     { label: "About", path: "/about" },
     { label: "Foundational Resources", path: "/resources" },
-    { label: "Book", path: "/", hash: "#book" },
+    { label: "Book", path: "/#book" },
     { label: "Blog", path: "/blog" },
     { label: "PEM Wheel", path: "/pem" },
     { label: "Contact", path: "/contact" },
@@ -43,7 +43,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <Link
                 key={link.path}
-                href={link.hash ? `${link.path}${link.hash}` : link.path}
+                href={link.path}
                 className={`text-sm font-medium transition-all duration-200 hover:text-[#2D453E] hover:underline underline-offset-4 decoration-2 ${
                   location === link.path ? "text-[#3F5F56] underline" : "text-[#3F5F56]/80"
                 }`}
@@ -83,7 +83,7 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
-                  href={link.hash ? `${link.path}${link.hash}` : link.path}
+                  href={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`p-4 rounded-xl text-base font-medium transition-colors ${
                     location === link.path
