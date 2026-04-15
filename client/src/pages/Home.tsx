@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Compass, Sparkles, RefreshCcw, ArrowRight } from "lucide-react";
 import lisaPhoto from "@assets/hn7HaSnQUTFaJWJ2_1775489779357.png";
+import pemBookCover from "@assets/Social_Media-3_1776252269811.png";
 
 // Daily rotating quotes
 const dailyQuotes = [
@@ -239,7 +240,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 flex items-center justify-center">
               <img
-                src={lisaPhoto}
+                src={pemBookCover}
                 alt="The Personal Energy Map book cover"
                 className="w-full max-w-md rounded-3xl shadow-lg object-cover"
               />
