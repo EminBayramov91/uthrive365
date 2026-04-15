@@ -234,42 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Book Section */}
-      <section className="py-20 px-4 bg-[#DDE8E2]">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="flex-1 flex items-center justify-center">
-              <img
-                src={pemBookCover}
-                alt="The Personal Energy Map book cover"
-                className="w-full max-w-md rounded-3xl shadow-lg object-cover"
-              />
-            </div>
-            <div className="flex-1 space-y-6">
-              <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">
-                The Personal Energy Map
-              </h2>
-              <p className="text-lg text-foreground leading-relaxed">
-                See your life clearly—what matters, where your energy is going, and what’s quietly asking for attention.
-                In minutes, you’ll uncover patterns most people never stop long enough to see.
-              </p>
-              <div className="pt-2 space-y-3">
-                <a
-                  href="#"
-                  role="button"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors shadow-md"
-                >
-                  Get the Book on Amazon
-                </a>
-                <p className="text-sm text-muted-foreground">
-                  Or start with the free PEM Wheel below
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Framework Section */}
       <section className="py-24 px-4 bg-[#DDE8E2]">
         <div className="max-w-3xl mx-auto text-center">
@@ -398,6 +362,42 @@ export default function Home() {
                 <text x="420" y="290" fontFamily="Georgia, serif" fontSize="9" fill="#5a8f6a" opacity="0.6" letterSpacing="1">FLOW</text>
                 <text x="290" y="258" fontFamily="Georgia, serif" fontSize="9" fill="#c8a96e" opacity="0.5" letterSpacing="1">CENTRE</text>
               </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Book Section */}
+      <section className="py-20 px-4 bg-[#DDE8E2]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="flex-1 flex items-center justify-center">
+              <img
+                src={pemBookCover}
+                alt="The Personal Energy Map book cover"
+                className="w-full max-w-md rounded-3xl shadow-lg object-cover"
+              />
+            </div>
+            <div className="flex-1 space-y-6">
+              <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">
+                The Personal Energy Map
+              </h2>
+              <p className="text-lg text-foreground leading-relaxed">
+                See your life clearly—what matters, where your energy is going, and what’s quietly asking for attention.
+                In minutes, you’ll uncover patterns most people never stop long enough to see.
+              </p>
+              <div className="pt-2 space-y-3">
+                <a
+                  href="#"
+                  role="button"
+                  className="inline-flex items-center justify-center px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors shadow-md"
+                >
+                  Get the Book on Amazon
+                </a>
+                <p className="text-sm text-muted-foreground">
+                  Or start with the free PEM Wheel below
+                </p>
+              </div>
             </div>
           </div>
         </div>
