@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
   }
 
+  #book {
+    scroll-margin-top: 120px;
+  }
+
   :root {
     --font-sans: 'Plus Jakarta Sans', sans-serif;
     --font-display: 'Outfit', sans-serif;
