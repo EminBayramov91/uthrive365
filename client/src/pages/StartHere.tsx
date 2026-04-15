@@ -41,7 +41,7 @@ export default function StartHere() {
         <img
           src={hikerImage}
           alt="Hiker on a mountain trail"
-          className="w-full h-[360px] md:h-[410px] lg:h-[430px] object-cover object-[left_40%]"
+          className="w-full h-[400px] md:h-[450px] lg:h-[480px] object-cover object-[left_40%]"
         />
       </div>
       <PageHeader 
