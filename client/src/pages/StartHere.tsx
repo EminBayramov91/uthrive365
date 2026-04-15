@@ -37,11 +37,11 @@ export default function StartHere() {
 
   return (
     <MainLayout>
-      <div className="w-full overflow-hidden">
+      <div className="w-full max-w-[92%] mx-auto overflow-hidden rounded-3xl">
         <img
           src={hikerImage}
           alt="Hiker on a mountain trail"
-          className="w-full h-[320px] md:h-[380px] lg:h-[400px] object-cover object-[left_top]"
+          className="w-full h-[360px] md:h-[400px] lg:h-[420px] object-cover object-[left_center]"
         />
       </div>
       <PageHeader 
