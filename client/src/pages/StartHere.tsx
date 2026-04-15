@@ -2,7 +2,7 @@ import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { PieChart, RefreshCcw, BookOpen } from "lucide-react";
-import hikerImage from "@assets/image_1775500702352.png";
+import hikerImage from "@assets/iStock-687519852_1776255504610.jpg";
 
 export default function StartHere() {
   const steps = [
