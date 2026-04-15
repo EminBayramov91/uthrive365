@@ -13,7 +13,7 @@ export default function Navbar() {
     { label: "Start Here", path: "/start" },
     { label: "About", path: "/about" },
     { label: "Foundational Resources", path: "/resources" },
-    { label: "Book", path: "/#book" },
+    { label: "Book", path: "#book" },
     { label: "Blog", path: "/blog" },
     { label: "PEM Wheel", path: "/pem" },
     { label: "Contact", path: "/contact" },
