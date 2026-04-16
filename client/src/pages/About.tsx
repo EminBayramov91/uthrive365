@@ -1,12 +1,20 @@
 import MainLayout from "@/components/layout/MainLayout";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import aboutHero from "@assets/about_page_1776346223470.webp";
 
 export default function About() {
   return (
     <MainLayout>
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-4 py-20 text-center">
+        <div className="w-full max-w-[86%] mx-auto overflow-hidden rounded-3xl mb-8">
+          <img
+            src={aboutHero}
+            alt="About U Thrive 365 hero image"
+            className="w-full h-[400px] md:h-[450px] lg:h-[480px] object-cover object-center"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-3">
           About U Thrive 365
         </h1>
