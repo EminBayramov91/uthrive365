@@ -2,6 +2,7 @@ import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { BookOpen, ArrowRight, Clock } from "lucide-react";
+import foundationalHero from "@assets/foundational-resources-hero_1776342701114.webp";
 
 export default function FoundationalResources() {
   const modules = [
@@ -37,7 +38,15 @@ export default function FoundationalResources() {
 
   return (
     <MainLayout>
+      <div className="w-full max-w-[86%] mx-auto overflow-hidden rounded-3xl">
+        <img
+          src={foundationalHero}
+          alt="Foundational resources hero image"
+          className="w-full h-[400px] md:h-[450px] lg:h-[480px] object-cover object-center"
+        />
+      </div>
       <PageHeader
+        className="mt-8"
         title="Foundational Resources"
         description="These resources are your starting point — practical, grounded, and designed to cut through the noise, name what's actually running your life, and give you the clarity to move forward with intention."
       />
