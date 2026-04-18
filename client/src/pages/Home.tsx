@@ -249,7 +249,7 @@ export default function Home() {
             </p>
             
             <p>
-              The PEM Wheel assessment is free. For a deeper explanation of how to use and interpret it, see <em>The Personal Energy Map (PEM) Wheel: A Practical Guide</em>, available on Amazon.
+              The PEM Wheel assessment is free. For a deeper explanation of how to use and interpret it, see <em>The Personal Energy Map</em>. Available on Amazon.
             </p>
           </div>
 
