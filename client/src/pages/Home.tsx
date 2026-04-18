@@ -354,7 +354,7 @@ export default function Home() {
       </section>
 
       {/* Book Section */}
-      <section id="book" className="py-24 px-4 bg-[#DDE8E2]">
+      <section id="book" className="py-28 px-4 bg-[#DDE8E2]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1 flex items-center justify-center">
