@@ -16,10 +16,10 @@ export default function Footer() {
           <div className="flex-1 flex items-center justify-center">
             <div className="flex items-center gap-6">
               <a href="https://instagram.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-accent hover:text-primary-foreground transition-colors">
-                <FaInstagram className="w-6 h-6" />
+                <FaInstagram className="w-7 h-7" color="currentColor" />
               </a>
               <a href="https://facebook.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-accent hover:text-primary-foreground transition-colors">
-                <FaFacebookF className="w-6 h-6" />
+                <FaFacebookF className="w-7 h-7" color="currentColor" />
               </a>
             </div>
           </div>
