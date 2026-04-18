@@ -60,7 +60,7 @@ export default function Newsletter() {
               disabled={subscribe.isPending}
               className="px-8 py-4 bg-[#B8A58C] text-white font-bold rounded-xl hover:bg-[#A99379] hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none whitespace-nowrap"
             >
-              {subscribe.isPending ? "Accessing..." : "Get the Free PEM Wheel"}
+              {subscribe.isPending ? "Accessing..." : "PEM Assessment"}
               {!subscribe.isPending && <Send className="w-4 h-4" />}
             </button>
           </form>
