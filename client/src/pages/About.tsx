@@ -204,14 +204,8 @@ export default function About() {
             {/* Optional CTA */}
             <div className="pt-8 flex gap-4 flex-col sm:flex-row">
               <Link
-                href="#pem-section"
+                href="/pem"
                 role="button"
-                onClick={() => {
-                  const element = document.getElementById('pem-section');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 transition-all"
               >
                 Start with the PEM Wheel <ArrowRight className="w-5 h-5" />
