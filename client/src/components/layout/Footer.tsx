@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Instagram, Facebook, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -15,10 +16,10 @@ export default function Footer() {
           <div className="flex-1 flex items-center justify-center">
             <div className="flex items-center gap-6">
               <a href="https://instagram.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-accent hover:text-primary-foreground transition-colors">
-                <Instagram className="w-6 h-6" />
+                <FaInstagram className="w-6 h-6" />
               </a>
               <a href="https://facebook.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-accent hover:text-primary-foreground transition-colors">
-                <Facebook className="w-6 h-6" />
+                <FaFacebookF className="w-6 h-6" />
               </a>
             </div>
           </div>
