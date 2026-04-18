@@ -208,7 +208,7 @@ export default function About() {
                 role="button"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 transition-all"
               >
-                Start with the PEM Wheel <ArrowRight className="w-5 h-5" />
+                PEM Assessment <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/start"
