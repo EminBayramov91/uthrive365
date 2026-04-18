@@ -38,11 +38,11 @@ export default function FoundationalResources() {
 
   return (
     <MainLayout>
-      <div className="w-full max-w-[86%] mx-auto overflow-hidden rounded-3xl">
+      <div className="w-full max-w-[79%] mx-auto overflow-hidden rounded-3xl">
         <img
           src={foundationalHero}
           alt="Foundational resources hero image"
-          className="w-full h-[400px] md:h-[450px] lg:h-[480px] object-cover object-center"
+          className="w-full h-[368px] md:h-[414px] lg:h-[442px] object-cover object-center"
         />
       </div>
       <PageHeader
