@@ -374,7 +374,7 @@ export default function Home() {
               </p>
               <div className="pt-2 space-y-3">
                 <a
-                  href="#"
+                  href="https://a.co/d/02CKvJh6"
                   role="button"
                   className="inline-flex items-center justify-center px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors shadow-md"
                 >
