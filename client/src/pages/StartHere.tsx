@@ -11,7 +11,7 @@ export default function StartHere() {
       title: "Take the PEM Wheel Assessment",
       description: "The first act of change is seeing clearly. The Personal Energy Map gives you an honest snapshot of where your energy is actually going — what matters most, what's being neglected, and where the quiet drain is coming from.",
       icon: PieChart,
-      action: "Take Assessment",
+      action: "PEM Assessment",
       link: "#pem-section",
       disabled: false
     },
