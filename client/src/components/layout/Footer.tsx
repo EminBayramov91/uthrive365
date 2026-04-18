@@ -12,8 +12,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex-1">
-            <div className="flex items-center justify-center gap-5">
+          <div className="flex-1 flex items-center justify-center">
+            <div className="flex items-center gap-6">
               <a href="https://instagram.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-accent hover:text-primary-foreground transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
