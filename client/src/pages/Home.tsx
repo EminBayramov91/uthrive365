@@ -374,7 +374,7 @@ export default function Home() {
               </p>
               <div className="pt-2 space-y-3">
                 <a
-                  href="https://a.co/d/02CKvJh6"
+                  href="https://www.amazon.com/Personal-Energy-Map-Lisa-Fitzharris-ebook/dp/B0GXGYVTVW/ref=sr_1_1?crid=198ZWR0FJ7ULD&dib=eyJ2IjoiMSJ9.rBnk-eUul9oK-4kvApljtg.smgOebqqwLTMTjBVnsEXuCxWxCEwNhqdqaScJalqr8k&dib_tag=se&keywords=the+personal+energy+map+lisa+fitzharris&qid=1776516034&sprefix=the+personal+enegy+map+lisa+fitzharris%2Caps%2C138&sr=8-1#detailBullets_feature_div"
                   role="button"
                   className="inline-flex items-center justify-center px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors shadow-md"
                 >
