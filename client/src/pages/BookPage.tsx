@@ -20,6 +20,18 @@ export default function BookPage() {
             <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-2xl">
               A practical guide to seeing where your energy is going and what to do next.
             </p>
+            <div className="space-y-4 text-foreground leading-relaxed max-w-2xl">
+              <p>
+                Most people sense something is off — but can&apos;t name it. This book gives you a simple, honest framework to see exactly where your energy is going, what&apos;s quietly draining you, and where to begin reclaiming it.
+              </p>
+              <p className="font-semibold">This book is for you if:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>You&apos;re high-achieving but running on empty</li>
+                <li>You know something needs to change but can&apos;t see where to start</li>
+                <li>You want a practical tool, not another theory</li>
+              </ul>
+              <p>Available on Kindle for $4.99.</p>
+            </div>
             <a
               href="https://www.amazon.com/dp/B0GXGYVTVW"
               target="_blank"
