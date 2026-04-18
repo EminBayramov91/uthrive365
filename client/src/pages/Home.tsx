@@ -222,12 +222,6 @@ export default function Home() {
               </div>
 
               <div className="pt-2">
-                <a
-                  href="#"
-                  className="inline-block text-primary hover:text-primary/80 font-semibold transition-colors"
-                >
-                  Learn more about Lisa →
-                </a>
               </div>
             </div>
           </div>
