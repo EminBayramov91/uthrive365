@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Compass, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,30 +7,25 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 lg:gap-8 mb-8">
           <div className="flex-1 space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Compass className="w-8 h-8 text-accent" />
-              <span className="font-display font-bold text-2xl tracking-tight">
-                uThrive 365
-              </span>
-            </Link>
-            <p className="text-primary-foreground/80 max-w-lg text-sm leading-relaxed">
-              Is there more life in you than the life you're living right now?
-            </p>
+            <div className="font-display font-bold text-2xl tracking-tight text-accent">
+              U Thrive 365
+            </div>
           </div>
 
           <div className="flex-1">
-            <h4 className="font-display font-semibold text-base mb-4 text-accent">Explore</h4>
-            <ul className="space-y-3">
-              <li><Link href="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Home</Link></li>
-              <li><Link href="/start" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Start Here</Link></li>
-              <li><Link href="/about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">About</Link></li>
-              <li><Link href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">Contact</Link></li>
-            </ul>
+            <div className="flex items-center justify-center gap-5">
+              <a href="https://instagram.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-accent hover:text-primary-foreground transition-colors">
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a href="https://facebook.com/profile" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-accent hover:text-primary-foreground transition-colors">
+                <Facebook className="w-6 h-6" />
+              </a>
+            </div>
           </div>
 
           <div className="flex-1">
             <h4 className="font-display font-semibold text-base mb-4 text-accent">Get in Touch</h4>
-            <div className="flex items-center gap-2 text-primary-foreground/80 text-sm">
+            <div className="flex items-center gap-2 text-primary-foreground/80 text-base">
               <Mail className="w-4 h-4" />
               <span>hello@uthrive365.com</span>
             </div>
