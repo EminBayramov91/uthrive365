@@ -17,7 +17,7 @@ export default function Footer() {
               <a href="https://instagram.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-accent hover:text-primary-foreground transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://facebook.com/profile" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-accent hover:text-primary-foreground transition-colors">
+              <a href="https://facebook.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-accent hover:text-primary-foreground transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
             </div>
