@@ -25,6 +25,7 @@ import BlogPost4 from "@/pages/BlogPost4";
 import BlogPost5 from "@/pages/BlogPost5";
 import WeekMarch30 from "@/pages/WeekMarch30";
 import Quiz from "@/pages/Quiz";
+import BookPage from "@/pages/BookPage";
 
 function Router() {
   return (
@@ -49,6 +50,7 @@ function Router() {
       <Route path="/pem" component={PEMWheel} />
       <Route path="/pem/help" component={PEMWheelHelp} />
       <Route path="/energy" component={EnergyGainDrain} />
+      <Route path="/book" component={BookPage} />
       
       {/* Fallback to 404 */}
       <Route component={NotFound} />
