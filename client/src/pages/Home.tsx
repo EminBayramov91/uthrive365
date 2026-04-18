@@ -289,6 +289,7 @@ export default function Home() {
               </ul>
               <div className="pt-4">
                 <Link href="/resources" className="inline-flex items-center text-primary font-bold hover:text-accent transition-colors gap-2">
+                href="/resources#top"
                   Explore the Resources <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
