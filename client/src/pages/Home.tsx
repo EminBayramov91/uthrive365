@@ -380,10 +380,10 @@ export default function Home() {
                   role="button"
                   className="inline-flex items-center justify-center px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors shadow-md"
                 >
-                  PEM assessment
+                  PEM Wheel Assessment
                 </a>
                 <p className="text-sm text-muted-foreground">
-                  Or start with the free PEM Wheel below
+                  Or start with the PEM Wheel Assessment below
                 </p>
               </div>
             </div>
