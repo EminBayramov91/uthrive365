@@ -110,7 +110,7 @@ export default function Home() {
         {/* Subtle Noise/Texture Overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-1"></div>
         
-        <div className="max-w-5xl mx-auto text-left relative z-10 py-20 pl-[30px] pr-0 ml-0 mt-[80px]">
+        <div className="max-w-5xl mx-auto text-left relative z-10 py-20 pl-[80px] pr-0 ml-0 mt-[120px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
