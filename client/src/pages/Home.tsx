@@ -87,7 +87,7 @@ export default function Home() {
       <section 
         className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden bg-cover bg-center"
         style={{ 
-          backgroundImage: `url('/images/hero-ut365.jpg')`
+          backgroundImage: `url(@assets/spiral-hero-webp_1776712238879.webp)`
         }}
       >
         {/* Adjusted Background Overlay */}
