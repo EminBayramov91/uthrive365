@@ -216,6 +216,15 @@ export default function Home() {
               <p className="text-lg text-foreground leading-relaxed">
                 Now I bring those worlds together here — engineering precision, athletic discipline, and deep curiosity about what helps people thrive — to help people step off autopilot and live from what is actually true for them.
               </p>
+              <div className="pt-2">
+                <Link
+                  href="/about"
+                  role="button"
+                  className="px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+                >
+                  Learn More About My Journey
+                </Link>
+              </div>
             </div>
           </div>
         </div>
