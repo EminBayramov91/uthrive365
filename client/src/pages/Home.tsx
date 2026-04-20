@@ -208,9 +208,6 @@ export default function Home() {
                 </p>
               </div>
               <p className="text-lg text-foreground leading-relaxed">
-                I’m Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.
-              </p>
-              <p className="text-lg text-foreground leading-relaxed">
                 For 30 years, I designed complex hydraulic systems from the ground up. At the same time, I spent 25 years studying a different kind of system: the human one — through meditation, energy work, sound, and other practices that kept bringing me back to the question of what it means to live in genuine alignment.
               </p>
               <p className="text-lg text-foreground leading-relaxed">
