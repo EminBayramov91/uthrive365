@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Compass, Sparkles, RefreshCcw, ArrowRight } from "lucide-react";
 import lisaPhoto from "@assets/hn7HaSnQUTFaJWJ2_1775489779357.png";
 import pemBookCover from "@assets/Social_Media-3_1776252269811.png";
+import spiralHero from "@assets/spiral-hero-webp_1776712315161.webp";
 
 // Daily rotating quotes
 const dailyQuotes = [
@@ -87,7 +88,7 @@ export default function Home() {
       <section 
         className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden bg-cover bg-center"
         style={{ 
-          backgroundImage: `url(@assets/spiral-hero-webp_1776712238879.webp)`
+          backgroundImage: `url(${spiralHero})`
         }}
       >
         {/* Adjusted Background Overlay */}
