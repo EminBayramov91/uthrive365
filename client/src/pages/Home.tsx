@@ -110,21 +110,21 @@ export default function Home() {
         {/* Subtle Noise/Texture Overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-1"></div>
         
-        <div className="max-w-5xl mx-auto text-center relative z-10 py-20">
+        <div className="max-w-5xl mx-auto text-left relative z-10 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <h1 
-              className="text-5xl md:text-7xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px] mx-auto"
+              className="text-5xl md:text-7xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px]"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
               Your next chapter isn't <br className="hidden md:block" />
               <span className="text-[#EDE8DE]">out of reach. It's just out of alignment.</span>
             </h1>
             <p 
-              className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed text-balance opacity-100 font-semibold"
+              className="text-xl md:text-2xl mb-12 max-w-4xl leading-relaxed text-balance opacity-100 font-semibold"
               style={{ 
                 color: '#E6E0D6',
                 textShadow: '0 2px 14px rgba(0,0,0,0.35)',
@@ -134,7 +134,7 @@ export default function Home() {
               Some shifts in the right places can change everything.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-5 justify-start items-start">
               <Link
                 href="/quiz"
                 role="button"
