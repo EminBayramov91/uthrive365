@@ -150,6 +150,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Framework Section */}
+      <section className="py-24 px-4 bg-[#DDE8E2]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-10">
+            A Framework Built for Real, Lasting Change
+          </h2>
+          
+          <div className="space-y-6 text-lg text-foreground leading-relaxed">
+            <p>
+              Most tools give you information. U Thrive 365 gives you a framework.
+            </p>
+            
+            <p>
+              It begins with awareness — understanding where your energy is actually going and how that compares to what matters most to you. From there, we move into rebalancing — practical shifts that help you reclaim energy, create momentum, and address what has been quietly draining you. Then comes realignment — consciously designing a life that reflects who you are becoming, rather than who you have been conditioned to be.
+            </p>
+            
+            <p>
+              The first step is the Personal Energy Map (PEM) — a simple but revealing tool that helps you see where you are right now. It is not a personality test. It is a mirror.
+            </p>
+            
+            <p>
+              The PEM Wheel assessment is free. For a deeper explanation of how to use and interpret it, see <em>The Personal Energy Map</em>. Available on Amazon.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10 pt-8">
+            <Link
+              href="/pem"
+              role="button"
+              className="px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+            >
+              Take the PEM Assessment
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* About Lisa Section */}
       <section className="py-20 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,44 +242,6 @@ export default function Home() {
               <div className="pt-2">
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Framework Section */}
-      <section className="py-24 px-4 bg-[#DDE8E2]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-10">
-            A Framework Built for Real, Lasting Change
-          </h2>
-          
-          <div className="space-y-6 text-lg text-foreground leading-relaxed">
-            <p>
-              Most tools give you information. U Thrive 365 gives you a framework.
-            </p>
-            
-            <p>
-              It begins with awareness — understanding where your energy is actually going and how that compares to what matters most to you. From there, we move into rebalancing — practical shifts that help you reclaim energy, create momentum, and address what has been quietly draining you. Then comes realignment — consciously designing a life that reflects who you are becoming, rather than who you have been conditioned to be.
-            </p>
-            
-            <p>
-              The first step is the Personal Energy Map (PEM) — a simple but revealing tool that helps you see where you are right now. It is not a personality test. It is a mirror.
-            </p>
-            
-            <p>
-              The PEM Wheel assessment is free. For a deeper explanation of how to use and interpret it, see <em>The Personal Energy Map</em>. Available on Amazon.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10 pt-8">
-            <Link
-              href="/pem"
-              role="button"
-              className="px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
-            >
-              Take the PEM Assessment
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </section>
