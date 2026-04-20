@@ -1,0 +1,33 @@
+Please update the third homepage section that contains the Lisa Fitzharris introduction.
+
+GOAL:
+Simplify this section so it only includes Lisa’s photo and the final revised text below. Remove all other existing text and layout elements from this section. Then rebuild the section in a clean two-column format with the photo on the left and the text on the right.
+
+CHANGES TO MAKE:
+
+1. In the third homepage section, delete all existing text content except for Lisa’s photo.
+
+2. Keep Lisa’s existing photo, but move it to the LEFT side of the section.
+
+3. Make the photo slightly larger than it is now.
+
+4. Format the section as a clean two-column layout:
+- Photo on the LEFT
+- Text on the RIGHT
+- Keep the design elegant, balanced, and consistent with the rest of the homepage
+- Use a softly rounded square or rounded rectangle image style if that looks best with the site design
+
+5. Replace all existing text in this section with ONLY the following copy:
+
+I’m Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.
+
+For 30 years, I designed complex hydraulic systems from the ground up. At the same time, I spent 25 years studying a different kind of system: the human one — through meditation, energy work, sound, and other practices that kept bringing me back to the question of what it means to live in genuine alignment.
+
+At 56, I stopped running someone else’s program and started designing my own. That decision changed everything.
+
+Now I bring those worlds together here — engineering precision, athletic discipline, and deep curiosity about what helps people thrive — to help people step off autopilot and live from what is actually true for them.
+
+6. Keep the fonts, colors, spacing, and overall styling consistent with the rest of the homepage, making only small spacing adjustments if needed for visual balance.
+
+IMPORTANT:
+Only update this third homepage section. Do not change any other sections of the homepage.

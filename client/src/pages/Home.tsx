@@ -190,57 +190,27 @@ export default function Home() {
 
       {/* About Lisa Section */}
       <section className="py-20 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-10 text-center">
-            {/* Photo */}
-            <div className="flex justify-center">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-secondary/30 shadow-lg">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-10 md:grid-cols-[320px_minmax(0,1fr)] items-center">
+            <div className="flex justify-center md:justify-start">
+              <div className="w-full max-w-[320px] aspect-square rounded-3xl overflow-hidden border-4 border-secondary/30 shadow-lg">
                 <img src={lisaPhoto} alt="Lisa Fitzharris" className="w-full h-full object-cover" />
               </div>
             </div>
 
-            {/* Headline */}
-            <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">
-              Do you feel like something in your life no longer fits?
-            </h2>
-
-            {/* Body Content */}
-            <div className="space-y-6 text-center">
-              <div className="space-y-4">
-                <p className="text-lg text-foreground leading-relaxed">
-                  Maybe you've been the capable one for so long you've forgotten to ask what you actually need.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  Maybe your energy is lower than it should be, and you sense it's about more than sleep or stress.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  Maybe you know something needs to change — but the map you've been following no longer leads anywhere that feels true.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  Maybe part of you suspects your most alive, most aligned chapter hasn't happened yet.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed font-semibold">
-                  You're not lost. You're just overdue for recalibration.
-                </p>
-              </div>
-
-              <div className="space-y-4 pt-6 border-t border-border">
-                <p className="text-lg text-foreground leading-relaxed">
-                  <span className="font-semibold">I'm Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.</span>
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  For 30 years, I designed complex hydraulic systems from the ground up — specifying, testing, and tuning every component for peak performance. At the same time, I spent 25 years exploring a different kind of system: the human one. Through meditation, sound and frequency work, energy practices, and other healing modalities, I kept returning to the deeper question of what it means to live in genuine alignment.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  At 56 I stopped running someone else's program and started designing my own. That decision changed everything.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  Now I bring those worlds together here — engineering precision, athletic discipline, and spiritual curiosity — to help people stop living on autopilot and start living from what is actually true for them.
-                </p>
-              </div>
-
-              <div className="pt-2">
-              </div>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground leading-relaxed">
+                I’m Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.
+              </p>
+              <p className="text-lg text-foreground leading-relaxed">
+                For 30 years, I designed complex hydraulic systems from the ground up. At the same time, I spent 25 years studying a different kind of system: the human one — through meditation, energy work, sound, and other practices that kept bringing me back to the question of what it means to live in genuine alignment.
+              </p>
+              <p className="text-lg text-foreground leading-relaxed">
+                At 56, I stopped running someone else’s program and started designing my own. That decision changed everything.
+              </p>
+              <p className="text-lg text-foreground leading-relaxed">
+                Now I bring those worlds together here — engineering precision, athletic discipline, and deep curiosity about what helps people thrive — to help people step off autopilot and live from what is actually true for them.
+              </p>
             </div>
           </div>
         </div>
