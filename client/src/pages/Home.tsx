@@ -199,6 +199,14 @@ export default function Home() {
             </div>
 
             <div className="space-y-6">
+              <div className="space-y-2">
+                <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">
+                  Hi, I'm Lisa.
+                </h2>
+                <p className="text-sm md:text-base tracking-[0.28em] uppercase text-foreground/70">
+                  ENGINEER. ATHLETE. LIFELONG STUDENT OF WHAT HELPS HUMAN BEINGS TRULY WORK.
+                </p>
+              </div>
               <p className="text-lg text-foreground leading-relaxed">
                 I’m Lisa Fitzharris — engineer, athlete, and lifelong student of what helps human beings truly work.
               </p>
