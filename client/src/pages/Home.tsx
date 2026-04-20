@@ -220,9 +220,10 @@ export default function Home() {
                 <Link
                   href="/about"
                   role="button"
-                  className="px-8 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-[#F4F1EA] font-bold rounded-xl hover:bg-primary/90 transition-colors"
                 >
                   Learn More About My Journey
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
