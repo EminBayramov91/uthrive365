@@ -159,19 +159,19 @@ export default function Home() {
           
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              Most tools give you information. U Thrive 365 gives you a framework.
+              U Thrive 365 starts with one honest question: where is your energy actually going — and is it working for you?
             </p>
             
             <p>
-              It begins with awareness — understanding where your energy is actually going and how that compares to what matters most to you. From there, we move into rebalancing — practical shifts that help you reclaim energy, create momentum, and address what has been quietly draining you. Then comes realignment — consciously designing a life that reflects who you are becoming, rather than who you have been conditioned to be.
+              The Personal Energy Map makes that visible. In minutes, you begin to see what is fueling you, what is quietly draining you, and what strengths, desires, and direction may be asking for more room.
             </p>
             
             <p>
-              The first step is the Personal Energy Map (PEM) — a simple but revealing tool that helps you see where you are right now. It is not a personality test. It is a mirror.
+              From there, patterns emerge. Better questions follow. What keeps repeating? What am I building toward — and what keeps getting in the way? When life is broken into smaller, clearer parts, those answers become easier to see, and meaningful change feels less like a leap and more like a sequence of honest steps.
             </p>
             
             <p>
-              The PEM Wheel assessment is free. For a deeper explanation of how to use and interpret it, see <em>The Personal Energy Map</em>. Available on Amazon.
+              This is not therapy. It is not a personality test. It is a practical framework for people who are ready to stop running someone else’s program and start designing their own.
             </p>
           </div>
 
