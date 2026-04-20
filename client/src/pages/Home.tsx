@@ -153,20 +153,6 @@ export default function Home() {
               </Link>
             </div>
             
-            <p 
-              className="mt-8"
-              style={{ 
-                color: '#E6E0D6',
-                fontSize: '1.15rem',
-                fontWeight: 500,
-                opacity: 0.95,
-                letterSpacing: '0.01em',
-                maxWidth: '600px',
-                margin: '1rem auto 0'
-              }}
-            >
-              Practical tools. Deep inner work. One clear framework to help you reconnect with what's actually true for you.
-            </p>
           </motion.div>
         </div>
       </section>
