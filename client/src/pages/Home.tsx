@@ -131,7 +131,7 @@ export default function Home() {
                 WebkitTextFillColor: '#E6E0D6'
               }}
             >
-              Like any finely-tuned system, small adjustments can create powerful shifts. U Thrive 365 helps you see what's out of alignment, reclaim your energy, and step into a life that feels more true, intentional, and fully your own.
+              Some shifts in the right places can change everything.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
