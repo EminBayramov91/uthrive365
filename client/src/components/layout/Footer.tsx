@@ -19,7 +19,7 @@ export default function Footer() {
 
           <div className="flex-1 flex items-center justify-center">
             <div className="flex items-center gap-6">
-              <a href="https://instagram.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F4F1EA] text-primary shadow-md hover:bg-white hover:shadow-lg transition-colors">
+              <a href="https://www.instagram.com/uthrive365/" target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F4F1EA] text-primary shadow-md hover:bg-white hover:shadow-lg transition-colors">
                 <FaInstagram className="w-6 h-6" />
               </a>
               <a href="https://facebook.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F4F1EA] text-primary shadow-md hover:bg-white hover:shadow-lg transition-colors">
