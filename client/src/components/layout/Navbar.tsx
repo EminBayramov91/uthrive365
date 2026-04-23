@@ -34,7 +34,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2 group">
             <Compass className="w-8 h-8 text-[#3F5F56] group-hover:rotate-45 transition-transform duration-500" />
             <span className="font-display font-bold text-xl tracking-tight text-[#3F5F56]">
-              uThrive 365
+              U Thrive 365
             </span>
           </Link>
 
