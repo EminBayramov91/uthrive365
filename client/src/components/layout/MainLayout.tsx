@@ -8,7 +8,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <motion.main 
-        className="flex-grow pt-24"
+        className="flex-grow pt-0"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
