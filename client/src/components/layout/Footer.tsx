@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Mail } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import footerLogo from "@assets/Mark-gold_1776960879198.png";
 
 export default function Footer() {
   return (
@@ -8,8 +9,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 lg:gap-8 mb-8">
           <div className="flex-1 space-y-4">
-            <div className="font-display font-bold text-2xl tracking-tight text-accent">
-              U Thrive 365
+            <div className="flex items-center gap-3">
+              <img src={footerLogo} alt="U Thrive 365 logo" className="w-10 h-10 object-contain" />
+              <div className="font-display font-bold text-2xl tracking-tight text-accent">
+                U Thrive 365
+              </div>
             </div>
           </div>
 
