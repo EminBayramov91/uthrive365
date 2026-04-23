@@ -1,7 +1,8 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X, Compass } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import navbarLogo from "@assets/Mark-green_1776959949709.png";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -32,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2 group">
-            <Compass className="w-8 h-8 text-[#3F5F56] group-hover:rotate-45 transition-transform duration-500" />
+            <img src={navbarLogo} alt="U Thrive 365 logo" className="w-8 h-8 object-contain" />
             <span className="font-display font-bold text-xl tracking-tight text-[#3F5F56]">
               U Thrive 365
             </span>
