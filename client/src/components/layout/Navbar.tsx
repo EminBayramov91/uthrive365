@@ -28,13 +28,13 @@ export default function Navbar() {
 
   return (
     <header
-      className="sticky top-0 w-full z-50 transition-all duration-300 bg-[#EEF3F1] border-b border-black/[0.08] shadow-[0_8px_24px_rgba(0,0,0,0.06)] py-3.5 md:py-[18px]"
+      className="sticky top-0 w-full z-50 transition-all duration-300 bg-[#EEF3F1] border-b border-black/[0.08] shadow-[0_8px_24px_rgba(0,0,0,0.06)] py-4 md:py-5"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img src={navbarLogo} alt="U Thrive 365 logo" className="w-[42px] h-[42px] object-contain" />
-            <span className="font-display font-bold text-xl tracking-tight text-[#3F5F56]">
+            <span className="font-display font-bold text-[1.25rem] tracking-tight text-[#3F5F56]">
               U Thrive 365
             </span>
           </Link>
@@ -45,7 +45,7 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-all duration-200 hover:text-[#2D453E] hover:underline underline-offset-4 decoration-2 ${
+                className={`text-[0.95rem] font-medium transition-all duration-200 hover:text-[#2D453E] hover:underline underline-offset-4 decoration-2 ${
                   location === link.path ? "text-[#3F5F56] underline" : "text-[#3F5F56]/80"
                 }`}
               >
@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link
               href="/spin"
               role="button"
-              className="bg-[#3F5E54] text-[#F4F1EA] px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#3F5E54]/90 hover:text-[#F4F1EA] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-md"
+              className="bg-[#3F5E54] text-[#F4F1EA] px-6 py-2.5 rounded-full text-[0.95rem] font-semibold hover:bg-[#3F5E54]/90 hover:text-[#F4F1EA] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-md"
             >
               Daily Spin
             </Link>
