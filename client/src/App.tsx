@@ -1,4 +1,5 @@
-import { Switch, Route } from "wouter";
+import { useLayoutEffect } from "react";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -26,6 +27,16 @@ import BlogPost5 from "@/pages/BlogPost5";
 import WeekMarch30 from "@/pages/WeekMarch30";
 import Quiz from "@/pages/Quiz";
 import BookPage from "@/pages/BookPage";
+
+function ScrollToTop() {
+  const [location] = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location]);
+
+  return null;
+}
 
 function Router() {
   return (
@@ -63,6 +74,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
+        <ScrollToTop />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>

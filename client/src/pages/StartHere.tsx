@@ -12,7 +12,7 @@ export default function StartHere() {
       description: "The first act of change is seeing clearly. The Personal Energy Map gives you an honest snapshot of where your energy is actually going — what matters most, what's being neglected, and where the quiet drain is coming from.",
       icon: PieChart,
       action: "PEM Assessment",
-      link: "#pem-section",
+      link: "/pem",
       disabled: false
     },
     {
@@ -21,7 +21,7 @@ export default function StartHere() {
       description: "Once you can see the pattern, you can begin to understand it. These short, grounded modules explain why change feels hard, what's really running your life beneath the surface, and how small shifts accumulate into something real.",
       icon: BookOpen,
       action: "Explore Resources",
-      link: "/start",
+      link: "/resources",
       disabled: false
     },
     {
@@ -76,15 +76,6 @@ export default function StartHere() {
                 <Link 
                   href={step.link}
                   role="button"
-                  {...(step.link === "#pem-section" && {
-                    onClick: (e: React.MouseEvent) => {
-                      e.preventDefault();
-                      const element = document.getElementById('pem-section');
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                      }
-                    }
-                  })}
                   className="px-6 py-3 bg-primary text-[#EDE8DE] font-semibold rounded-xl hover:bg-primary/90 transition-colors w-full md:w-auto text-center shadow-md"
                 >
                   {step.action}
