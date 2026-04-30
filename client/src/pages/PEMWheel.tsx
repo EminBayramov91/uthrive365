@@ -1,88 +1,255 @@
 import MainLayout from "@/components/layout/MainLayout";
-import { useState, useRef } from "react";
-import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, Tooltip, ResponsiveContainer } from "recharts";
+import { useState } from "react";
+
+const lifeAreas = [
+  "Body",
+  "Mental",
+  "Emotional",
+  "Spiritual",
+  "Family",
+  "Love",
+  "Social",
+  "Wealth",
+  "Purpose",
+  "Character",
+] as const;
+
+type LifeArea = (typeof lifeAreas)[number];
+type ScoreCategory = "priority" | "time" | "satisfaction";
+type ScoreSet = Record<ScoreCategory, number>;
+type Scores = Record<LifeArea, ScoreSet>;
+
+const scoreOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const seriesConfig: Array<{
+  key: ScoreCategory;
+  label: string;
+  stroke: string;
+  fill: string;
+}> = [
+  {
+    key: "priority",
+    label: "Priority",
+    stroke: "#C84A3F",
+    fill: "rgba(200, 74, 63, 0.15)",
+  },
+  {
+    key: "time",
+    label: "Time",
+    stroke: "#2E6FB7",
+    fill: "rgba(46, 111, 183, 0.13)",
+  },
+  {
+    key: "satisfaction",
+    label: "Satisfaction",
+    stroke: "#2F8B57",
+    fill: "rgba(47, 139, 87, 0.13)",
+  },
+];
+
+function createDefaultScores(): Scores {
+  return lifeAreas.reduce((acc, area) => {
+    acc[area] = { priority: 5, time: 5, satisfaction: 5 };
+    return acc;
+  }, {} as Scores);
+}
+
+function polarPoint(
+  center: number,
+  angleDegrees: number,
+  radius: number,
+): { x: number; y: number } {
+  const angleRadians = (angleDegrees * Math.PI) / 180;
+  return {
+    x: center + Math.cos(angleRadians) * radius,
+    y: center + Math.sin(angleRadians) * radius,
+  };
+}
+
+function readableTangentRotation(angleDegrees: number): number {
+  let rotation = angleDegrees + 90;
+
+  while (rotation > 180) rotation -= 360;
+  while (rotation <= -180) rotation += 360;
+
+  if (rotation > 90) rotation -= 180;
+  if (rotation < -90) rotation += 180;
+
+  return rotation;
+}
+
+function PEMWheelDiagram({ scores }: { scores: Scores }) {
+  const center = 320;
+  const maxRadius = 190;
+  const labelRadius = 266;
+  const viewBoxSize = 640;
+  const angleStep = 360 / lifeAreas.length;
+
+  const spokes = lifeAreas.map((area, index) => {
+    const angle = -90 + index * angleStep;
+    const outer = polarPoint(center, angle, maxRadius);
+    const labelPoint = polarPoint(center, angle, labelRadius);
+
+    return {
+      area,
+      angle,
+      outer,
+      labelPoint,
+      labelRotation: readableTangentRotation(angle),
+    };
+  });
+
+  const polygonPoints = (category: ScoreCategory) =>
+    spokes
+      .map(({ area, angle }) => {
+        const radius = (scores[area][category] / 10) * maxRadius;
+        const point = polarPoint(center, angle, radius);
+        return `${point.x},${point.y}`;
+      })
+      .join(" ");
+
+  return (
+    <div className="w-full pb-2">
+      <svg
+        viewBox={`0 0 ${viewBoxSize} ${viewBoxSize}`}
+        role="img"
+        aria-labelledby="pem-wheel-title pem-wheel-description"
+        className="mx-auto block h-auto w-full max-w-[680px]"
+      >
+        <title id="pem-wheel-title">Personal Energy Map wheel diagram</title>
+        <desc id="pem-wheel-description">
+          Circular PEM Wheel diagram with ten evenly spaced life areas and
+          three score series for priority, time, and satisfaction.
+        </desc>
+
+        <rect
+          x="28"
+          y="28"
+          width="584"
+          height="584"
+          rx="24"
+          fill="#F7F6F1"
+          stroke="#D9DED9"
+        />
+
+        {[2, 4, 6, 8, 10].map((tick) => {
+          const radius = (tick / 10) * maxRadius;
+          return (
+            <g key={tick}>
+              <circle
+                cx={center}
+                cy={center}
+                r={radius}
+                fill="none"
+                stroke={tick === 10 ? "#AEBBB4" : "#D1D8D3"}
+                strokeWidth={tick === 10 ? 1.8 : 1.2}
+              />
+              <text
+                x={center + 8}
+                y={center - radius + 4}
+                fill="#6F877F"
+                fontSize="12"
+                fontWeight="600"
+              >
+                {tick}
+              </text>
+            </g>
+          );
+        })}
+
+        {spokes.map(({ area, outer }) => (
+          <line
+            key={`spoke-${area}`}
+            x1={center}
+            y1={center}
+            x2={outer.x}
+            y2={outer.y}
+            stroke="#C2CCC6"
+            strokeWidth="1.2"
+          />
+        ))}
+
+        {seriesConfig.map((series) => (
+          <polygon
+            key={series.key}
+            points={polygonPoints(series.key)}
+            fill={series.fill}
+            stroke={series.stroke}
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
+        ))}
+
+        {seriesConfig.map((series) =>
+          spokes.map(({ area, angle }) => {
+            const radius = (scores[area][series.key] / 10) * maxRadius;
+            const point = polarPoint(center, angle, radius);
+            return (
+              <circle
+                key={`${series.key}-${area}`}
+                cx={point.x}
+                cy={point.y}
+                r="4"
+                fill={series.stroke}
+                stroke="#FFFFFF"
+                strokeWidth="1.5"
+              />
+            );
+          }),
+        )}
+
+        {spokes.map(({ area, labelPoint, labelRotation }) => (
+          <text
+            key={`label-${area}`}
+            x={labelPoint.x}
+            y={labelPoint.y}
+            transform={`rotate(${labelRotation} ${labelPoint.x} ${labelPoint.y})`}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fill="#3F5F56"
+            fontSize="15"
+            fontWeight="700"
+            letterSpacing="0"
+          >
+            {area}
+          </text>
+        ))}
+
+        <circle cx={center} cy={center} r="5" fill="#B8A58C" />
+      </svg>
+
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+        {seriesConfig.map((series) => (
+          <div key={series.key} className="flex items-center gap-2 text-sm font-semibold text-foreground">
+            <span
+              className="h-3 w-8 rounded-full"
+              style={{ backgroundColor: series.stroke }}
+              aria-hidden="true"
+            />
+            {series.label}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function PEMWheel() {
-  const lifeAreas = [
-    "Body",
-    "Mental",
-    "Emotional",
-    "Spiritual",
-    "Family",
-    "Love",
-    "Social",
-    "Wealth",
-    "Purpose",
-    "Character"
-  ];
+  const [scores, setScores] = useState<Scores>(() => createDefaultScores());
 
-  const [scores, setScores] = useState(
-    lifeAreas.reduce((acc, area) => ({
-      ...acc,
-      [area]: { priority: 5, time: 5, satisfaction: 5 }
-    }), {})
-  );
-
-  const handleScoreChange = (area, category, value) => {
-    setScores({
-      ...scores,
+  const handleScoreChange = (
+    area: LifeArea,
+    category: ScoreCategory,
+    value: string,
+  ) => {
+    setScores((currentScores) => ({
+      ...currentScores,
       [area]: {
-        ...scores[area],
-        [category]: parseInt(value)
-      }
-    });
+        ...currentScores[area],
+        [category]: Number.parseInt(value, 10),
+      },
+    }));
   };
-
-  // Format data for the radar chart
-  const chartData = lifeAreas.map((area) => ({
-    name: area,
-    Priority: scores[area]?.priority || 5,
-    Time: scores[area]?.time || 5,
-    Satisfaction: scores[area]?.satisfaction || 5
-  }));
-
-  // Custom tick renderer for category labels - default rendering
-  const CustomAngleTick = (props) => {
-    const { x, y, payload } = props;
-    
-    return (
-      <g transform={`translate(${x},${y})`}>
-        <text
-          x={0}
-          y={0}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fill="#4F5F5A"
-          fontSize={12}
-          fontWeight={500}
-        >
-          {payload.value}
-        </text>
-      </g>
-    );
-  };
-
-  // Custom tick renderer for radius axis labels
-  const CustomRadiusTick = (props) => {
-    const { x, y, payload } = props;
-    
-    return (
-      <g transform={`translate(${x},${y})`}>
-        <text
-          x={-8}
-          y={5}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fill="#6F877F"
-          fontSize={10}
-        >
-          {payload.value}
-        </text>
-      </g>
-    );
-  };
-
-
 
   return (
     <MainLayout>
@@ -174,33 +341,33 @@ export default function PEMWheel() {
                   
                   {/* Priority Dropdown */}
                   <select
-                    value={scores[area]?.priority || 5}
+                    value={scores[area].priority}
                     onChange={(e) => handleScoreChange(area, "priority", e.target.value)}
                     className="px-3 py-2 rounded-lg border border-border bg-background text-foreground text-center hover:border-primary transition-colors cursor-pointer"
                   >
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                    {scoreOptions.map((num) => (
                       <option key={num} value={num}>{num}</option>
                     ))}
                   </select>
 
                   {/* Time Dropdown */}
                   <select
-                    value={scores[area]?.time || 5}
+                    value={scores[area].time}
                     onChange={(e) => handleScoreChange(area, "time", e.target.value)}
                     className="px-3 py-2 rounded-lg border border-border bg-background text-foreground text-center hover:border-primary transition-colors cursor-pointer"
                   >
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                    {scoreOptions.map((num) => (
                       <option key={num} value={num}>{num}</option>
                     ))}
                   </select>
 
                   {/* Satisfaction Dropdown */}
                   <select
-                    value={scores[area]?.satisfaction || 5}
+                    value={scores[area].satisfaction}
                     onChange={(e) => handleScoreChange(area, "satisfaction", e.target.value)}
                     className="px-3 py-2 rounded-lg border border-border bg-background text-foreground text-center hover:border-primary transition-colors cursor-pointer"
                   >
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                    {scoreOptions.map((num) => (
                       <option key={num} value={num}>{num}</option>
                     ))}
                   </select>
@@ -214,74 +381,7 @@ export default function PEMWheel() {
         <section className="mb-12">
           <h2 className="text-2xl font-display font-bold text-primary mb-6">Your PEM Wheel</h2>
           <div className="bg-background border border-border p-8 rounded-2xl">
-            <ResponsiveContainer width="100%" height={500}>
-              <RadarChart
-                data={chartData}
-                margin={{ top: 50, right: 180, bottom: 50, left: 180 }}
-              >
-                <PolarGrid 
-                  strokeDasharray="0" 
-                  stroke="#C0C0C0" 
-                  radialLines={{ stroke: "#C0C0C0", strokeWidth: 1.5 }}
-                />
-                <PolarAngleAxis 
-                  dataKey="name" 
-                  tick={<CustomAngleTick />}
-                />
-                <PolarRadiusAxis 
-                  angle={90} 
-                  domain={[0, 10]}
-                  ticks={[2, 4, 6, 8, 10]}
-                  tick={<CustomRadiusTick />}
-                  stroke="#B0B0B0"
-                  strokeWidth={2}
-                />
-                <Radar
-                  name="Priority"
-                  dataKey="Priority"
-                  stroke="#DC2626"
-                  strokeWidth={2.5}
-                  fill="#DC2626"
-                  fillOpacity={0.15}
-                  isAnimationActive={true}
-                />
-                <Radar
-                  name="Time"
-                  dataKey="Time"
-                  stroke="#2563EB"
-                  strokeWidth={2.5}
-                  fill="#2563EB"
-                  fillOpacity={0.15}
-                  isAnimationActive={true}
-                />
-                <Radar
-                  name="Satisfaction"
-                  dataKey="Satisfaction"
-                  stroke="#16A34A"
-                  strokeWidth={2.5}
-                  fill="#16A34A"
-                  fillOpacity={0.15}
-                  isAnimationActive={true}
-                />
-                <Tooltip 
-                  contentStyle={{
-                    backgroundColor: "#FFFFFF",
-                    border: "1px solid #D0D0D0",
-                    borderRadius: "8px",
-                    color: "#4F5F5A",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
-                  }}
-                  cursor={{ stroke: "#B8A58C", strokeWidth: 1.5 }}
-                />
-                <Legend 
-                  verticalAlign="bottom" 
-                  height={25}
-                  wrapperStyle={{ paddingTop: "30px" }}
-                  iconType="line"
-                  wrapperClassName="text-sm"
-                />
-              </RadarChart>
-            </ResponsiveContainer>
+            <PEMWheelDiagram scores={scores} />
           </div>
         </section>
 
