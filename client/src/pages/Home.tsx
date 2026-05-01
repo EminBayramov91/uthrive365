@@ -176,13 +176,13 @@ export default function Home() {
       </section>
 
       {/* Framework Section */}
-      <section className="py-24 px-4 bg-[#DDE8E2]">
+      <section className="px-4 py-16 md:py-20 lg:py-24 bg-[#DDE8E2]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-10">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-8 md:mb-10">
             A Framework Built for Real, Lasting Change
           </h2>
 
-          <div className="space-y-6 text-lg text-foreground leading-relaxed">
+          <div className="space-y-5 md:space-y-6 text-lg text-foreground leading-relaxed">
             <p>
               U Thrive 365 starts with one honest question: where is your energy actually going — and is it working for you?
             </p>
@@ -200,7 +200,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10 pt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 md:mt-10 pt-4 md:pt-6">
             <Link
               href="/pem"
               role="button"
@@ -214,11 +214,11 @@ export default function Home() {
       </section>
 
       {/* About Lisa Section */}
-      <section className="py-20 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
+      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2] border-y border-border/50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-[320px_minmax(0,1fr)] items-center">
+          <div className="grid gap-8 md:gap-10 md:grid-cols-[320px_minmax(0,1fr)] items-center">
             <div className="flex justify-center md:justify-start">
-              <div className="w-full max-w-[320px] aspect-square rounded-3xl overflow-hidden border-4 border-secondary/30 shadow-lg">
+              <div className="w-full max-w-[280px] md:max-w-[320px] aspect-square rounded-3xl overflow-hidden border-4 border-secondary/30 shadow-lg">
                 <img src={lisaPhoto} alt="Lisa Fitzharris" className="w-full h-full object-cover" />
               </div>
             </div>
@@ -257,15 +257,15 @@ export default function Home() {
       </section>
 
       {/* Foundational Resources Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2]">
+      <section className="px-4 py-16 md:py-20 lg:py-24 bg-gradient-to-b from-[#E6F0EA] to-[#DDE8E2]">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="flex-1 space-y-6">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-12 items-center">
+            <div className="flex-1 space-y-5 md:space-y-6">
               <h2 className="text-3xl md:text-5xl font-bold font-display text-primary">Foundational Resources</h2>
               <p className="text-lg text-foreground leading-relaxed">
                 Every journey begins with a single honest look. These resources help you see clearly, shift gently, and build real momentum — one small step at a time.
               </p>
-              <ul className="space-y-4 pt-4">
+              <ul className="space-y-3 md:space-y-4 pt-2 md:pt-4">
                 {[
                   "The Patterns That Keep You Here",
                   "What Is Actually Running Your Life",
@@ -277,7 +277,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="pt-4">
+              <div className="pt-2 md:pt-4">
                 <Link href="/resources" className="inline-flex items-center text-primary font-bold hover:text-accent transition-colors gap-2">
                   Explore the Foundational Resources <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -344,14 +344,14 @@ export default function Home() {
       </section>
 
       {/* Book Section */}
-      <section id="book" className="py-28 px-4 bg-[#DDE8E2]">
+      <section id="book" className="px-4 py-16 md:py-20 lg:py-24 bg-[#DDE8E2]">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-12 items-center">
             <div className="flex-1 flex items-center justify-center">
               <img
                 src={pemBookCover}
                 alt="The Personal Energy Map book cover"
-                className="w-full max-w-md rounded-3xl shadow-lg object-cover"
+                className="w-full max-w-sm md:max-w-md rounded-3xl shadow-lg object-cover"
               />
             </div>
             <div className="flex-1 space-y-6">
@@ -382,8 +382,8 @@ export default function Home() {
       </section>
 
       {/* Daily Rotating Quote Section */}
-      <section className="py-20 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA] overflow-hidden">
-        <div className="relative h-24 flex items-center">
+      <section className="py-12 md:py-16 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA] overflow-hidden">
+        <div className="relative h-20 md:h-24 flex items-center">
           <p
             className="text-base md:text-2xl lg:text-3xl font-bold font-display text-primary animate-scroll-quote whitespace-nowrap"
             style={{
