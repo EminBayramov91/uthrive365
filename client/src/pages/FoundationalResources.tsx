@@ -46,7 +46,6 @@ export default function FoundationalResources() {
         />
       </div>
       <PageHeader
-        className="mt-8"
         title="Foundational Resources"
         description="These resources are your starting point — practical, grounded, and designed to cut through the noise, name what's actually running your life, and give you the clarity to move forward with intention."
       />

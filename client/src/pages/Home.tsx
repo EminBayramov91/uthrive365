@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { Compass, Sparkles, RefreshCcw, ArrowRight } from "lucide-react";
 import lisaPhoto from "@assets/hn7HaSnQUTFaJWJ2_1775489779357.png";
 import pemBookCover from "@assets/Social_Media-3_1776252269811.png";
-import spiralHero from "@assets/spiral-hero-webp_1776712315161.webp";
+import heroImage from "@assets/hero-img_20260501.webp";
+import glassyLogo from "@assets/glassy-logo2_20260501.png";
 
 // Daily rotating quotes
 const dailyQuotes = [
@@ -85,48 +86,61 @@ export default function Home() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section 
-        className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden bg-cover bg-center"
-        style={{ 
-          backgroundImage: `url(${spiralHero})`
+      <section
+        className="relative min-h-[90vh] overflow-hidden bg-cover bg-center px-6 sm:px-10 lg:px-[94px]"
+        style={{
+          backgroundImage: `url(${heroImage})`
         }}
       >
         {/* Adjusted Background Overlay */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{ 
-            background: 'linear-gradient(180deg, rgba(31,42,37,0.35) 0%, rgba(31,42,37,0.20) 40%, rgba(31,42,37,0.45) 100%)' 
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            background: 'linear-gradient(180deg, rgba(31,42,37,0.35) 0%, rgba(31,42,37,0.20) 40%, rgba(31,42,37,0.45) 100%)'
           }}
         />
 
         {/* Vignette Overlay */}
-        <div 
-          className="absolute inset-0 z-0" 
-          style={{ 
-            background: 'radial-gradient(circle at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.15) 75%, rgba(0,0,0,0.30) 100%)' 
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            background: 'radial-gradient(circle at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.15) 75%, rgba(0,0,0,0.30) 100%)'
           }}
         />
-        
+
         {/* Subtle Noise/Texture Overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-1"></div>
-        
-        <div className="max-w-5xl mx-auto text-left relative z-10 py-20 pl-[80px] pr-0 ml-0">
+
+        <div className="relative z-20 flex min-h-[90vh] w-full flex-col justify-between gap-10 py-10 sm:gap-12 sm:py-12 lg:gap-16 lg:py-16">
+          <div className="flex shrink-0 justify-start">
+            <img
+              src={glassyLogo}
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none w-24 opacity-20 sm:w-32 lg:w-56"
+              style={{
+                filter: "brightness(0.72) contrast(1.45) saturate(0.45) drop-shadow(0 1px 2px rgba(255,255,255,0.16)) drop-shadow(0 -1px 1px rgba(0,0,0,0.34))",
+                mixBlendMode: "soft-light"
+              }}
+            />
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="items-start text-left"
+            className="max-w-5xl items-start text-left"
           >
-            <h1 
+            <h1
               className="text-5xl md:text-7xl font-display font-bold text-[#EDE8DE] mb-8 leading-tight text-balance max-w-[900px]"
               style={{ textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
             >
               Your next chapter isn't <br className="hidden md:block" />
               <span className="text-[#EDE8DE]">out of reach. It's just out of alignment.</span>
             </h1>
-            <p 
+            <p
               className="text-xl md:text-2xl mb-12 max-w-4xl leading-relaxed text-balance opacity-100 font-semibold"
-              style={{ 
+              style={{
                 color: '#E6E0D6',
                 textShadow: '0 2px 14px rgba(0,0,0,0.35)',
                 WebkitTextFillColor: '#E6E0D6'
@@ -145,8 +159,19 @@ export default function Home() {
                 <ArrowRight className="w-5 h-5 text-[#F4F1EA]" />
               </Link>
             </div>
-            
+
           </motion.div>
+
+          <p
+            aria-hidden="true"
+            className="pointer-events-none shrink-0 text-8 uppercase leading-none tracking-[0.14em] text-[#B8A58C] sm:text-3xl lg:text-4xl"
+            style={{
+              fontFamily: "Georgia, serif",
+              textShadow: "0 2px 14px rgba(0,0,0,0.35)"
+            }}
+          >
+            Transform. Align. Thrive.
+          </p>
         </div>
       </section>
 
@@ -156,20 +181,20 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-10">
             A Framework Built for Real, Lasting Change
           </h2>
-          
+
           <div className="space-y-6 text-lg text-foreground leading-relaxed">
             <p>
               U Thrive 365 starts with one honest question: where is your energy actually going — and is it working for you?
             </p>
-            
+
             <p>
               The Personal Energy Map makes that visible. In minutes, you begin to see what is fueling you, what is quietly draining you, and what strengths, desires, and direction may be asking for more room.
             </p>
-            
+
             <p>
               From there, patterns emerge. Better questions follow. What keeps repeating? What am I building toward — and what keeps getting in the way? When life is broken into smaller, clearer parts, those answers become easier to see, and meaningful change feels less like a leap and more like a sequence of honest steps.
             </p>
-            
+
             <p>
               This is not therapy. It is not a personality test. It is a practical framework for people who are ready to stop running someone else’s program and start designing their own.
             </p>
@@ -258,10 +283,10 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            
-            <div className="flex-1 relative flex items-center justify-center -ml-8">
+
+            <div className="flex-1 relative flex items-center justify-center">
               {/* Foundational Resources SVG Graphic */}
-              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="max-w-2xl origin-center" style={{transform: 'scale(1.65)'}}>
+              <svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-xl">
                 <defs>
                   <clipPath id="card-clip">
                     <rect x="140" y="40" width="400" height="340" rx="16"/>
@@ -359,7 +384,7 @@ export default function Home() {
       {/* Daily Rotating Quote Section */}
       <section className="py-20 bg-gradient-to-b from-[#DDE8E2] to-[#D5E0DA] overflow-hidden">
         <div className="relative h-24 flex items-center">
-          <p 
+          <p
             className="text-base md:text-2xl lg:text-3xl font-bold font-display text-primary animate-scroll-quote whitespace-nowrap"
             style={{
               letterSpacing: '0.01em'

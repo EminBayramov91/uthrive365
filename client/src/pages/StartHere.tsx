@@ -2,7 +2,7 @@ import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
 import { Link } from "wouter";
 import { PieChart, RefreshCcw, BookOpen } from "lucide-react";
-import hikerImage from "@assets/Hiker_modified_1776256248178.jpg";
+import hikerImage from "@assets/iStock-687519852_1776255504610.jpg";
 
 export default function StartHere() {
   const steps = [
@@ -37,15 +37,14 @@ export default function StartHere() {
 
   return (
     <MainLayout>
-      <div className="w-full max-w-[86%] mx-auto overflow-hidden rounded-3xl">
+      <div className="w-full max-w-[79%] mx-auto overflow-hidden rounded-3xl">
         <img
           src={hikerImage}
           alt="Hiker on a mountain trail"
-          className="w-full h-[400px] md:h-[450px] lg:h-[480px] object-cover object-[left_40%]"
+          className="w-full h-[368px] md:h-[414px] lg:h-[442px] object-cover object-center"
         />
       </div>
       <PageHeader 
-        className="mt-8"
         title="Start Here" 
         description="You've already tried things. You know something needs to shift. You're just not sure what or why nothing has fully landed yet. These three steps cut through that. No hand-holding, just clarity."
       />

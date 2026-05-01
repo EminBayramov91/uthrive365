@@ -7,18 +7,18 @@ export default function About() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-4 py-20 text-center">
-        <div className="w-full max-w-[86%] mx-auto overflow-hidden rounded-3xl mb-8">
-          <img
-            src={aboutHero}
-            alt="About U Thrive 365 hero image"
-            className="w-full h-[400px] md:h-[450px] lg:h-[480px] object-cover object-center"
-          />
-        </div>
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-primary mb-3">
+      <div className="w-full max-w-[79%] mx-auto overflow-hidden rounded-3xl">
+        <img
+          src={aboutHero}
+          alt="About U Thrive 365 hero image"
+          className="w-full h-[368px] md:h-[414px] lg:h-[442px] object-cover object-center"
+        />
+      </div>
+      <section className="py-16 md:py-24 max-w-4xl mx-auto text-center px-4">
+        <h1 className="text-4xl md:text-6xl font-display font-bold text-primary mb-3 text-balance">
           About U Thrive 365
         </h1>
-        <p className="text-sm md:text-base text-muted-foreground mb-8 tracking-wide">
+        <p className="text-sm md:text-base text-muted-foreground mb-6 tracking-wide">
           Created by Lisa Fitzharris
         </p>
         <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
