@@ -1,16 +1,47 @@
 import MainLayout from "@/components/layout/MainLayout";
 import PageHeader from "@/components/ui/PageHeader";
 import { useState } from "react";
-import { Mail, Send } from "lucide-react";
+import { AlertCircle, Mail, Send } from "lucide-react";
+import { api } from "@shared/routes";
 
 export default function Contact() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
-    // Mock submission
-    setTimeout(() => setStatus("success"), 1000);
+    setErrorMessage("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") || ""),
+      email: String(formData.get("email") || ""),
+      inquiryType: String(formData.get("inquiryType") || ""),
+      message: String(formData.get("message") || ""),
+    };
+
+    try {
+      const response = await fetch(api.contact.path, {
+        method: api.contact.method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json().catch(() => null);
+
+      if (!response.ok) {
+        throw new Error(data?.message || "Message could not be sent. Please try again.");
+      }
+
+      api.contact.responses[200].parse(data);
+      form.reset();
+      setStatus("success");
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : "Message could not be sent. Please try again.");
+      setStatus("error");
+    }
   };
 
   return (
@@ -50,7 +81,10 @@ export default function Contact() {
               <h3 className="text-3xl font-display font-bold text-primary mb-2">Message Sent</h3>
               <p className="text-muted-foreground text-lg">Thank you. I'll be in touch soon.</p>
               <button 
-                onClick={() => setStatus("idle")}
+                onClick={() => {
+                  setErrorMessage("");
+                  setStatus("idle");
+                }}
                 className="mt-8 text-primary font-medium hover:underline"
               >
                 Send another message
@@ -60,18 +94,18 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-foreground">Name</label>
-                  <input required type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Jane Doe" />
+                  <label htmlFor="contact-name" className="text-sm font-semibold text-foreground">Name</label>
+                  <input id="contact-name" name="name" required type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="Jane Doe" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold text-foreground">Email</label>
-                  <input required type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="jane@example.com" />
+                  <label htmlFor="contact-email" className="text-sm font-semibold text-foreground">Email</label>
+                  <input id="contact-email" name="email" required type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" placeholder="jane@example.com" />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <label className="text-sm font-semibold text-foreground">Inquiry Type</label>
-                <select className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+                <label htmlFor="contact-inquiry-type" className="text-sm font-semibold text-foreground">Inquiry Type</label>
+                <select id="contact-inquiry-type" name="inquiryType" className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
                   <option>General Question</option>
                   <option>PEM Wheel</option>
                   <option>Foundational Resources</option>
@@ -82,9 +116,16 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-semibold text-foreground">Message</label>
-                <textarea required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" placeholder="How can I help?"></textarea>
+                <label htmlFor="contact-message" className="text-sm font-semibold text-foreground">Message</label>
+                <textarea id="contact-message" name="message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-muted/20 focus:bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" placeholder="How can I help?"></textarea>
               </div>
+
+              {status === "error" && (
+                <div className="flex items-center gap-2 rounded-xl border border-destructive/20 bg-destructive/5 px-4 py-3 text-sm font-medium text-destructive">
+                  <AlertCircle className="h-4 w-4" />
+                  <span>{errorMessage}</span>
+                </div>
+              )}
 
               <button 
                 type="submit" 

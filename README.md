@@ -89,7 +89,7 @@ DATABASE_URL=postgresql://user:password@host:port/database
 
 В Replit у проекта также есть `SESSION_SECRET`. В текущем коде он не используется, но его можно держать в Replit Secrets и локально задавать при необходимости. Реальные secret-значения не коммитьте в Git.
 
-Email capture на Home использует backend endpoint `/api/subscribe`: email сохраняется в PostgreSQL и уведомление отправляется через Resend. Для production/Replit нужны secrets:
+Email capture на Home использует backend endpoint `/api/subscribe`: email сохраняется в PostgreSQL и уведомление отправляется через Resend. Contact form использует backend endpoint `/api/contact` и отправляет сообщение на тот же `EMAIL_TO`. Для production/Replit нужны secrets:
 
 ```text
 RESEND_API_KEY=re_xxxxxxxxx
@@ -283,7 +283,7 @@ git push
 
 ## Особенности проекта, о которых стоит помнить
 
-- Contact form сейчас mock-only: он показывает успех в интерфейсе, но реально письмо не отправляет.
+- Contact form отправляет `/api/contact`; backend валидирует поля и отправляет письмо через Resend на `EMAIL_TO` (`hello@uthrive365.com` по умолчанию).
 - Home email capture отправляет `/api/subscribe`, сохраняет email в таблицу `subscribers`, отправляет уведомление через Resend и после успеха переводит пользователя на `/pem`.
 - В backend есть API `/api/spins/random` и `/api/spins`, но текущая страница `DailySpin.tsx` использует локальный массив `SPIN_ENTRIES`. Если нужен единый источник данных, стоит подключить страницу к backend API.
 - PostgreSQL нужен уже на старте сервера, потому что `server/db.ts` проверяет `DATABASE_URL`.

@@ -2,6 +2,22 @@ import { z } from "zod";
 import { spins } from "./schema";
 
 export const api = {
+  contact: {
+    method: "POST" as const,
+    path: "/api/contact" as const,
+    request: z.object({
+      name: z.string().trim().min(1).max(100),
+      email: z.string().trim().email().max(254),
+      inquiryType: z.string().trim().min(1).max(100),
+      message: z.string().trim().min(1).max(3000),
+    }),
+    responses: {
+      200: z.object({ ok: z.literal(true) }),
+      400: z.object({ message: z.string() }),
+      500: z.object({ message: z.string() }),
+      503: z.object({ message: z.string() }),
+    },
+  },
   subscribe: {
     method: "POST" as const,
     path: "/api/subscribe" as const,

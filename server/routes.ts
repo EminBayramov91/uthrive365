@@ -15,7 +15,38 @@ const resendEmailResponseSchema = z.object({
   message: z.string().optional(),
 });
 
-async function sendSubscriberNotification(email: string) {
+const contactRequestSchema = api.contact.request;
+
+type EmailMessage = {
+  subject: string;
+  html: string;
+  text: string;
+};
+
+function escapeHtml(value: string) {
+  return value.replace(/[&<>"']/g, (character) => {
+    switch (character) {
+      case "&":
+        return "&amp;";
+      case "<":
+        return "&lt;";
+      case ">":
+        return "&gt;";
+      case '"':
+        return "&quot;";
+      case "'":
+        return "&#39;";
+      default:
+        return character;
+    }
+  });
+}
+
+function toSingleLine(value: string) {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+async function sendEmail(message: EmailMessage) {
   if (process.env.EMAIL_DELIVERY_DISABLED === "true") {
     return;
   }
@@ -42,20 +73,9 @@ async function sendSubscriberNotification(email: string) {
     body: JSON.stringify({
       from,
       to: [to],
-      subject: "New PEM Wheel email capture",
-      html: `
-        <h2>New PEM Wheel email capture</h2>
-        <p>A visitor requested access to the PEM Wheel assessment.</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Source:</strong> Home page PEM capture</p>
-      `,
-      text: [
-        "New PEM Wheel email capture",
-        "",
-        "A visitor requested access to the PEM Wheel assessment.",
-        `Email: ${email}`,
-        "Source: Home page PEM capture",
-      ].join("\n"),
+      subject: message.subject,
+      html: message.html,
+      text: message.text,
     }),
   });
 
@@ -75,10 +95,83 @@ async function sendSubscriberNotification(email: string) {
   }
 }
 
+async function sendSubscriberNotification(email: string) {
+  await sendEmail({
+    subject: "New PEM Wheel email capture",
+    html: `
+      <h2>New PEM Wheel email capture</h2>
+      <p>A visitor requested access to the PEM Wheel assessment.</p>
+      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Source:</strong> Home page PEM capture</p>
+    `,
+    text: [
+      "New PEM Wheel email capture",
+      "",
+      "A visitor requested access to the PEM Wheel assessment.",
+      `Email: ${email}`,
+      "Source: Home page PEM capture",
+    ].join("\n"),
+  });
+}
+
+async function sendContactMessage(data: z.infer<typeof contactRequestSchema>) {
+  const name = escapeHtml(data.name);
+  const email = escapeHtml(data.email);
+  const inquiryType = escapeHtml(data.inquiryType);
+  const contactMessage = escapeHtml(data.message).replace(/\n/g, "<br />");
+
+  await sendEmail({
+    subject: `New U Thrive 365 contact form message: ${toSingleLine(data.inquiryType)}`,
+    html: `
+      <h2>New U Thrive 365 contact form message</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Inquiry Type:</strong> ${inquiryType}</p>
+      <p><strong>Message:</strong></p>
+      <p>${contactMessage}</p>
+    `,
+    text: [
+      "New U Thrive 365 contact form message",
+      "",
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      `Inquiry Type: ${data.inquiryType}`,
+      "",
+      "Message:",
+      data.message,
+    ].join("\n"),
+  });
+}
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  app.post(api.contact.path, async (req, res, next) => {
+    try {
+      const data = contactRequestSchema.parse(req.body);
+
+      await sendContactMessage(data);
+
+      res.json({ ok: true });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Please complete all contact form fields." });
+      }
+
+      if (
+        error instanceof Error &&
+        error.message.startsWith("Missing email configuration")
+      ) {
+        return res.status(503).json({
+          message: "Email delivery is not configured yet.",
+        });
+      }
+
+      next(error);
+    }
+  });
+
   app.post(api.subscribe.path, async (req, res, next) => {
     try {
       const data = subscribeRequestSchema.parse(req.body);
