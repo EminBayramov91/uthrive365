@@ -89,6 +89,20 @@ DATABASE_URL=postgresql://user:password@host:port/database
 
 В Replit у проекта также есть `SESSION_SECRET`. В текущем коде он не используется, но его можно держать в Replit Secrets и локально задавать при необходимости. Реальные secret-значения не коммитьте в Git.
 
+Email capture на Home использует backend endpoint `/api/subscribe`: email сохраняется в PostgreSQL и уведомление отправляется через Resend. Для production/Replit нужны secrets:
+
+```text
+RESEND_API_KEY=re_xxxxxxxxx
+EMAIL_FROM=U Thrive 365 <noreply@uthrive365.com>
+EMAIL_TO=hello@uthrive365.com
+```
+
+Для локальной разработки без реальной отправки можно задать:
+
+```text
+EMAIL_DELIVERY_DISABLED=true
+```
+
 Если `DATABASE_URL` не задан, сервер упадет при старте в `server/db.ts` с ошибкой:
 
 ```text
@@ -105,7 +119,7 @@ DATABASE_URL must be set. Did you forget to provision a database?
 npm run dev:local
 ```
 
-Эта команда запускает локальный PostgreSQL-контейнер `uthrive365-postgres`, задает `DATABASE_URL`, применяет Drizzle-схему через `npm run db:push` и затем запускает dev-сервер.
+Эта команда запускает локальный PostgreSQL-контейнер `uthrive365-postgres`, задает `DATABASE_URL`, отключает реальную email-отправку через `EMAIL_DELIVERY_DISABLED=true`, применяет Drizzle-схему через `npm run db:push` и затем запускает dev-сервер.
 
 Перед запуском должен быть открыт Docker Desktop.
 
@@ -120,6 +134,7 @@ http://localhost:5000
 ```powershell
 $env:PORT="5000"
 $env:DATABASE_URL="postgresql://postgres:postgres@localhost:5432/uthrive365"
+$env:EMAIL_DELIVERY_DISABLED="true"
 npm run db:push
 npm run dev
 ```
@@ -269,7 +284,7 @@ git push
 ## Особенности проекта, о которых стоит помнить
 
 - Contact form сейчас mock-only: он показывает успех в интерфейсе, но реально письмо не отправляет.
-- Newsletter hook отправляет `/api/subscribe`, но backend endpoint не реализован; при 404 UI симулирует успех.
+- Home email capture отправляет `/api/subscribe`, сохраняет email в таблицу `subscribers`, отправляет уведомление через Resend и после успеха переводит пользователя на `/pem`.
 - В backend есть API `/api/spins/random` и `/api/spins`, но текущая страница `DailySpin.tsx` использует локальный массив `SPIN_ENTRIES`. Если нужен единый источник данных, стоит подключить страницу к backend API.
 - PostgreSQL нужен уже на старте сервера, потому что `server/db.ts` проверяет `DATABASE_URL`.
 

@@ -1,4 +1,11 @@
-import { spins, type Spin, type InsertSpin } from "@shared/schema";
+import {
+  subscribers,
+  spins,
+  type InsertSubscriber,
+  type InsertSpin,
+  type Spin,
+  type Subscriber,
+} from "@shared/schema";
 import { db } from "./db";
 import { eq, sql } from "drizzle-orm";
 
@@ -6,6 +13,7 @@ export interface IStorage {
   getRandomSpin(): Promise<Spin | undefined>;
   getSpins(): Promise<Spin[]>;
   createSpin(spin: InsertSpin): Promise<Spin>;
+  createSubscriber(subscriber: InsertSubscriber): Promise<Subscriber>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -21,6 +29,35 @@ export class DatabaseStorage implements IStorage {
   async createSpin(spin: InsertSpin): Promise<Spin> {
     const [newSpin] = await db.insert(spins).values(spin).returning();
     return newSpin;
+  }
+
+  async createSubscriber(subscriber: InsertSubscriber): Promise<Subscriber> {
+    const normalizedSubscriber = {
+      ...subscriber,
+      email: subscriber.email.trim().toLowerCase(),
+    };
+
+    const [newSubscriber] = await db
+      .insert(subscribers)
+      .values(normalizedSubscriber)
+      .onConflictDoNothing()
+      .returning();
+
+    if (newSubscriber) {
+      return newSubscriber;
+    }
+
+    const [existingSubscriber] = await db
+      .select()
+      .from(subscribers)
+      .where(eq(subscribers.email, normalizedSubscriber.email))
+      .limit(1);
+
+    if (!existingSubscriber) {
+      throw new Error("Unable to create or find subscriber");
+    }
+
+    return existingSubscriber;
   }
 }
 

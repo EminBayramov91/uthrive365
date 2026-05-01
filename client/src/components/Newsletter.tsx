@@ -1,15 +1,22 @@
 import { useState } from "react";
 import { useSubscribe } from "@/hooks/use-subscribe";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, AlertCircle } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
   const subscribe = useSubscribe();
+  const [, setLocation] = useLocation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      subscribe.mutate(email);
+      subscribe.mutate(email, {
+        onSuccess: () => {
+          setEmail("");
+          setLocation("/pem");
+        },
+      });
     }
   };
 
@@ -39,31 +46,31 @@ export default function Newsletter() {
           Enter your email to access your free PEM Wheel and take the first honest look.
         </p>
 
-        {subscribe.isSuccess ? (
-          <div className="flex items-center justify-center gap-3 text-accent font-medium text-lg bg-accent/10 py-4 px-6 rounded-2xl w-fit mx-auto border border-accent/20">
-            <CheckCircle className="w-6 h-6" />
-            <span>Check your email for the PEM Wheel assessment.</span>
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="flex-1 px-8 py-4 rounded-xl bg-white/10 border border-white/20 placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all text-base"
+            style={{ color: '#EDE8DE' }}
+          />
+          <button
+            type="submit"
+            disabled={subscribe.isPending}
+            className="px-8 py-4 bg-[#B8A58C] text-white font-bold rounded-xl hover:bg-[#A99379] hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none whitespace-nowrap"
+          >
+            {subscribe.isPending ? "Accessing..." : "PEM Assessment"}
+            {!subscribe.isPending && <Send className="w-4 h-4" />}
+          </button>
+        </form>
+
+        {subscribe.isError && (
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm font-medium text-[#F4F1EA]">
+            <AlertCircle className="h-4 w-4" />
+            <span>{subscribe.error.message}</span>
           </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-8 py-4 rounded-xl bg-white/10 border border-white/20 placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all text-base"
-              style={{ color: '#EDE8DE' }}
-            />
-            <button
-              type="submit"
-              disabled={subscribe.isPending}
-              className="px-8 py-4 bg-[#B8A58C] text-white font-bold rounded-xl hover:bg-[#A99379] hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none whitespace-nowrap"
-            >
-              {subscribe.isPending ? "Accessing..." : "PEM Assessment"}
-              {!subscribe.isPending && <Send className="w-4 h-4" />}
-            </button>
-          </form>
         )}
       </div>
     </div>

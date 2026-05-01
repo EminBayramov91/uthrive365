@@ -1,24 +1,22 @@
 import { useMutation } from "@tanstack/react-query";
+import { api } from "@shared/routes";
 
 export function useSubscribe() {
   return useMutation({
     mutationFn: async (email: string) => {
-      // Mocking the endpoint to fulfill the email capture UI requirement
-      // This will hit the backend and gracefully fail if not implemented
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
+      const res = await fetch(api.subscribe.path, {
+        method: api.subscribe.method,
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source: "home-pem-capture" }),
       });
       
       if (!res.ok) {
-        // We'll simulate a success for the UI prototype sake if endpoint is missing
-        if (res.status === 404) {
-          return new Promise(resolve => setTimeout(() => resolve(true), 800));
-        }
-        throw new Error("Failed to subscribe");
+        const error = await res.json().catch(() => null);
+        throw new Error(error?.message || "Failed to submit email");
       }
-      return res.json();
+
+      const data = await res.json();
+      return api.subscribe.responses[200].parse(data);
     },
   });
 }

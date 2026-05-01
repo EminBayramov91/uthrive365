@@ -35,6 +35,7 @@ Wait-For-Postgres
 
 $env:PORT = "5000"
 $env:DATABASE_URL = $databaseUrl
+$env:EMAIL_DELIVERY_DISABLED = "true"
 
 npm run db:push
 npm run dev
