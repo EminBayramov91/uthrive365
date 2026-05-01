@@ -1,5 +1,6 @@
 import MainLayout from "@/components/layout/MainLayout";
 import { useState } from "react";
+import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, Tooltip, ResponsiveContainer } from "recharts";
 
 const lifeAreas = [
   "Body",
@@ -14,242 +15,219 @@ const lifeAreas = [
   "Character",
 ] as const;
 
+const scoreOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as const;
+const radialTicks = [2, 4, 6, 8, 10] as unknown as {
+  value?: number;
+  coordinate: number;
+  index?: number;
+}[];
+
 type LifeArea = (typeof lifeAreas)[number];
 type ScoreCategory = "priority" | "time" | "satisfaction";
-type ScoreSet = Record<ScoreCategory, number>;
-type Scores = Record<LifeArea, ScoreSet>;
+type AreaScores = Record<ScoreCategory, number>;
+type Scores = Record<LifeArea, AreaScores>;
+type ChartDatum = {
+  name: LifeArea;
+  Priority: number;
+  Time: number;
+  Satisfaction: number;
+};
+type TickProps = {
+  x?: number;
+  y?: number;
+  payload?: {
+    value?: string | number;
+  };
+};
+type RadarPoint = {
+  x: number;
+  y: number;
+};
+type RoundedRadarShapeProps = {
+  points?: RadarPoint[];
+  stroke?: string;
+  strokeWidth?: number | string;
+  fill?: string;
+  fillOpacity?: number | string;
+};
 
-const scoreOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-const seriesConfig: Array<{
-  key: ScoreCategory;
-  label: string;
-  stroke: string;
-  fill: string;
-}> = [
-  {
-    key: "priority",
-    label: "Priority",
-    stroke: "#C84A3F",
-    fill: "rgba(200, 74, 63, 0.15)",
-  },
-  {
-    key: "time",
-    label: "Time",
-    stroke: "#2E6FB7",
-    fill: "rgba(46, 111, 183, 0.13)",
-  },
-  {
-    key: "satisfaction",
-    label: "Satisfaction",
-    stroke: "#2F8B57",
-    fill: "rgba(47, 139, 87, 0.13)",
-  },
-];
-
-function createDefaultScores(): Scores {
+function createInitialScores(): Scores {
   return lifeAreas.reduce((acc, area) => {
     acc[area] = { priority: 5, time: 5, satisfaction: 5 };
     return acc;
   }, {} as Scores);
 }
 
-function polarPoint(
-  center: number,
-  angleDegrees: number,
-  radius: number,
-): { x: number; y: number } {
-  const angleRadians = (angleDegrees * Math.PI) / 180;
-  return {
-    x: center + Math.cos(angleRadians) * radius,
-    y: center + Math.sin(angleRadians) * radius,
-  };
+function normalizeReadableRotation(degrees: number) {
+  let normalized = degrees;
+  while (normalized > 180) normalized -= 360;
+  while (normalized <= -180) normalized += 360;
+
+  if (normalized > 90) return normalized - 180;
+  if (normalized < -90) return normalized + 180;
+  return normalized;
 }
 
-function readableTangentRotation(angleDegrees: number): number {
-  let rotation = angleDegrees + 90;
+function getLabelRotation(label: string | number) {
+  const index = lifeAreas.findIndex((area) => area === String(label));
+  const areaIndex = index >= 0 ? index : 0;
+  const spokeAngle = -90 + areaIndex * (360 / lifeAreas.length);
+  const perpendicularAngle = spokeAngle + 90;
 
-  while (rotation > 180) rotation -= 360;
-  while (rotation <= -180) rotation += 360;
-
-  if (rotation > 90) rotation -= 180;
-  if (rotation < -90) rotation += 180;
-
-  return rotation;
+  return normalizeReadableRotation(perpendicularAngle);
 }
 
-function PEMWheelDiagram({ scores }: { scores: Scores }) {
-  const center = 320;
-  const maxRadius = 190;
-  const labelRadius = 266;
-  const viewBoxSize = 640;
-  const angleStep = 360 / lifeAreas.length;
+function CustomAngleTick({ x = 0, y = 0, payload }: TickProps) {
+  const label = payload?.value;
 
-  const spokes = lifeAreas.map((area, index) => {
-    const angle = -90 + index * angleStep;
-    const outer = polarPoint(center, angle, maxRadius);
-    const labelPoint = polarPoint(center, angle, labelRadius);
-
-    return {
-      area,
-      angle,
-      outer,
-      labelPoint,
-      labelRotation: readableTangentRotation(angle),
-    };
-  });
-
-  const polygonPoints = (category: ScoreCategory) =>
-    spokes
-      .map(({ area, angle }) => {
-        const radius = (scores[area][category] / 10) * maxRadius;
-        const point = polarPoint(center, angle, radius);
-        return `${point.x},${point.y}`;
-      })
-      .join(" ");
+  if (label === undefined) {
+    return null;
+  }
 
   return (
-    <div className="w-full pb-2">
-      <svg
-        viewBox={`0 0 ${viewBoxSize} ${viewBoxSize}`}
-        role="img"
-        aria-labelledby="pem-wheel-title pem-wheel-description"
-        className="mx-auto block h-auto w-full max-w-[680px]"
+    <g transform={`translate(${x},${y}) rotate(${getLabelRotation(label)})`}>
+      <text
+        x={0}
+        y={0}
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="#2F5B52"
+        fontSize={12}
+        fontWeight={600}
       >
-        <title id="pem-wheel-title">Personal Energy Map wheel diagram</title>
-        <desc id="pem-wheel-description">
-          Circular PEM Wheel diagram with ten evenly spaced life areas and
-          three score series for priority, time, and satisfaction.
-        </desc>
+        {label}
+      </text>
+    </g>
+  );
+}
 
-        <rect
-          x="28"
-          y="28"
-          width="584"
-          height="584"
-          rx="24"
-          fill="#F7F6F1"
-          stroke="#D9DED9"
-        />
+function CustomRadiusTick({ x = 0, y = 0, payload }: TickProps) {
+  const label = payload?.value;
 
-        {[2, 4, 6, 8, 10].map((tick) => {
-          const radius = (tick / 10) * maxRadius;
-          return (
-            <g key={tick}>
-              <circle
-                cx={center}
-                cy={center}
-                r={radius}
-                fill="none"
-                stroke={tick === 10 ? "#AEBBB4" : "#D1D8D3"}
-                strokeWidth={tick === 10 ? 1.8 : 1.2}
-              />
-              <text
-                x={center + 8}
-                y={center - radius + 4}
-                fill="#6F877F"
-                fontSize="12"
-                fontWeight="600"
-              >
-                {tick}
-              </text>
-            </g>
-          );
-        })}
+  if (label === undefined || label === 0) {
+    return null;
+  }
 
-        {spokes.map(({ area, outer }) => (
-          <line
-            key={`spoke-${area}`}
-            x1={center}
-            y1={center}
-            x2={outer.x}
-            y2={outer.y}
-            stroke="#C2CCC6"
-            strokeWidth="1.2"
-          />
-        ))}
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text
+        x={-8}
+        y={4}
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="#6F877F"
+        fontSize={10}
+      >
+        {label}
+      </text>
+    </g>
+  );
+}
 
-        {seriesConfig.map((series) => (
-          <polygon
-            key={series.key}
-            points={polygonPoints(series.key)}
-            fill={series.fill}
-            stroke={series.stroke}
-            strokeWidth="3"
-            strokeLinejoin="round"
-          />
-        ))}
+function getPointCenter(points: RadarPoint[]) {
+  return points.reduce(
+    (center, point) => ({
+      x: center.x + point.x / points.length,
+      y: center.y + point.y / points.length,
+    }),
+    { x: 0, y: 0 },
+  );
+}
 
-        {seriesConfig.map((series) =>
-          spokes.map(({ area, angle }) => {
-            const radius = (scores[area][series.key] / 10) * maxRadius;
-            const point = polarPoint(center, angle, radius);
-            return (
-              <circle
-                key={`${series.key}-${area}`}
-                cx={point.x}
-                cy={point.y}
-                r="4"
-                fill={series.stroke}
-                stroke="#FFFFFF"
-                strokeWidth="1.5"
-              />
-            );
-          }),
-        )}
+function getClosedSmoothPath(points: RadarPoint[]) {
+  if (points.length < 3) {
+    return "";
+  }
 
-        {spokes.map(({ area, labelPoint, labelRotation }) => (
-          <text
-            key={`label-${area}`}
-            x={labelPoint.x}
-            y={labelPoint.y}
-            transform={`rotate(${labelRotation} ${labelPoint.x} ${labelPoint.y})`}
-            textAnchor="middle"
-            dominantBaseline="middle"
-            fill="#3F5F56"
-            fontSize="15"
-            fontWeight="700"
-            letterSpacing="0"
-          >
-            {area}
-          </text>
-        ))}
+  const commands = [`M ${points[0].x} ${points[0].y}`];
 
-        <circle cx={center} cy={center} r="5" fill="#B8A58C" />
-      </svg>
+  points.forEach((point, index) => {
+    const previous = points[(index - 1 + points.length) % points.length];
+    const next = points[(index + 1) % points.length];
+    const nextAfter = points[(index + 2) % points.length];
+    const controlStart = {
+      x: point.x + (next.x - previous.x) / 6,
+      y: point.y + (next.y - previous.y) / 6,
+    };
+    const controlEnd = {
+      x: next.x - (nextAfter.x - point.x) / 6,
+      y: next.y - (nextAfter.y - point.y) / 6,
+    };
 
-      <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-        {seriesConfig.map((series) => (
-          <div key={series.key} className="flex items-center gap-2 text-sm font-semibold text-foreground">
-            <span
-              className="h-3 w-8 rounded-full"
-              style={{ backgroundColor: series.stroke }}
-              aria-hidden="true"
-            />
-            {series.label}
-          </div>
-        ))}
-      </div>
-    </div>
+    commands.push(
+      `C ${controlStart.x} ${controlStart.y} ${controlEnd.x} ${controlEnd.y} ${next.x} ${next.y}`,
+    );
+  });
+
+  commands.push("Z");
+  return commands.join(" ");
+}
+
+function RoundedRadarShape({
+  points = [],
+  stroke,
+  strokeWidth,
+  fill,
+  fillOpacity,
+}: RoundedRadarShapeProps) {
+  if (points.length < 3) {
+    return <g />;
+  }
+
+  const center = getPointCenter(points);
+  const radii = points.map((point) =>
+    Math.hypot(point.x - center.x, point.y - center.y),
+  );
+  const minRadius = Math.min(...radii);
+  const maxRadius = Math.max(...radii);
+  const sharedShapeProps = {
+    stroke,
+    strokeWidth,
+    fill,
+    fillOpacity,
+    strokeLinejoin: "round" as const,
+  };
+
+  if (maxRadius - minRadius < 0.5) {
+    return (
+      <circle
+        {...sharedShapeProps}
+        cx={center.x}
+        cy={center.y}
+        r={(minRadius + maxRadius) / 2}
+      />
+    );
+  }
+
+  return (
+    <path
+      {...sharedShapeProps}
+      d={getClosedSmoothPath(points)}
+    />
   );
 }
 
 export default function PEMWheel() {
-  const [scores, setScores] = useState<Scores>(() => createDefaultScores());
+  const [scores, setScores] = useState<Scores>(() => createInitialScores());
 
-  const handleScoreChange = (
-    area: LifeArea,
-    category: ScoreCategory,
-    value: string,
-  ) => {
+  const handleScoreChange = (area: LifeArea, category: ScoreCategory, value: string) => {
+    const nextValue = Number.parseInt(value, 10);
+
     setScores((currentScores) => ({
       ...currentScores,
       [area]: {
         ...currentScores[area],
-        [category]: Number.parseInt(value, 10),
+        [category]: Number.isNaN(nextValue) ? currentScores[area][category] : nextValue,
       },
     }));
   };
+
+  const chartData: ChartDatum[] = lifeAreas.map((area) => ({
+    name: area,
+    Priority: scores[area].priority,
+    Time: scores[area].time,
+    Satisfaction: scores[area].satisfaction,
+  }));
 
   return (
     <MainLayout>
@@ -380,8 +358,88 @@ export default function PEMWheel() {
         {/* PEM Wheel Chart */}
         <section className="mb-12">
           <h2 className="text-2xl font-display font-bold text-primary mb-6">Your PEM Wheel</h2>
-          <div className="bg-background border border-border p-8 rounded-2xl">
-            <PEMWheelDiagram scores={scores} />
+          <div className="bg-background border border-border p-4 sm:p-8 rounded-2xl overflow-x-auto">
+            <div className="h-[560px] min-w-[560px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <RadarChart
+                  data={chartData}
+                  cx="50%"
+                  cy="46%"
+                  outerRadius="82%"
+                  margin={{ top: 48, right: 72, bottom: 78, left: 72 }}
+                >
+                  <PolarGrid
+                    gridType="circle"
+                    radialLines={true}
+                    strokeDasharray="0"
+                    stroke="#C6D1CC"
+                    strokeWidth={1}
+                  />
+                  <PolarAngleAxis
+                    dataKey="name"
+                    tick={<CustomAngleTick />}
+                    tickLine={false}
+                    axisLine={false}
+                    tickSize={22}
+                  />
+                  <PolarRadiusAxis
+                    angle={90}
+                    domain={[0, 10]}
+                    ticks={radialTicks}
+                    tick={<CustomRadiusTick />}
+                    tickLine={false}
+                    axisLine={false}
+                    stroke="#AEBDB7"
+                  />
+                  <Radar
+                    name="Priority"
+                    dataKey="Priority"
+                    stroke="#DC2626"
+                    strokeWidth={2.5}
+                    fill="#DC2626"
+                    fillOpacity={0.15}
+                    shape={<RoundedRadarShape />}
+                    isAnimationActive={false}
+                  />
+                  <Radar
+                    name="Time"
+                    dataKey="Time"
+                    stroke="#2563EB"
+                    strokeWidth={2.5}
+                    fill="#2563EB"
+                    fillOpacity={0.15}
+                    shape={<RoundedRadarShape />}
+                    isAnimationActive={false}
+                  />
+                  <Radar
+                    name="Satisfaction"
+                    dataKey="Satisfaction"
+                    stroke="#16A34A"
+                    strokeWidth={2.5}
+                    fill="#16A34A"
+                    fillOpacity={0.15}
+                    shape={<RoundedRadarShape />}
+                    isAnimationActive={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "#FFFFFF",
+                      border: "1px solid #D0D0D0",
+                      borderRadius: "8px",
+                      color: "#4F5F5A",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+                    }}
+                    cursor={{ stroke: "#B8A58C", strokeWidth: 1.5 }}
+                  />
+                  <Legend
+                    verticalAlign="bottom"
+                    height={25}
+                    wrapperStyle={{ paddingTop: "30px", fontSize: "14px" }}
+                    iconType="line"
+                  />
+                </RadarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         </section>
 
