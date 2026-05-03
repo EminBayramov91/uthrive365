@@ -15,8 +15,7 @@ export function useSubscribe() {
         throw new Error(error?.message || "Failed to submit email");
       }
 
-      const data = await res.json();
-      return api.subscribe.responses[200].parse(data);
+      return { ok: true as const };
     },
   });
 }

@@ -10,8 +10,8 @@ The app is designed to run on Replit, but it can also be developed locally on Wi
 - Start Here, About, Foundational Resources, Book, Blog, and Contact pages.
 - PEM Assessment page with a radar-style wheel visualization.
 - Daily Spin page and backend spin endpoints.
-- Contact form endpoint that sends messages to the site owner.
-- Home email capture endpoint that saves subscribers and sends a notification.
+- Contact form endpoint that forwards messages to Formspree.
+- Home email capture endpoint that saves subscribers and forwards notifications to Formspree.
 - PostgreSQL persistence through Drizzle ORM.
 
 ## Tech Stack
@@ -48,7 +48,7 @@ attached_assets/        Images and imported Replit assets
 - npm.
 - Docker Desktop for the easiest Windows local setup.
 - PostgreSQL if you prefer a manual local database setup.
-- A Resend account/API key for real email delivery.
+- Formspree forms for contact and Home email capture delivery.
 
 ## Environment Variables
 
@@ -61,26 +61,24 @@ The plain `npm run dev` command does not automatically load `.env` by itself. Se
 | `PORT` | Recommended | Server port. Replit and local development use `5000`. |
 | `DATABASE_URL` | Yes | PostgreSQL connection string used by Drizzle and the server. |
 | `SESSION_SECRET` | Recommended | Reserved for session/auth-related server code. Keep it in Replit Secrets. |
-| `EMAIL_DELIVERY_DISABLED` | Local only | Set to `true` to test forms locally without sending real emails. |
-| `RESEND_API_KEY` | Production email | Resend API key used by `/api/contact` and `/api/subscribe`. |
-| `EMAIL_FROM` | Production email | Verified sender address for outgoing email. |
-| `EMAIL_TO` | Optional | Recipient for form notifications. Defaults to `hello@uthrive365.com`. |
+| `FORMSPREE_CONTACT_ENDPOINT` | Optional | Contact form endpoint. Defaults to `https://formspree.io/f/xrejbqrk`. |
+| `FORMSPREE_SUBSCRIBE_ENDPOINT` | Optional | Home email capture endpoint. Defaults to `https://formspree.io/f/xojrvdra`. |
 
 Recommended production/Replit secrets:
 
 ```text
 DATABASE_URL=postgresql://...
 SESSION_SECRET=long-random-secret
-RESEND_API_KEY=re_...
-EMAIL_FROM="U Thrive 365 <hello@uthrive365.com>"
-EMAIL_TO=hello@uthrive365.com
 ```
 
-For local development without real email sending:
+Optional Formspree endpoint overrides:
 
 ```text
-EMAIL_DELIVERY_DISABLED=true
+FORMSPREE_CONTACT_ENDPOINT=https://formspree.io/f/xrejbqrk
+FORMSPREE_SUBSCRIBE_ENDPOINT=https://formspree.io/f/xojrvdra
 ```
+
+The Formspree endpoints are not secrets. They are listed in `.env.example` for clarity and can be changed later without touching the form code.
 
 ## Local Setup on Windows
 
@@ -102,7 +100,6 @@ This script:
 - creates or starts a local PostgreSQL 16 container named `uthrive365-postgres`;
 - sets `PORT=5000`;
 - sets `DATABASE_URL=postgresql://postgres:postgres@localhost:5432/uthrive365`;
-- sets `EMAIL_DELIVERY_DISABLED=true`;
 - runs `npm run db:push`;
 - starts the development server.
 
@@ -119,22 +116,19 @@ If you already have PostgreSQL running, set the required variables yourself:
 ```powershell
 $env:PORT="5000"
 $env:DATABASE_URL="postgresql://postgres:postgres@localhost:5432/uthrive365"
-$env:EMAIL_DELIVERY_DISABLED="true"
 npm run db:push
 npm run dev
 ```
 
-To test real email delivery locally, remove the disabled flag and provide Resend credentials:
+The forms use Formspree by default, so local submissions will also send notifications to the Formspree destination configured by the client.
+
+To override the Formspree endpoints locally:
 
 ```powershell
-$env:EMAIL_DELIVERY_DISABLED="false"
-$env:RESEND_API_KEY="re_replace_with_real_key"
-$env:EMAIL_FROM="U Thrive 365 <hello@uthrive365.com>"
-$env:EMAIL_TO="hello@uthrive365.com"
+$env:FORMSPREE_CONTACT_ENDPOINT="https://formspree.io/f/xrejbqrk"
+$env:FORMSPREE_SUBSCRIBE_ENDPOINT="https://formspree.io/f/xojrvdra"
 npm run dev
 ```
-
-The `EMAIL_FROM` address must be allowed by Resend. In production, this usually means the domain or sender address must be verified in the client's Resend account.
 
 ## Useful Commands
 
@@ -190,7 +184,7 @@ The Contact page submits to:
 POST /api/contact
 ```
 
-The backend validates the request and sends an email notification through Resend.
+The backend validates the request and forwards the submission to Formspree endpoint `https://formspree.io/f/xrejbqrk`.
 
 ### Home Email Capture
 
@@ -200,7 +194,7 @@ The Home newsletter/PEM capture form submits to:
 POST /api/subscribe
 ```
 
-The backend validates the email, saves it in the `subscribers` table, sends an email notification, and the frontend redirects the user to the PEM page after a successful submit.
+The backend validates the email, saves it in the `subscribers` table, forwards the submission to Formspree endpoint `https://formspree.io/f/xojrvdra`, and the frontend redirects the user to the PEM page after a successful submit.
 
 ### Daily Spin
 
@@ -240,12 +234,9 @@ Replit should have these Secrets configured:
 ```text
 DATABASE_URL
 SESSION_SECRET
-RESEND_API_KEY
-EMAIL_FROM
-EMAIL_TO
 ```
 
-Do not set `EMAIL_DELIVERY_DISABLED=true` in production unless you intentionally want contact and email capture submissions to stop sending real emails.
+The Formspree endpoints are already configured in code. Add `FORMSPREE_CONTACT_ENDPOINT` and `FORMSPREE_SUBSCRIBE_ENDPOINT` as Replit Secrets only if the client creates new Formspree forms later.
 
 ## Working Locally and Publishing Back to Replit
 

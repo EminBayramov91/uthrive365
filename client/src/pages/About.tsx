@@ -211,7 +211,7 @@ export default function About() {
                 PEM Assessment <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/start"
+                href="/resources"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-primary font-bold rounded-xl hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all"
               >
                 Explore Foundational Resources <ArrowRight className="w-5 h-5" />

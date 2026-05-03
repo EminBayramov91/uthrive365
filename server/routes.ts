@@ -9,74 +9,41 @@ const subscribeRequestSchema = z.object({
   source: z.string().trim().max(100).optional(),
 });
 
-const resendEmailResponseSchema = z.object({
-  id: z.string().optional(),
-  name: z.string().optional(),
-  message: z.string().optional(),
+const formspreeResponseSchema = z.object({
+  ok: z.boolean().optional(),
+  errors: z
+    .array(
+      z.object({
+        message: z.string().optional(),
+        code: z.string().optional(),
+        field: z.string().optional(),
+      }),
+    )
+    .optional(),
 });
 
 const contactRequestSchema = api.contact.request;
 
-type EmailMessage = {
-  subject: string;
-  html: string;
-  text: string;
-};
-
-function escapeHtml(value: string) {
-  return value.replace(/[&<>"']/g, (character) => {
-    switch (character) {
-      case "&":
-        return "&amp;";
-      case "<":
-        return "&lt;";
-      case ">":
-        return "&gt;";
-      case '"':
-        return "&quot;";
-      case "'":
-        return "&#39;";
-      default:
-        return character;
-    }
-  });
-}
+const formspreeContactEndpoint =
+  process.env.FORMSPREE_CONTACT_ENDPOINT || "https://formspree.io/f/xrejbqrk";
+const formspreeSubscribeEndpoint =
+  process.env.FORMSPREE_SUBSCRIBE_ENDPOINT || "https://formspree.io/f/xojrvdra";
 
 function toSingleLine(value: string) {
   return value.replace(/\s+/g, " ").trim();
 }
 
-async function sendEmail(message: EmailMessage) {
-  if (process.env.EMAIL_DELIVERY_DISABLED === "true") {
-    return;
-  }
-
-  const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.EMAIL_FROM;
-  const to = process.env.EMAIL_TO || "hello@uthrive365.com";
-
-  if (!apiKey || !from) {
-    const missing = [
-      !apiKey ? "RESEND_API_KEY" : null,
-      !from ? "EMAIL_FROM" : null,
-    ].filter(Boolean);
-
-    throw new Error(`Missing email configuration: ${missing.join(", ")}`);
-  }
-
-  const response = await fetch("https://api.resend.com/emails", {
+async function sendFormspreeSubmission(
+  endpoint: string,
+  payload: Record<string, string>,
+) {
+  const response = await fetch(endpoint, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${apiKey}`,
+      Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      from,
-      to: [to],
-      subject: message.subject,
-      html: message.html,
-      text: message.text,
-    }),
+    body: JSON.stringify(payload),
   });
 
   let responseBody: unknown = null;
@@ -86,60 +53,35 @@ async function sendEmail(message: EmailMessage) {
     responseBody = null;
   }
 
-  const result = resendEmailResponseSchema.safeParse(responseBody);
   if (!response.ok) {
-    const message = result.success
-      ? result.data.message || result.data.name || "Resend email delivery failed"
-      : "Resend email delivery failed";
-    throw new Error(message);
+    const result = formspreeResponseSchema.safeParse(responseBody);
+    const errors = result.success
+      ? result.data.errors
+          ?.map((error) => error.message)
+          .filter((message): message is string => Boolean(message))
+      : [];
+    const details = errors?.length ? `: ${errors.join(" ")}` : "";
+    throw new Error(`Formspree delivery failed${details}`);
   }
 }
 
 async function sendSubscriberNotification(email: string) {
-  await sendEmail({
+  await sendFormspreeSubmission(formspreeSubscribeEndpoint, {
+    email,
+    source: "Home page PEM capture",
     subject: "New PEM Wheel email capture",
-    html: `
-      <h2>New PEM Wheel email capture</h2>
-      <p>A visitor requested access to the PEM Wheel assessment.</p>
-      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-      <p><strong>Source:</strong> Home page PEM capture</p>
-    `,
-    text: [
-      "New PEM Wheel email capture",
-      "",
-      "A visitor requested access to the PEM Wheel assessment.",
-      `Email: ${email}`,
-      "Source: Home page PEM capture",
-    ].join("\n"),
   });
 }
 
 async function sendContactMessage(data: z.infer<typeof contactRequestSchema>) {
-  const name = escapeHtml(data.name);
-  const email = escapeHtml(data.email);
-  const inquiryType = escapeHtml(data.inquiryType);
-  const contactMessage = escapeHtml(data.message).replace(/\n/g, "<br />");
-
-  await sendEmail({
-    subject: `New U Thrive 365 contact form message: ${toSingleLine(data.inquiryType)}`,
-    html: `
-      <h2>New U Thrive 365 contact form message</h2>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Inquiry Type:</strong> ${inquiryType}</p>
-      <p><strong>Message:</strong></p>
-      <p>${contactMessage}</p>
-    `,
-    text: [
-      "New U Thrive 365 contact form message",
-      "",
-      `Name: ${data.name}`,
-      `Email: ${data.email}`,
-      `Inquiry Type: ${data.inquiryType}`,
-      "",
-      "Message:",
-      data.message,
-    ].join("\n"),
+  await sendFormspreeSubmission(formspreeContactEndpoint, {
+    name: data.name,
+    email: data.email,
+    inquiryType: data.inquiryType,
+    message: data.message,
+    subject: `New U Thrive 365 contact form message: ${toSingleLine(
+      data.inquiryType,
+    )}`,
   });
 }
 
@@ -159,12 +101,9 @@ export async function registerRoutes(
         return res.status(400).json({ message: "Please complete all contact form fields." });
       }
 
-      if (
-        error instanceof Error &&
-        error.message.startsWith("Missing email configuration")
-      ) {
-        return res.status(503).json({
-          message: "Email delivery is not configured yet.",
+      if (error instanceof Error && error.message.startsWith("Formspree")) {
+        return res.status(502).json({
+          message: "Message could not be sent. Please try again.",
         });
       }
 
@@ -190,12 +129,9 @@ export async function registerRoutes(
         return res.status(400).json({ message: "Please enter a valid email address." });
       }
 
-      if (
-        error instanceof Error &&
-        error.message.startsWith("Missing email configuration")
-      ) {
-        return res.status(503).json({
-          message: "Email delivery is not configured yet.",
+      if (error instanceof Error && error.message.startsWith("Formspree")) {
+        return res.status(502).json({
+          message: "Email could not be submitted. Please try again.",
         });
       }
 

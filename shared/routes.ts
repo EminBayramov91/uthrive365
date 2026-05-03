@@ -14,6 +14,7 @@ export const api = {
     responses: {
       200: z.object({ ok: z.literal(true) }),
       400: z.object({ message: z.string() }),
+      502: z.object({ message: z.string() }),
       500: z.object({ message: z.string() }),
       503: z.object({ message: z.string() }),
     },
@@ -28,6 +29,7 @@ export const api = {
     responses: {
       200: z.object({ ok: z.literal(true) }),
       400: z.object({ message: z.string() }),
+      502: z.object({ message: z.string() }),
       500: z.object({ message: z.string() }),
       503: z.object({ message: z.string() }),
     },

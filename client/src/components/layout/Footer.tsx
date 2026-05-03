@@ -21,7 +21,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/uthrive365/" target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F4F1EA] text-primary shadow-md hover:bg-white hover:shadow-lg transition-colors">
                 <FaInstagram className="w-6 h-6" />
               </a>
-              <a href="https://facebook.com/uthrive365" target="_blank" rel="noreferrer" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F4F1EA] text-primary shadow-md hover:bg-white hover:shadow-lg transition-colors">
+              <a href="https://www.facebook.com/p/U-Thrive-365-100063718183932/" target="_blank" rel="noreferrer" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F4F1EA] text-primary shadow-md hover:bg-white hover:shadow-lg transition-colors">
                 <FaFacebookF className="w-5 h-5" />
               </a>
             </div>

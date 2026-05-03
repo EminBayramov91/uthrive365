@@ -29,13 +29,11 @@ export default function Contact() {
         body: JSON.stringify(payload),
       });
 
-      const data = await response.json().catch(() => null);
-
       if (!response.ok) {
+        const data = await response.json().catch(() => null);
         throw new Error(data?.message || "Message could not be sent. Please try again.");
       }
 
-      api.contact.responses[200].parse(data);
       form.reset();
       setStatus("success");
     } catch (error) {

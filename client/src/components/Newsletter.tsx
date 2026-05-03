@@ -10,8 +10,10 @@ export default function Newsletter() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      subscribe.mutate(email, {
+    const normalizedEmail = email.trim();
+
+    if (normalizedEmail) {
+      subscribe.mutate(normalizedEmail, {
         onSuccess: () => {
           setEmail("");
           setLocation("/pem");
@@ -43,7 +45,7 @@ export default function Newsletter() {
             style={{ color: "#E6E0D6" }}
           >
             Your energy is telling a story right now. The PEM Wheel helps you
-            read it — where it's going, what's draining it, and where to begin
+            read it - where it's going, what's draining it, and where to begin
             reclaiming it.
           </p>
           <p
@@ -59,11 +61,14 @@ export default function Newsletter() {
             className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto"
           >
             <input
+              name="email"
               type="email"
+              inputMode="email"
+              autoComplete="email"
               placeholder="Enter your email address"
               required
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value.trim())}
               className="flex-1 px-8 py-4 rounded-xl bg-white/10 border border-white/20 placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all text-base"
               style={{ color: "#EDE8DE" }}
             />
